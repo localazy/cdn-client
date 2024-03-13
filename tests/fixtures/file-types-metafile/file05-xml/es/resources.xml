@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="about_us">"Acerca de nosotros"</string>
+  <string name="already_have_account">"¿Ya tienes una cuenta? Iniciar sesión"</string>
+  <string name="app_title">"Mi solicitud"</string>
+  <string name="contact_us">"Póngase en contacto con nosotros"</string>
+  <string name="disable_notifications">"Desactivar las notificaciones"</string>
+  <string name="edit_profile">"Editar perfil"</string>
+  <string name="email_placeholder">"Introduce tu correo electrónico"</string>
+  <string name="enable_notifications">"Habilitar notificaciones"</string>
+  <string name="error_message">"Algo salió mal. Por favor, inténtelo de nuevo."</string>
+  <string name="farewell_message">"¡Adiós y gracias por usar nuestra aplicación!"</string>
+  <string name="feedback_prompt">"¡Cuéntanos lo que piensas de la aplicación!"</string>
+  <string name="gender_choice_female">"Es tu amiga."</string>
+  <string name="gender_choice_male">"Es tu amigo."</string>
+  <string name="gender_choice_other">"Son tus amigos."</string>
+  <string name="language_select_label">"Elige tu idioma:"</string>
+  <string name="login_prompt">"Inicie sesión para continuar."</string>
+  <string name="logout_button">"Cerrar sesión"</string>
+  <string name="network_error">"Comprueba tu conexión a Internet e inténtalo de nuevo."</string>
+  <string name="notifications_label">"Notificaciones"</string>
+  <string name="password_placeholder">"Introduce tu contraseña"</string>
+  <string name="password_reset">"Restablecer la contraseña"</string>
+  <string name="plural_message">"Tienes mensajes %1$d nuevos"</string>
+  <string name="privacy_policy">"Política de privacidad"</string>
+  <string name="profile_page_title">"Tu perfil"</string>
+  <string name="remember_me">"Recuérdame"</string>
+  <string name="settings">"Ajustes"</string>
+  <string name="sign_up">"Inscríbase"</string>
+  <string name="submit_feedback">"Enviar comentarios"</string>
+  <string name="terms_of_service">"Términos de servicio"</string>
+  <string name="welcome_message">"¡Bienvenido,%1$s!"</string>
+</resources>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="781px" height="162px" viewBox="0 0 781 162">
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif" transform="translate(-0.5 -0.5)">
+    <!-- localazy box-->
+    <rect x="20" y="20" width="120" height="120" rx="18" ry="18" fill="rgb(255, 255, 255)" stroke="#808080" />
+    <image x="57.75" y="57" width="43.5" height="45" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyOSAzMCIgaGVpZ2h0PSIzMCIgd2lkdGg9IjI5Ij4mI3hhOzxwYXRoIGZpbGw9IiMwNjZGRUYiIGQ9Ik0yMi4yOTYxIDAuOTg3NjkxTDIyLjEwNzUgMS40NDYwNEwyMC42MyA0Ljk1NTg5QzIwLjc3NDYgNC41NTQwNSAyMC40NzI5IDQuMTIwODEgMjAuMDM5MSA0LjEyMDgxSDcuOTYxNDRDNy41MDg3NyA0LjEyMDgxIDcuMjA2OTkgNC41NzkxNiA3LjM4MzAzIDQuOTkzNTZMMTAuMjgxNCAxMS45MDAyQzEwLjM4MiAxMi4xMzI2IDEwLjYwODMgMTIuMjgzMiAxMC44NTk4IDEyLjI4MzJIMTYuNjA2M0MxNy4wNTI3IDEyLjI4MzIgMTcuMzU0NCAxMi43MzUzIDE3LjE5MSAxMy4xNDM0TDE3LjAwODYgMTMuNTgzTDE1LjUzMTIgMTcuMDk5MUMxNS42NzU4IDE2LjY5MSAxNS4zNzQgMTYuMjU3NyAxNC45NDAyIDE2LjI1NzdIMTMuMDU0QzEyLjYwNzYgMTYuMjU3NyAxMi4yOTk2IDE2LjcxNjEgMTIuNDc1NiAxNy4xMzA1TDE3LjM2NyAyOC44MDI4QzE3LjU3NDUgMjkuMjk4OCAxNy4yMDk4IDI5Ljg0NSAxNi42NjkxIDI5Ljg0NUgxMy42NTc2QzEzLjM1NTggMjkuODQ1IDEzLjA3OTIgMjkuNjYzIDEyLjk1OTcgMjkuMzgwNEwxLjQ0Nzk2IDEuODg1NTZDMS4xMDIxNyAxLjA1Njc2IDEuNzA1NzMgMC4xNDYzMzIgMi42MDQ4IDAuMTQ2MzMySDIxLjcwNTFDMjIuMTQ1MiAwLjE0NjMzMiAyMi40NDcgMC41Nzk1NjkgMjIuMjk2MSAwLjk4NzY5MVoiLz4mI3hhOzxwYXRoIGZpbGw9IiNBMUNCRkQiIGQ9Ik0yOC4wODA0IDQuMDU4MDNMMjIuNTIyNiAxNy4yNzQ5QzIyLjIyNzEgMTcuOTcxOCAyMS41NDE4IDE4LjQzMDIgMjAuNzgxMSAxOC40MzAySDE1LjkwODVDMTUuNDYyMSAxOC40MzAyIDE1LjE1NDEgMTcuOTcxOCAxNS4zMzAxIDE3LjU1NzRMMTUuNTEyNCAxNy4xMzA1QzE1LjUxODcgMTcuMTE3OSAxNS41MTg3IDE3LjExMTYgMTUuNTI1IDE3LjA5OTFMMTcuMDAyNSAxMy41ODNDMTYuODI2NCAxMy45OTc0IDE3LjEzNDUgMTQuNDU1NyAxNy41ODA5IDE0LjQ1NTdIMTguODk0OUMxOS4xNDY0IDE0LjQ1NTcgMTkuMzc5IDE0LjMwNSAxOS40NzMzIDE0LjA3MjdMMjIuMzc4IDcuMTY2MDNDMjIuNTU0IDYuNzUxNjMgMjIuMjQ2IDYuMjkzMjggMjEuNzk5NiA2LjI5MzI4SDIxLjAxMzdDMjAuNTY3MyA2LjI5MzI4IDIwLjI1OTIgNS44MzQ5MiAyMC40MzUzIDUuNDIwNTJMMjAuNjE3NiA0Ljk5MzU3QzIwLjYyMzkgNC45ODEwMSAyMC42MzAyIDQuOTY4NDUgMjAuNjMwMiA0Ljk1NTg5TDIyLjEwNzcgMS40NDYwNEMyMS45MzE2IDEuODYwNDUgMjIuMjM5NyAyLjMxODggMjIuNjg2MSAyLjMxODhIMjYuOTIzNkMyNy44MjI3IDIuMzEyNTIgMjguNDMyNSAzLjIyOTIyIDI4LjA4MDQgNC4wNTgwM1oiLz4mI3hhOzwvc3ZnPg==" preserveAspectRatio="none" />
+    <!-- 1st arrow-->
+    <path d="M 140 80 L 323.63 80" fill="none" stroke="#808080" />
+    <path d="M 328.88 80 L 321.88 83.5 L 323.63 80 L 321.88 76.5 Z" fill="#808080" stroke="#808080" />
+    <foreignObject x="140" y="20" width="190" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color: #808080; font-size: 14px; display: flex; height: 100%; justify-content: center; align-items: center; text-align: center;">
+        Localazy automatically
+        <br />
+        publishes content to CDN
+      </div>
+    </foreignObject>
+    <!-- cdn box -->
+    <rect x="330" y="20" width="120" height="120" rx="18" ry="18" fill="#fff2d1" stroke="#808080" />
+    <image x="347" y="37" width="85" height="85" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA0MiA0MiIgaGVpZ2h0PSI0MiIgd2lkdGg9IjQyIj4mI3hhOzxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF8xNTM3XzEyMCkiPiYjeGE7PHBhdGggZmlsbD0iI0ZGRjJEMSIgZD0iTTM2IDBINkMyLjY4NjI5IDAgMCAyLjY4NjI5IDAgNlYzNkMwIDM5LjMxMzcgMi42ODYyOSA0MiA2IDQySDM2QzM5LjMxMzcgNDIgNDIgMzkuMzEzNyA0MiAzNlY2QzQyIDIuNjg2MjkgMzkuMzEzNyAwIDM2IDBaIi8+JiN4YTs8cGF0aCBmaWxsPSIjREI5RTAwIiBkPSJNOC41IDIxQzguNSAxNC4xIDE0LjA4NzUgOC41IDIwLjk4NzUgOC41QzI3LjkgOC41IDMzLjUgMTQuMSAzMy41IDIxQzMzLjUgMjcuOSAyNy45IDMzLjUgMjAuOTg3NSAzMy41QzE0LjA4NzUgMzMuNSA4LjUgMjcuOSA4LjUgMjFaTTI1Ljk2MjUgMTZIMjkuNjVDMjguNDUgMTMuOTM3NSAyNi41Mzc1IDEyLjMzNzUgMjQuMjM3NSAxMS41NUMyNC45ODc1IDEyLjkzNzUgMjUuNTYyNSAxNC40Mzc1IDI1Ljk2MjUgMTZaTTIxIDExLjA1QzIyLjAzNzUgMTIuNTUgMjIuODUgMTQuMjEyNSAyMy4zODc1IDE2SDE4LjYxMjVDMTkuMTUgMTQuMjEyNSAxOS45NjI1IDEyLjU1IDIxIDExLjA1Wk0xMSAyMUMxMSAyMS44NjI1IDExLjEyNSAyMi43IDExLjMyNSAyMy41SDE1LjU1QzE1LjQ1IDIyLjY3NSAxNS4zNzUgMjEuODUgMTUuMzc1IDIxQzE1LjM3NSAyMC4xNSAxNS40NSAxOS4zMjUgMTUuNTUgMTguNUgxMS4zMjVDMTEuMTI1IDE5LjMgMTEgMjAuMTM3NSAxMSAyMVpNMTIuMzUgMjZIMTYuMDM3NUMxNi40Mzc1IDI3LjU2MjUgMTcuMDEyNSAyOS4wNjI1IDE3Ljc2MjUgMzAuNDVDMTUuNDYyNSAyOS42NjI1IDEzLjU1IDI4LjA3NSAxMi4zNSAyNlpNMTIuMzUgMTZIMTYuMDM3NUMxNi40Mzc1IDE0LjQzNzUgMTcuMDEyNSAxMi45Mzc1IDE3Ljc2MjUgMTEuNTVDMTUuNDYyNSAxMi4zMzc1IDEzLjU1IDEzLjkyNSAxMi4zNSAxNlpNMjEgMzAuOTVDMTkuOTYyNSAyOS40NSAxOS4xNSAyNy43ODc1IDE4LjYxMjUgMjZIMjMuMzg3NUMyMi44NSAyNy43ODc1IDIyLjAzNzUgMjkuNDUgMjEgMzAuOTVaTTE3Ljg3NSAyMUMxNy44NzUgMjEuODUgMTcuOTYyNSAyMi42NzUgMTguMDc1IDIzLjVIMjMuOTI1QzI0LjAzNzUgMjIuNjc1IDI0LjEyNSAyMS44NSAyNC4xMjUgMjFDMjQuMTI1IDIwLjE1IDI0LjAzNzUgMTkuMzEyNSAyMy45MjUgMTguNUgxOC4wNzVDMTcuOTYyNSAxOS4zMTI1IDE3Ljg3NSAyMC4xNSAxNy44NzUgMjFaTTI0LjIzNzUgMzAuNDVDMjQuOTg3NSAyOS4wNjI1IDI1LjU2MjUgMjcuNTYyNSAyNS45NjI1IDI2SDI5LjY1QzI4LjQ1IDI4LjA2MjUgMjYuNTM3NSAyOS42NjI1IDI0LjIzNzUgMzAuNDVaTTI2LjYyNSAyMUMyNi42MjUgMjEuODUgMjYuNTUgMjIuNjc1IDI2LjQ1IDIzLjVIMzAuNjc1QzMwLjg3NSAyMi43IDMxIDIxLjg2MjUgMzEgMjFDMzEgMjAuMTM3NSAzMC44NzUgMTkuMyAzMC42NzUgMTguNUgyNi40NUMyNi41NSAxOS4zMjUgMjYuNjI1IDIwLjE1IDI2LjYyNSAyMVoiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbC1ydWxlPSJldmVub2RkIi8+JiN4YTs8L2c+JiN4YTs8ZGVmcz4mI3hhOzxjbGlwUGF0aCBpZD0iY2xpcDBfMTUzN18xMjAiPiYjeGE7PHJlY3QgZmlsbD0id2hpdGUiIGhlaWdodD0iNDIiIHdpZHRoPSI0MiIvPiYjeGE7PC9jbGlwUGF0aD4mI3hhOzwvZGVmcz4mI3hhOzwvc3ZnPg==" preserveAspectRatio="none" />
+    <text x="390" y="45" fill="#333333" font-size="16px" text-anchor="middle">CDN</text>
+    <!-- 2nd arrow-->
+    <path d="M 450 79.5 L 633.63 79.5" fill="none" stroke="#808080" />
+    <path d="M 638.88 79.5 L 631.88 83 L 633.63 79.5 L 631.88 76 Z" fill="#808080" stroke="#808080" />
+    <foreignObject x="450" y="20" width="190" height="60">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color: #808080; font-size: 14px; display: flex; height: 100%; justify-content: center; align-items: center; text-align: center;">
+        Download translated
+        <br />
+        files using CDN Client
+      </div>
+    </foreignObject>
+    <!-- cdn client box-->
+    <rect x="640" y="20" width="120" height="120" rx="18" ry="18" fill="rgb(255, 255, 255)" stroke="#808080" />
+    <foreignObject x="640" y="20" width="120" height="120">
+      <div xmlns="http://www.w3.org/1999/xhtml" style="color: #333333; font-size:20px; display: flex; height: 100%; justify-content: center; align-items: center; text-align: center;">
+        Your
+        <br />
+        App
+      </div>
+    </foreignObject>
+  </g>
+</svg>

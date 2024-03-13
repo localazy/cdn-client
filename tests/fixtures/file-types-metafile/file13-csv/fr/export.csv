@@ -1,0 +1,29 @@
+key,fr
+about_us,Option pour en savoir plus sur les créateurs de l'application
+already_have_account,Invite pour les utilisateurs qui ont déjà un compte
+app_title,Le titre de la demande
+contact_us,Possibilité de contacter les créateurs de l'application
+disable_notifications,Option pour désactiver les notifications
+edit_profile,Possibilité de modifier le profil de l'utilisateur
+email_placeholder,Texte d'espace réservé pour le champ de saisie de l'e-mail
+enable_notifications,Option pour activer les notifications
+error_message,Message d'erreur pour les erreurs générales
+farewell_message,Message d'adieu lorsque l'utilisateur se déconnecte
+feedback_prompt,Message rapide pour demander l'avis de l'utilisateur
+gender_choice,Message générique pour un ami sans préciser son sexe
+language_select_label,Libellé pour la liste déroulante de sélection de la langue
+login_prompt,Message invitant l'utilisateur à se connecter
+logout_button,Libellé du bouton de déconnexion
+network_error,Message d'erreur en cas d'erreur réseau
+notifications_label,Étiquette pour les notifications
+password_placeholder,Texte de remplacement pour le champ de saisie du mot de passe
+password_reset,Option pour réinitialiser le mot de passe
+plural_message,"Message affichant le nombre de nouveaux messages, avec un espace réservé au pluriel"
+privacy_policy,Texte du lien pour la politique de confidentialité
+profile_page_title,Titre de la page de profil de l'utilisateur
+remember_me,Option permettant à l'application de se souvenir de l'utilisateur
+settings,Libellé de l'option de configuration
+sign_up,Texte du bouton pour s'inscrire
+submit_feedback,Texte du bouton pour envoyer des commentaires
+terms_of_service,Texte du lien pour les conditions d'utilisation
+welcome_message,Message de bienvenue avec espace réservé pour le nom de l'utilisateur

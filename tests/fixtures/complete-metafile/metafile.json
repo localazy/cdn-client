@@ -1,0 +1,160 @@
+{
+  "projectUrl": "https://localazy.com/p/cdnarticle",
+  "baseLocale": "en",
+  "timestamp": 1700000000,
+  "files": {
+    "file01": {
+      "file": "file.json",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/complete-metafile/_e0/file01/en/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "BN",
+          "script": "",
+          "isRtl": false,
+          "name": "Malay (Brunei)",
+          "localizedName": "Malay (Brunei)",
+          "uri": "/complete-metafile/_e0/file01/ms-BN/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "",
+          "script": "Arab",
+          "isRtl": false,
+          "name": "Malay (Arabic)",
+          "localizedName": "Malay (Arabic)",
+          "uri": "/complete-metafile/_e0/file01/ms-Arab/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "ID",
+          "script": "Latn",
+          "isRtl": false,
+          "name": "Malay (Indonesia, Latin)",
+          "localizedName": "Malay (Indonesia, Latin)",
+          "uri": "/complete-metafile/_e0/file01/ms-ID-Latn/file.json",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file02": {
+      "file": "file.json",
+      "path": "",
+      "library": "lib",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/complete-metafile/_e0/file02/en/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "BN",
+          "script": "",
+          "isRtl": false,
+          "name": "Malay (Brunei)",
+          "localizedName": "Malay (Brunei)",
+          "uri": "/complete-metafile/_e0/file02/ms-BN/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "",
+          "script": "Arab",
+          "isRtl": false,
+          "name": "Malay (Arabic)",
+          "localizedName": "Malay (Arabic)",
+          "uri": "/complete-metafile/_e0/file02/ms-Arab/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "ID",
+          "script": "Latn",
+          "isRtl": false,
+          "name": "Malay (Indonesia, Latin)",
+          "localizedName": "Malay (Indonesia, Latin)",
+          "uri": "/complete-metafile/_e0/file02/ms-ID-Latn/file.json",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file03": {
+      "file": "file.json",
+      "path": "",
+      "library": "lib",
+      "module": "auth",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/complete-metafile/_e0/file03/en/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "BN",
+          "script": "",
+          "isRtl": false,
+          "name": "Malay (Brunei)",
+          "localizedName": "Malay (Brunei)",
+          "uri": "/complete-metafile/_e0/file03/ms-BN/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "",
+          "script": "Arab",
+          "isRtl": false,
+          "name": "Malay (Arabic)",
+          "localizedName": "Malay (Arabic)",
+          "uri": "/complete-metafile/_e0/file03/ms-Arab/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "ID",
+          "script": "Latn",
+          "isRtl": false,
+          "name": "Malay (Indonesia, Latin)",
+          "localizedName": "Malay (Indonesia, Latin)",
+          "uri": "/complete-metafile/_e0/file03/ms-ID-Latn/file.json",
+          "timestamp": 1700000000
+        }
+      ]
+    }
+  }
+}

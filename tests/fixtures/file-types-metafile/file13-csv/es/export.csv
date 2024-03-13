@@ -1,0 +1,29 @@
+key,es
+about_us,Opción para leer sobre los creadores de la aplicación
+already_have_account,Preguntar a los usuarios que ya tienen una cuenta
+app_title,El título de la solicitud
+contact_us,Opción de contactar con los creadores de la aplicación
+disable_notifications,Opción para deshabilitar las notificaciones
+edit_profile,Opción para editar el perfil del usuario
+email_placeholder,Texto de marcador de posición para el campo de entrada de correo electrónico
+enable_notifications,Opción para habilitar las notificaciones
+error_message,Mensaje de error para errores generales
+farewell_message,Mensaje de despedida cuando el usuario cierra sesión
+feedback_prompt,Mensaje rápido para solicitar la opinión del usuario
+gender_choice,Mensaje genérico para un amigo sin especificar el género
+language_select_label,Etiqueta para el menú desplegable de selección de idioma
+login_prompt,Mensaje para que el usuario inicie sesión
+logout_button,Etiqueta para el botón de cierre de sesión
+network_error,Mensaje de error para errores de red
+notifications_label,Etiqueta para las notificaciones
+password_placeholder,Texto de marcador de posición para el campo de entrada de contraseña
+password_reset,Opción para restablecer la contraseña
+plural_message,"Mensaje que muestra el número de mensajes nuevos, con un marcador de posición plural"
+privacy_policy,Texto del enlace a la política de privacidad
+profile_page_title,Título de la página de perfil del usuario
+remember_me,Opción para que la aplicación recuerde al usuario
+settings,Etiqueta para la opción de configuración
+sign_up,Texto del botón para registrarse
+submit_feedback,Texto del botón para enviar comentarios
+terms_of_service,Texto del enlace para ver los términos de servicio
+welcome_message,Mensaje de bienvenida con marcador de posición para el nombre del usuario

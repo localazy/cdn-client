@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Localazy (https://localazy.com)\n"
+"Project-Id-Version: CDN\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n==1) ? 0 : 1;\n"
+
+msgid "About Us"
+msgstr "About Us"
+
+msgid "Already have an account? Log In"
+msgstr "Already have an account? Log In"
+
+msgid "Choose your language:"
+msgstr "Choose your language:"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Disable Notifications"
+msgstr "Disable Notifications"
+
+msgid "Edit Profile"
+msgstr "Edit Profile"
+
+msgid "Enable Notifications"
+msgstr "Enable Notifications"
+
+msgid "Enter your email"
+msgstr "Enter your email"
+
+msgid "Enter your password"
+msgstr "Enter your password"
+
+msgid "Goodbye and thank you for using our app!"
+msgstr "Goodbye and thank you for using our app!"
+
+msgctxt "male"
+msgid "He is your friend."
+msgstr "He is your friend."
+
+msgid "Log Out"
+msgstr "Log Out"
+
+msgid "My Application"
+msgstr "My Application"
+
+msgid "Notifications"
+msgstr "Notifications"
+
+msgid "Please check your internet connection and try again."
+msgstr "Please check your internet connection and try again."
+
+msgid "Please log in to continue."
+msgstr "Please log in to continue."
+
+msgid "Privacy Policy"
+msgstr "Privacy Policy"
+
+msgid "Remember Me"
+msgstr "Remember Me"
+
+msgid "Reset your password"
+msgstr "Reset your password"
+
+msgid "Settings"
+msgstr "Settings"
+
+msgctxt "female"
+msgid "She is your friend."
+msgstr "She is your friend."
+
+msgid "Sign Up"
+msgstr "Sign Up"
+
+msgid "Something went wrong. Please try again."
+msgstr "Something went wrong. Please try again."
+
+msgid "Submit Feedback"
+msgstr "Submit Feedback"
+
+msgid "Tell us what you think about the app!"
+msgstr "Tell us what you think about the app!"
+
+msgid "Terms of Service"
+msgstr "Terms of Service"
+
+msgctxt "other"
+msgid "They are your friend."
+msgstr "They are your friend."
+
+msgid "Welcome, {user_name}!"
+msgstr "Welcome, {user_name}!"
+
+msgid "Your Profile"
+msgstr "Your Profile"

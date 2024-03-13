@@ -1,0 +1,52 @@
+{
+  "app": {
+    "farewellMessage": "¡Adiós y gracias por usar nuestra aplicación!",
+    "loginPrompt": "Inicie sesión para continuar.",
+    "logoutButton": "Cerrar sesión",
+    "title": "Mi solicitud",
+    "welcomeMessage": "¡Bienvenido,{user_name}!"
+  },
+  "authentication": {
+    "alreadyHaveAccount": "¿Ya tienes una cuenta? Iniciar sesión",
+    "emailPlaceholder": "Introduce tu correo electrónico",
+    "passwordPlaceholder": "Introduce tu contraseña",
+    "passwordReset": "Restablecer la contraseña",
+    "rememberMe": "Recuérdame",
+    "signUp": "Inscríbase"
+  },
+  "contact": {
+    "aboutUs": "Acerca de nosotros",
+    "us": "Póngase en contacto con nosotros"
+  },
+  "errors": {
+    "message": "Algo salió mal. Por favor, inténtelo de nuevo.",
+    "networkError": "Comprueba tu conexión a Internet e inténtalo de nuevo."
+  },
+  "feedback": {
+    "prompt": "¡Cuéntanos lo que piensas de la aplicación!",
+    "submitFeedback": "Enviar comentarios"
+  },
+  "gender": {
+    "choice": {
+      "female": "Es tu amiga.",
+      "male": "Es tu amigo.",
+      "other": "Son tus amigos."
+    }
+  },
+  "messages": {
+    "pluralMessage": "Tienes mensajes ${count} nuevos"
+  },
+  "profile": {
+    "editProfile": "Editar perfil",
+    "pageTitle": "Tu perfil"
+  },
+  "settings": {
+    "disableNotifications": "Desactivar las notificaciones",
+    "enableNotifications": "Habilitar notificaciones",
+    "languageSelectLabel": "Elige tu idioma:",
+    "notificationsLabel": "Notificaciones",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
+    "title": "Ajustes"
+  }
+}

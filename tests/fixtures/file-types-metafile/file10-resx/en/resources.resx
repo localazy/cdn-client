@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+<resheader name="resmimetype">
+<value>text/microsoft-resx</value>
+</resheader>
+<resheader name="version">
+<value>2.0</value>
+</resheader>
+<resheader name="writer">
+<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+<resheader name="reader">
+<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+<data name="about_us" xml:space="preserve">
+<value>About Us</value>
+</data>
+<data name="already_have_account" xml:space="preserve">
+<value>Already have an account? Log In</value>
+</data>
+<data name="app_title" xml:space="preserve">
+<value>My Application</value>
+</data>
+<data name="contact_us" xml:space="preserve">
+<value>Contact Us</value>
+</data>
+<data name="disable_notifications" xml:space="preserve">
+<value>Disable Notifications</value>
+</data>
+<data name="edit_profile" xml:space="preserve">
+<value>Edit Profile</value>
+</data>
+<data name="email_placeholder" xml:space="preserve">
+<value>Enter your email</value>
+</data>
+<data name="enable_notifications" xml:space="preserve">
+<value>Enable Notifications</value>
+</data>
+<data name="error_message" xml:space="preserve">
+<value>Something went wrong. Please try again.</value>
+</data>
+<data name="farewell_message" xml:space="preserve">
+<value>Goodbye and thank you for using our app!</value>
+</data>
+<data name="feedback_prompt" xml:space="preserve">
+<value>Tell us what you think about the app!</value>
+</data>
+<data name="gender_choice_female" xml:space="preserve">
+<value>She is your friend.</value>
+</data>
+<data name="gender_choice_male" xml:space="preserve">
+<value>He is your friend.</value>
+</data>
+<data name="gender_choice_other" xml:space="preserve">
+<value>They are your friend.</value>
+</data>
+<data name="language_select_label" xml:space="preserve">
+<value>Choose your language:</value>
+</data>
+<data name="login_prompt" xml:space="preserve">
+<value>Please log in to continue.</value>
+</data>
+<data name="logout_button" xml:space="preserve">
+<value>Log Out</value>
+</data>
+<data name="network_error" xml:space="preserve">
+<value>Please check your internet connection and try again.</value>
+</data>
+<data name="notifications_label" xml:space="preserve">
+<value>Notifications</value>
+</data>
+<data name="password_placeholder" xml:space="preserve">
+<value>Enter your password</value>
+</data>
+<data name="password_reset" xml:space="preserve">
+<value>Reset your password</value>
+</data>
+<data name="plural_message_one" xml:space="preserve">
+<value>You have one new message</value>
+</data>
+<data name="plural_message_other" xml:space="preserve">
+<value>You have {count} new messages</value>
+</data>
+<data name="plural_message_zero" xml:space="preserve">
+<value>You have no new messages</value>
+</data>
+<data name="privacy_policy" xml:space="preserve">
+<value>Privacy Policy</value>
+</data>
+<data name="profile_page_title" xml:space="preserve">
+<value>Your Profile</value>
+</data>
+<data name="remember_me" xml:space="preserve">
+<value>Remember Me</value>
+</data>
+<data name="settings" xml:space="preserve">
+<value>Settings</value>
+</data>
+<data name="sign_up" xml:space="preserve">
+<value>Sign Up</value>
+</data>
+<data name="submit_feedback" xml:space="preserve">
+<value>Submit Feedback</value>
+</data>
+<data name="terms_of_service" xml:space="preserve">
+<value>Terms of Service</value>
+</data>
+<data name="welcome_message" xml:space="preserve">
+<value>Welcome, {user_name}!</value>
+</data>
+</root>

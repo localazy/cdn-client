@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Localazy (https://localazy.com)\n"
+"Project-Id-Version: CDN\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1) ? 0 : 1;\n"
+
+msgid "aboutUs"
+msgstr "À propos de nous"
+
+msgid "alreadyHaveAccount"
+msgstr "Vous avez déjà un compte"
+
+msgid "appTitle"
+msgstr "Titre de l'application"
+
+msgid "contactUs"
+msgstr "Nous contacter"
+
+msgid "disableNotifications"
+msgstr "Désactiver les notifications"
+
+msgid "editProfile"
+msgstr "Modifier le profil"
+
+msgid "emailPlaceholder"
+msgstr "Espace réservé aux e-mails"
+
+msgid "enableNotifications"
+msgstr "Activer les notifications"
+
+msgid "errorMessage"
+msgstr "Message d'erreur"
+
+msgid "farewellMessage"
+msgstr "Message d'adieu"
+
+msgid "feedbackPrompt"
+msgstr "Prompte de commentaires"
+
+msgctxt "female"
+msgid "genderChoice"
+msgstr "Choix du sexe"
+
+msgctxt "male"
+msgid "genderChoice"
+msgstr "Choix du sexe"
+
+msgctxt "other"
+msgid "genderChoice"
+msgstr "Choix du sexe"
+
+msgid "languageSelectLabel"
+msgstr "Libellé de sélection de la langue"
+
+msgid "loginPrompt"
+msgstr "Prompte de connexion"
+
+msgid "logoutButton"
+msgstr "Bouton de déconnexion"
+
+msgid "networkError"
+msgstr "Erreur réseau"
+
+msgid "notificationsLabel"
+msgstr "Étiquette de notifications"
+
+msgid "pluralMessage"
+msgid_plural "pluralMessages"
+msgstr[0] "Vous n'avez aucun nouveau message"
+msgstr[1] "Vous avez un nouveau message"
+
+msgid "passwordPlaceholder"
+msgstr "Espace réservé au mot de passe"
+
+msgid "privacyPolicy"
+msgstr "Politique de confidentialité"
+
+msgid "profilePageTitle"
+msgstr "Titre de la page de profil"
+
+msgid "rememberMe"
+msgstr "Souvenez-vous de moi"
+
+msgid "settings"
+msgstr "Réglages"
+
+msgid "signUp"
+msgstr "S'inscrire"
+
+msgid "submitFeedback"
+msgstr "Soumettre des commentaires"
+
+msgid "termsOfService"
+msgstr "Conditions générales d'utilisation"
+
+msgid "welcomeMessage"
+msgstr "Message de bienvenue"

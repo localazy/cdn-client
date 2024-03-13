@@ -1,0 +1,100 @@
+name: QA checks
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint, Typecheck, Test and Build source files
+    runs-on: [ self-hosted, Linux ]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint source files
+        run: npm run lint
+
+      - name: Check types
+        run: npm run typecheck
+
+      - name: Run tests
+        run: npm run test:coverage
+
+      - name: Build package
+        run: npm run build
+
+      - name: 'Report Coverage'
+        if: always()
+        uses: davelosert/vitest-coverage-report-action@v2
+
+#      - name: Gather data
+#        id: data
+#        run: |
+#          VERSION=$(node -p "require('./package.json').version")
+#          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+#          LICENSE=$(node -p "require('./package.json').license")
+#          echo "license=$LICENSE" >> "$GITHUB_OUTPUT"
+#          COVERAGE=$(node -p "require('./coverage/coverage-summary.json').total.lines.pct")
+#          echo "coverage=$COVERAGE" >> "$GITHUB_OUTPUT"
+#          echo "path=.github/badges" >> "${GITHUB_OUTPUT}"
+#        shell: bash
+#
+#      - name: Create badges directory
+#        run: mkdir -p "${{ steps.data.outputs.path }}"
+#        shell: bash
+#
+#      - name: Generate version badge
+#        uses: emibcn/badge-action@v2.0.2
+#        with:
+#          label: npm
+#          status: ${{ steps.data.outputs.version }}
+#          color: 0558bd,066fef
+#          path: ${{ steps.data.outputs.path }}/version.svg
+#
+#      - name: Generate license badge
+#        uses: emibcn/badge-action@v2.0.2
+#        with:
+#          label: license
+#          status: ${{ steps.data.outputs.license }}
+#          color: 0558bd,066fef
+#          path: ${{ steps.data.outputs.path }}/license.svg
+#
+#      - name: Generate coverage badge
+#        uses: emibcn/badge-action@v2.0.2
+#        with:
+#          label: coverage
+#          status: ${{ steps.data.outputs.coverage }}%
+#          color: ${{ steps.data.outputs.coverage > 90 && 'green'
+#            || steps.data.outputs.coverage > 80 && 'yellow,green'
+#            || steps.data.outputs.coverage > 70 && 'yellow'
+#            || steps.data.outputs.coverage > 60 && 'orange,yellow'
+#            || steps.data.outputs.coverage > 50 && 'orange'
+#            || steps.data.outputs.coverage > 40 && 'red,orange'
+#            || steps.data.outputs.coverage > 30 && 'red,red,orange'
+#            || steps.data.outputs.coverage > 20 && 'red,red,red,orange'
+#            || 'red' }}
+#          path: ${{ steps.data.outputs.path }}/coverage.svg
+#
+#      - name: Commit files
+#        run: |
+#          git config --local user.email "${{ github.actor_id }}+github-actions[bot]@users.noreply.github.com"
+#          git config --local user.name "github-actions[bot]"
+#          git add .
+#          git status
+#          git commit -m "Update badges"
+#
+#      - name: Push changes
+#        uses: ad-m/github-push-action@v0.8.0
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: docs

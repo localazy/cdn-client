@@ -1,0 +1,745 @@
+{
+  "projectUrl": "https://localazy.com/p/cdn",
+  "baseLocale": "en",
+  "timestamp": 1700000000,
+  "files": {
+    "file01-json": {
+      "file": "plain.json",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file01-json/en/plain.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file01-json/es/plain.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file01-json/fr/plain.json",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file02-json5": {
+      "file": "texts.json5",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file02-json5/en/texts.json5",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file02-json5/es/texts.json5",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file02-json5/fr/texts.json5",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file03-neon": {
+      "file": "plain.neon",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file03-neon/en/plain.neon",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file03-neon/es/plain.neon",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file03-neon/fr/plain.neon",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file04-yaml": {
+      "file": "plain.yaml",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file04-yaml/en/plain.yaml",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file04-yaml/es/plain.yaml",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file04-yaml/fr/plain.yaml",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file05-xml": {
+      "file": "resources.xml",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file05-xml/en/resources.xml",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file05-xml/es/resources.xml",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file05-xml/fr/resources.xml",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file06-srt": {
+      "file": "subtitles.srt",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file06-srt/en/subtitles.srt",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file06-srt/es/subtitles.srt",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file06-srt/fr/subtitles.srt",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file07-ini": {
+      "file": "plain.ini",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file07-ini/en/plain.ini",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file07-ini/es/plain.ini",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file07-ini/fr/plain.ini",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file08-strings": {
+      "file": "Localizable.strings",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file08-strings/en/Localizable.strings",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file08-strings/es/Localizable.strings",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file08-strings/fr/Localizable.strings",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file09-toml": {
+      "file": "file.toml",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file09-toml/en/file.toml",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file09-toml/es/file.toml",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file09-toml/fr/file.toml",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file10-resx": {
+      "file": "resources.resx",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file10-resx/en/resources.resx",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file10-resx/es/resources.resx",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file10-resx/fr/resources.resx",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file11-xliff": {
+      "file": "translate.xliff",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file11-xliff/en/translate.xliff",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file11-xliff/es/translate.xliff",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file11-xliff/fr/translate.xliff",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file12-properties": {
+      "file": "local.properties",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file12-properties/en/local.properties",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file12-properties/es/local.properties",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file12-properties/fr/local.properties",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file13-csv": {
+      "file": "export.csv",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file13-csv/en/export.csv",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file13-csv/es/export.csv",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file13-csv/fr/export.csv",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file14-ts": {
+      "file": "resources.ts",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file14-ts/en/resources.ts",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file14-ts/es/resources.ts",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file14-ts/fr/resources.ts",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file15-js": {
+      "file": "default.js",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file15-js/en/default.js",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file15-js/es/default.js",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file15-js/fr/default.js",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file16-php": {
+      "file": "structured.php",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file16-php/en/structured.php",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file16-php/es/structured.php",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file16-php/fr/structured.php",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file17-pot": {
+      "file": "messages.pot",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file17-pot/en/messages.pot",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file17-pot/es/messages.pot",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file17-pot/fr/messages.pot",
+          "timestamp": 1700000000
+        }
+      ]
+    },
+    "file18-po": {
+      "file": "messages.po",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [ ],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/file-types-metafile/_e0/file18-po/en/messages.po",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/file-types-metafile/_e0/file18-po/es/messages.po",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "fr",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "French",
+          "localizedName": "Français",
+          "uri": "/file-types-metafile/_e0/file18-po/fr/messages.po",
+          "timestamp": 1700000000
+        }
+      ]
+    }
+  }
+}

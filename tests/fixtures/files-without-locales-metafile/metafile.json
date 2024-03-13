@@ -1,0 +1,18 @@
+{
+  "projectUrl": "https://localazy.com/p/cdnarticle",
+  "baseLocale": "en",
+  "timestamp": 1700000000,
+  "files": {
+    "file01": {
+      "file": "file.json",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [],
+      "locales": [
+      ]
+    }
+  }
+}

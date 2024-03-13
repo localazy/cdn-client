@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+<file datatype="plaintext" original="Localizable.strings" source-language="en" target-language="es">
+<body>
+<trans-unit id="appTitle">
+<source xml:space="preserve">My Application</source>
+<target xml:space="preserve">Mi solicitud</target>
+</trans-unit>
+<trans-unit id="genderChoice">
+<source xml:space="preserve">{GENDER, select, male {He is your friend.} female {She is your friend.} other {They are your friend.}}</source>
+<target xml:space="preserve">{GÉNERO, selecciona, masculino {Él es tu amigo.} mujer {Ella es tu amiga.} other {Es tu amigo.}}</target>
+</trans-unit>
+<trans-unit id="loginPrompt">
+<source xml:space="preserve">Please log in to continue.</source>
+<target xml:space="preserve">Inicie sesión para continuar.</target>
+</trans-unit>
+<trans-unit id="logoutButton">
+<source xml:space="preserve">Log Out</source>
+<target xml:space="preserve">Cerrar sesión</target>
+</trans-unit>
+<trans-unit id="pluralMessage">
+<source xml:space="preserve">You have %d new messages</source>
+<target xml:space="preserve">Tienes mensajes %d nuevos</target>
+</trans-unit>
+<trans-unit id="welcomeMessage">
+<source xml:space="preserve">Welcome, %s!</source>
+<target xml:space="preserve">¡Bienvenido,%s!</target>
+</trans-unit>
+</body>
+</file>
+</xliff>

@@ -1,0 +1,38 @@
+{
+  "projectUrl": "https://localazy.com/p/cdnarticle",
+  "baseLocale": "en",
+  "timestamp": 1700000000,
+  "files": {
+    "file01": {
+      "file": "file.json",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": 1700000000,
+      "productFlavors": [],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/single-file-metafile/_e0/file01/en/file.json",
+          "timestamp": 1700000000
+        },
+        {
+          "language": "ms",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Malay",
+          "localizedName": "Malay",
+          "uri": "/single-file-metafile/_e0/file01/ms/file.json",
+          "timestamp": 1700000000
+        }
+      ]
+    }
+  }
+}

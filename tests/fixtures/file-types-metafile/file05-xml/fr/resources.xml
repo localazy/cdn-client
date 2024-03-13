@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="about_us">"À propos de nous"</string>
+  <string name="already_have_account">"Vous avez déjà un compte ? Se connecter"</string>
+  <string name="app_title">"Ma candidature"</string>
+  <string name="contact_us">"Nous contacter"</string>
+  <string name="disable_notifications">"Désactiver les notifications"</string>
+  <string name="edit_profile">"Modifier le profil"</string>
+  <string name="email_placeholder">"Entrez votre e-mail"</string>
+  <string name="enable_notifications">"Activer les notifications"</string>
+  <string name="error_message">"Quelque chose s\'est mal passé. Veuillez réessayer."</string>
+  <string name="farewell_message">"Au revoir et merci d\'avoir utilisé notre application !"</string>
+  <string name="feedback_prompt">"Dites-nous ce que vous pensez de l\'application !"</string>
+  <string name="gender_choice_female">"C\'est ton amie."</string>
+  <string name="gender_choice_male">"C\'est ton ami."</string>
+  <string name="gender_choice_other">"Ce sont tes amis."</string>
+  <string name="language_select_label">"Choisissez votre langue :"</string>
+  <string name="login_prompt">"Veuillez vous connecter pour continuer."</string>
+  <string name="logout_button">"Déconnectez-vous"</string>
+  <string name="network_error">"Vérifiez votre connexion Internet et réessayez."</string>
+  <string name="notifications_label">"Les notifications"</string>
+  <string name="password_placeholder">"Entrez votre mot de passe"</string>
+  <string name="password_reset">"Réinitialisez votre mot de passe"</string>
+  <string name="plural_message">"Vous avez de %1$d nouveaux messages"</string>
+  <string name="privacy_policy">"Politique de confidentialité"</string>
+  <string name="profile_page_title">"Votre profil"</string>
+  <string name="remember_me">"Souvenez-vous de moi"</string>
+  <string name="settings">"Réglages"</string>
+  <string name="sign_up">"INSCRIVEZ-VOUS"</string>
+  <string name="submit_feedback">"Soumettre des commentaires"</string>
+  <string name="terms_of_service">"Conditions générales d\'utilisation"</string>
+  <string name="welcome_message">"Bienvenue, %1$s !"</string>
+</resources>

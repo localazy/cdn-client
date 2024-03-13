@@ -1,0 +1,101 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Localazy (https://localazy.com)\n"
+"Project-Id-Version: CDN\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n==1) ? 0 : 1;\n"
+
+msgid "aboutUs"
+msgstr "aboutUs"
+
+msgid "alreadyHaveAccount"
+msgstr "alreadyHaveAccount"
+
+msgid "appTitle"
+msgstr "appTitle"
+
+msgid "contactUs"
+msgstr "contactUs"
+
+msgid "disableNotifications"
+msgstr "disableNotifications"
+
+msgid "editProfile"
+msgstr "editProfile"
+
+msgid "emailPlaceholder"
+msgstr "emailPlaceholder"
+
+msgid "enableNotifications"
+msgstr "enableNotifications"
+
+msgid "errorMessage"
+msgstr "errorMessage"
+
+msgid "farewellMessage"
+msgstr "farewellMessage"
+
+msgid "feedbackPrompt"
+msgstr "feedbackPrompt"
+
+msgctxt "female"
+msgid "genderChoice"
+msgstr "genderChoice"
+
+msgctxt "male"
+msgid "genderChoice"
+msgstr "genderChoice"
+
+msgctxt "other"
+msgid "genderChoice"
+msgstr "genderChoice"
+
+msgid "languageSelectLabel"
+msgstr "languageSelectLabel"
+
+msgid "loginPrompt"
+msgstr "loginPrompt"
+
+msgid "logoutButton"
+msgstr "logoutButton"
+
+msgid "networkError"
+msgstr "networkError"
+
+msgid "notificationsLabel"
+msgstr "notificationsLabel"
+
+msgid "pluralMessage"
+msgid_plural "pluralMessages"
+msgstr[0] "You have no new messages"
+msgstr[1] "You have one new message"
+
+msgid "passwordPlaceholder"
+msgstr "passwordPlaceholder"
+
+msgid "privacyPolicy"
+msgstr "privacyPolicy"
+
+msgid "profilePageTitle"
+msgstr "profilePageTitle"
+
+msgid "rememberMe"
+msgstr "rememberMe"
+
+msgid "settings"
+msgstr "settings"
+
+msgid "signUp"
+msgstr "signUp"
+
+msgid "submitFeedback"
+msgstr "submitFeedback"
+
+msgid "termsOfService"
+msgstr "termsOfService"
+
+msgid "welcomeMessage"
+msgstr "welcomeMessage"

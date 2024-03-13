@@ -1,0 +1,99 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Localazy (https://localazy.com)\n"
+"Project-Id-Version: CDN\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1) ? 0 : 1;\n"
+
+msgid "About Us"
+msgstr "À propos de nous"
+
+msgid "Already have an account? Log In"
+msgstr "Vous avez déjà un compte ? Se connecter"
+
+msgid "Choose your language:"
+msgstr "Choisissez votre langue :"
+
+msgid "Contact Us"
+msgstr "Nous contacter"
+
+msgid "Disable Notifications"
+msgstr "Désactiver les notifications"
+
+msgid "Edit Profile"
+msgstr "Modifier le profil"
+
+msgid "Enable Notifications"
+msgstr "Activer les notifications"
+
+msgid "Enter your email"
+msgstr "Entrez votre e-mail"
+
+msgid "Enter your password"
+msgstr "Entrez votre mot de passe"
+
+msgid "Goodbye and thank you for using our app!"
+msgstr "Au revoir et merci d'avoir utilisé notre application !"
+
+msgctxt "male"
+msgid "He is your friend."
+msgstr "C'est ton ami."
+
+msgid "Log Out"
+msgstr "Déconnectez-vous"
+
+msgid "My Application"
+msgstr "Ma candidature"
+
+msgid "Notifications"
+msgstr "Les notifications"
+
+msgid "Please check your internet connection and try again."
+msgstr "Vérifiez votre connexion Internet et réessayez."
+
+msgid "Please log in to continue."
+msgstr "Veuillez vous connecter pour continuer."
+
+msgid "Privacy Policy"
+msgstr "Politique de confidentialité"
+
+msgid "Remember Me"
+msgstr "Souvenez-vous de moi"
+
+msgid "Reset your password"
+msgstr "Réinitialisez votre mot de passe"
+
+msgid "Settings"
+msgstr "Réglages"
+
+msgctxt "female"
+msgid "She is your friend."
+msgstr "C'est ton amie."
+
+msgid "Sign Up"
+msgstr "INSCRIVEZ-VOUS"
+
+msgid "Something went wrong. Please try again."
+msgstr "Quelque chose s'est mal passé. Veuillez réessayer."
+
+msgid "Submit Feedback"
+msgstr "Soumettre des commentaires"
+
+msgid "Tell us what you think about the app!"
+msgstr "Dites-nous ce que vous pensez de l'application !"
+
+msgid "Terms of Service"
+msgstr "Conditions générales d'utilisation"
+
+msgctxt "other"
+msgid "They are your friend."
+msgstr "Ce sont tes amis."
+
+msgid "Welcome, {user_name}!"
+msgstr "Bienvenue, {user_name} !"
+
+msgid "Your Profile"
+msgstr "Votre profil"

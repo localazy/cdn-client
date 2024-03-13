@@ -1,0 +1,68 @@
+{
+  "projectUrl": "https://localazy.com/p/cdnarticle",
+  "baseLocale": "en",
+  "timestamp": -8465065979062673572,
+  "files": {
+    "dfe5b84c1598c8c56b6f1a11efcd483bb3f417ea": {
+      "file": "file.json",
+      "path": "",
+      "library": "",
+      "module": "",
+      "buildType": "",
+      "timestamp": "-8465065979062673572",
+      "productFlavors": [],
+      "locales": [
+        {
+          "language": "en",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "English",
+          "localizedName": "English",
+          "uri": "/_a855374211039568660198b39c31/_e0/dfe5b84c1598c8c56b6f1a11efcd483bb3f417ea/en/file.json",
+          "timestamp": "-9223300000000000000"
+        },
+        {
+          "language": "de",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "German",
+          "localizedName": "Deutsch",
+          "uri": "/_a855374211039568660198b39c31/_e0/dfe5b84c1598c8c56b6f1a11efcd483bb3f417ea/de/file.json",
+          "timestamp": "-8549898287605285711"
+        },
+        {
+          "language": "es",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Spanish",
+          "localizedName": "Español",
+          "uri": "/_a855374211039568660198b39c31/_e0/dfe5b84c1598c8c56b6f1a11efcd483bb3f417ea/es/file.json",
+          "timestamp": "-8550050401790927404"
+        },
+        {
+          "language": "pt",
+          "region": "PT",
+          "script": "",
+          "isRtl": false,
+          "name": "European Portuguese",
+          "localizedName": "Português Europeu",
+          "uri": "/_a855374211039568660198b39c31/_e0/dfe5b84c1598c8c56b6f1a11efcd483bb3f417ea/pt-PT/file.json",
+          "timestamp": "-8550051169379505755"
+        },
+        {
+          "language": "vi",
+          "region": "",
+          "script": "",
+          "isRtl": false,
+          "name": "Vietnamese",
+          "localizedName": "Tiếng Việt",
+          "uri": "/_a855374211039568660198b39c31/_e0/dfe5b84c1598c8c56b6f1a11efcd483bb3f417ea/vi/file.json",
+          "timestamp": "-8465065979062673572"
+        }
+      ]
+    }
+  }
+}

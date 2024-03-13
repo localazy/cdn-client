@@ -1,0 +1,52 @@
+{
+  "app": {
+    "farewellMessage": "Au revoir et merci d'avoir utilisé notre application !",
+    "loginPrompt": "Veuillez vous connecter pour continuer.",
+    "logoutButton": "Déconnectez-vous",
+    "title": "Ma candidature",
+    "welcomeMessage": "Bienvenue, {user_name} !"
+  },
+  "authentication": {
+    "alreadyHaveAccount": "Vous avez déjà un compte ? Se connecter",
+    "emailPlaceholder": "Entrez votre e-mail",
+    "passwordPlaceholder": "Entrez votre mot de passe",
+    "passwordReset": "Réinitialisez votre mot de passe",
+    "rememberMe": "Souvenez-vous de moi",
+    "signUp": "INSCRIVEZ-VOUS"
+  },
+  "contact": {
+    "aboutUs": "À propos de nous",
+    "us": "Nous contacter"
+  },
+  "errors": {
+    "message": "Quelque chose s'est mal passé. Veuillez réessayer.",
+    "networkError": "Vérifiez votre connexion Internet et réessayez."
+  },
+  "feedback": {
+    "prompt": "Dites-nous ce que vous pensez de l'application !",
+    "submitFeedback": "Soumettre des commentaires"
+  },
+  "gender": {
+    "choice": {
+      "female": "C'est ton amie.",
+      "male": "C'est ton ami.",
+      "other": "Ce sont tes amis."
+    }
+  },
+  "messages": {
+    "pluralMessage": "Vous avez de ${count} nouveaux messages"
+  },
+  "profile": {
+    "editProfile": "Modifier le profil",
+    "pageTitle": "Votre profil"
+  },
+  "settings": {
+    "disableNotifications": "Désactiver les notifications",
+    "enableNotifications": "Activer les notifications",
+    "languageSelectLabel": "Choisissez votre langue :",
+    "notificationsLabel": "Les notifications",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions générales d'utilisation",
+    "title": "Réglages"
+  }
+}

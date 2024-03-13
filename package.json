@@ -1,0 +1,91 @@
+{
+  "name": "@localazy/cdn-client",
+  "version": "1.0.0",
+  "description": "Node.js module that allows you to easily interact with the Localazy CDN.",
+  "author": "Localazy <team@localazy.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localazy/cdn-client"
+  },
+  "bugs": {
+    "url": "https://github.com/localazy/cdn-client/issues"
+  },
+  "homepage": "https://github.com/localazy/cdn-client#readme",
+  "keywords": [
+    "Localazy",
+    "Localazy CDN",
+    "CDN",
+    "TypeScript",
+    "internationalization",
+    "translation",
+    "localization",
+    "globalization",
+    "i18n",
+    "t9n",
+    "l10n",
+    "g11n"
+  ],
+  "type": "module",
+  "module": "./dist/localazy-cdn.min.js",
+  "main": "./dist/cjs/localazy-cdn.min.cjs",
+  "unpkg": "./dist/umd/localazy-cdn.umd.min.cjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/localazy-cdn.js",
+        "types": "./dist/index.d.ts"
+      },
+      "require": {
+        "default": "./dist/cjs/localazy-cdn.cjs",
+        "types": "./dist/index.d.ts"
+      }
+    }
+  },
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "vite & npm run main-ts:watch",
+    "build": "rimraf dist && npm run main-ts:build && vite build",
+    "main-ts:build": "reexport src/main.ts",
+    "main-ts:watch": "reexport --watch src/main.ts",
+    "check": "npm run typecheck && npm run test:coverage && npm run lint",
+    "typecheck": "npx tsc --noemit",
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:ui": "vitest --ui",
+    "test:debug": "vitest --inspect-brk --no-file-parallelism",
+    "lint": "bash -c 'eslint --ext .ts,.js,.mjs,.cjs --ignore-path <(cat .gitignore .eslintignore) .'",
+    "lint:fix": "npm run lint -- --fix",
+    "typedoc": "npm run docs:html && npm run docs:md",
+    "typedoc:html": "rimraf typedoc/html/* && typedoc --plugin typedoc-plugin-missing-exports --tsconfig tsconfig.typedoc.json --out typedoc/html src/main.ts",
+    "typedoc:md": "rimraf typedoc/md/* && typedoc --plugin typedoc-plugin-markdown --plugin typedoc-plugin-missing-exports --tsconfig tsconfig.typedoc.json --out typedoc/md src/main.ts"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.0",
+    "@types/node": "^20.11.26",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitest/coverage-v8": "^1.3.1",
+    "@vitest/ui": "^1.3.1",
+    "axios-mock-adapter": "^1.22.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "reexport": "^1.4.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "typedoc": "^0.25.12",
+    "typedoc-plugin-markdown": "^3.17.1",
+    "typedoc-plugin-missing-exports": "^2.2.0",
+    "vite": "^5.1.6",
+    "vite-plugin-dts": "^3.7.3",
+    "vitest": "^1.3.1"
+  }
+}

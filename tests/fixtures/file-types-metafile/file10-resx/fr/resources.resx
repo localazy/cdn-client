@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><root>
+<resheader name="resmimetype">
+<value>text/microsoft-resx</value>
+</resheader>
+<resheader name="version">
+<value>2.0</value>
+</resheader>
+<resheader name="writer">
+<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+<resheader name="reader">
+<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+</resheader>
+<data name="about_us" xml:space="preserve">
+<value>À propos de nous</value>
+</data>
+<data name="already_have_account" xml:space="preserve">
+<value>Vous avez déjà un compte ? Se connecter</value>
+</data>
+<data name="app_title" xml:space="preserve">
+<value>Ma candidature</value>
+</data>
+<data name="contact_us" xml:space="preserve">
+<value>Nous contacter</value>
+</data>
+<data name="disable_notifications" xml:space="preserve">
+<value>Désactiver les notifications</value>
+</data>
+<data name="edit_profile" xml:space="preserve">
+<value>Modifier le profil</value>
+</data>
+<data name="email_placeholder" xml:space="preserve">
+<value>Entrez votre e-mail</value>
+</data>
+<data name="enable_notifications" xml:space="preserve">
+<value>Activer les notifications</value>
+</data>
+<data name="error_message" xml:space="preserve">
+<value>Quelque chose s'est mal passé. Veuillez réessayer.</value>
+</data>
+<data name="farewell_message" xml:space="preserve">
+<value>Au revoir et merci d'avoir utilisé notre application !</value>
+</data>
+<data name="feedback_prompt" xml:space="preserve">
+<value>Dites-nous ce que vous pensez de l'application !</value>
+</data>
+<data name="gender_choice_female" xml:space="preserve">
+<value>C'est ton amie.</value>
+</data>
+<data name="gender_choice_male" xml:space="preserve">
+<value>C'est ton ami.</value>
+</data>
+<data name="gender_choice_other" xml:space="preserve">
+<value>Ce sont tes amis.</value>
+</data>
+<data name="language_select_label" xml:space="preserve">
+<value>Choisissez votre langue :</value>
+</data>
+<data name="login_prompt" xml:space="preserve">
+<value>Veuillez vous connecter pour continuer.</value>
+</data>
+<data name="logout_button" xml:space="preserve">
+<value>Déconnectez-vous</value>
+</data>
+<data name="network_error" xml:space="preserve">
+<value>Vérifiez votre connexion Internet et réessayez.</value>
+</data>
+<data name="notifications_label" xml:space="preserve">
+<value>Les notifications</value>
+</data>
+<data name="password_placeholder" xml:space="preserve">
+<value>Entrez votre mot de passe</value>
+</data>
+<data name="password_reset" xml:space="preserve">
+<value>Réinitialisez votre mot de passe</value>
+</data>
+<data name="plural_message_one" xml:space="preserve">
+<value>Vous avez un nouveau message</value>
+</data>
+<data name="plural_message_other" xml:space="preserve">
+<value>Vous avez de {count} nouveaux messages</value>
+</data>
+<data name="plural_message_zero" xml:space="preserve">
+<value>Vous n'avez aucun nouveau message</value>
+</data>
+<data name="privacy_policy" xml:space="preserve">
+<value>Politique de confidentialité</value>
+</data>
+<data name="profile_page_title" xml:space="preserve">
+<value>Votre profil</value>
+</data>
+<data name="remember_me" xml:space="preserve">
+<value>Souvenez-vous de moi</value>
+</data>
+<data name="settings" xml:space="preserve">
+<value>Réglages</value>
+</data>
+<data name="sign_up" xml:space="preserve">
+<value>INSCRIVEZ-VOUS</value>
+</data>
+<data name="submit_feedback" xml:space="preserve">
+<value>Soumettre des commentaires</value>
+</data>
+<data name="terms_of_service" xml:space="preserve">
+<value>Conditions générales d'utilisation</value>
+</data>
+<data name="welcome_message" xml:space="preserve">
+<value>Bienvenue, {user_name} !</value>
+</data>
+</root>

@@ -1,0 +1,29 @@
+key,en
+about_us,Option to read about the app creators
+already_have_account,Prompt for users who already have an account
+app_title,The title of the application
+contact_us,Option to contact the app creators
+disable_notifications,Option to disable notifications
+edit_profile,Option to edit user's profile
+email_placeholder,Placeholder text for email input field
+enable_notifications,Option to enable notifications
+error_message,Error message for general errors
+farewell_message,Farewell message when the user logs out
+feedback_prompt,Prompt message to ask for user's feedback
+gender_choice,Generic message for friend without specifying gender
+language_select_label,Label for language selection dropdown
+login_prompt,Prompt message for the user to log in
+logout_button,Label for the logout button
+network_error,Error message for network errors
+notifications_label,Label for the notifications
+password_placeholder,Placeholder text for password input field
+password_reset,Option to reset password
+plural_message,"Message displaying the number of new messages, with a plural placeholder"
+privacy_policy,Link text for privacy policy
+profile_page_title,Title for the user's profile page
+remember_me,Option for the app to remember the user
+settings,Label for the settings option
+sign_up,Button text for signing up
+submit_feedback,Button text to submit feedback
+terms_of_service,Link text for terms of service
+welcome_message,Welcome message with placeholder for the user's name

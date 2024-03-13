@@ -1,0 +1,52 @@
+{
+  "app": {
+    "farewellMessage": "Goodbye and thank you for using our app!",
+    "loginPrompt": "Please log in to continue.",
+    "logoutButton": "Log Out",
+    "title": "My Application",
+    "welcomeMessage": "Welcome, {user_name}!"
+  },
+  "authentication": {
+    "alreadyHaveAccount": "Already have an account? Log In",
+    "emailPlaceholder": "Enter your email",
+    "passwordPlaceholder": "Enter your password",
+    "passwordReset": "Reset your password",
+    "rememberMe": "Remember Me",
+    "signUp": "Sign Up"
+  },
+  "contact": {
+    "aboutUs": "About Us",
+    "us": "Contact Us"
+  },
+  "errors": {
+    "message": "Something went wrong. Please try again.",
+    "networkError": "Please check your internet connection and try again."
+  },
+  "feedback": {
+    "prompt": "Tell us what you think about the app!",
+    "submitFeedback": "Submit Feedback"
+  },
+  "gender": {
+    "choice": {
+      "female": "She is your friend.",
+      "male": "He is your friend.",
+      "other": "They are your friend."
+    }
+  },
+  "messages": {
+    "pluralMessage": "You have ${count} new messages"
+  },
+  "profile": {
+    "editProfile": "Edit Profile",
+    "pageTitle": "Your Profile"
+  },
+  "settings": {
+    "disableNotifications": "Disable Notifications",
+    "enableNotifications": "Enable Notifications",
+    "languageSelectLabel": "Choose your language:",
+    "notificationsLabel": "Notifications",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "title": "Settings"
+  }
+}
