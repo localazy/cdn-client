@@ -1,3 +1,11 @@
+## 1.1.1 (2024-03-13)
+
+
+
+### 🧰 Other Commits
+
+* Update CI ([dbe6994](https://github.com/localazy/cdn-client/commit/dbe6994))
+
 # 1.1.0 (2024-03-13)
 
 
