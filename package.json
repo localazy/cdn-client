@@ -38,11 +38,12 @@
         "default": "./dist/index.d.ts"
       },
       "browser": {
+        "import": "./dist/localazy-cdn-client.min.js",
         "default": "./dist/browser/localazy-cdn-client.umd.min.js"
       },
       "default": {
-        "require": "./dist/node/localazy-cdn-client.cjs",
-        "default": "./dist/localazy-cdn-client.js"
+        "import": "./dist/localazy-cdn-client.js",
+        "default": "./dist/node/localazy-cdn-client.cjs"
       }
     }
   },
