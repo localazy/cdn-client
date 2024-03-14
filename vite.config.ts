@@ -27,13 +27,13 @@ export default defineConfig({
     rollupOptions: {
       output: [
         {
-          format: 'es',
-          entryFileNames: 'localazy-cdn.js',
+          format: 'esm',
+          entryFileNames: 'localazy-cdn-client.js',
           banner,
         },
         {
-          format: 'es',
-          entryFileNames: 'localazy-cdn.min.js',
+          format: 'esm',
+          entryFileNames: 'localazy-cdn-client.min.js',
           banner,
           plugins: [
             // minify output
@@ -44,14 +44,15 @@ export default defineConfig({
         },
         {
           format: 'cjs',
-          dir: 'dist/cjs',
-          entryFileNames: 'localazy-cdn.cjs',
+          dir: 'dist/node',
+          entryFileNames: 'localazy-cdn-client.cjs',
           banner,
         },
         {
           format: 'cjs',
-          dir: 'dist/cjs',
-          entryFileNames: 'localazy-cdn.min.cjs',
+          dir: 'dist/node',
+          entryFileNames: 'localazy-cdn-client.min.cjs',
+          banner,
           plugins: [
             // minify output
             // @ts-expect-error plugin is compatible
@@ -61,19 +62,22 @@ export default defineConfig({
         },
         {
           format: 'umd',
-          dir: 'dist/umd',
-          entryFileNames: 'localazy-cdn.umd.cjs',
+          dir: 'dist/browser',
+          entryFileNames: 'localazy-cdn-client.umd.js',
           banner,
           name: 'LocalazyCDN',
+          esModule: false,
           globals: {
             axios: 'axios',
           },
         },
         {
           format: 'umd',
-          dir: 'dist/umd',
-          entryFileNames: 'localazy-cdn.umd.min.cjs',
+          dir: 'dist/browser',
+          entryFileNames: 'localazy-cdn-client.umd.min.js',
+          banner,
           name: 'LocalazyCDN',
+          esModule: false,
           globals: {
             axios: 'axios',
           },
@@ -89,8 +93,6 @@ export default defineConfig({
       external: [
         ...Object.keys(pkg.dependencies || {}),
         ...Object.keys(pkg.devDependencies || {}),
-        // node internals
-        // 'https',
       ],
     },
   },
