@@ -27,10 +27,10 @@
     "g11n"
   ],
   "type": "module",
-  "main": "./dist/node/localazy-cdn.cjs",
-  "module": "./dist/localazy-cdn.js",
-  "unpkg": "./dist/browser/localazy-cdn.umd.min.js",
-  "jsdelivr": "./dist/browser/localazy-cdn.umd.min.js",
+  "main": "./dist/node/localazy-cdn-client.cjs",
+  "module": "./dist/localazy-cdn-client.js",
+  "unpkg": "./dist/browser/localazy-cdn-client.umd.min.js",
+  "jsdelivr": "./dist/browser/localazy-cdn-client.umd.min.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
@@ -38,11 +38,11 @@
         "default": "./dist/index.d.ts"
       },
       "browser": {
-        "default": "./dist/browser/localazy-cdn.umd.min.js"
+        "default": "./dist/browser/localazy-cdn-client.umd.min.js"
       },
       "default": {
-        "require": "./dist/node/localazy-cdn.cjs",
-        "default": "./dist/localazy-cdn.js"
+        "require": "./dist/node/localazy-cdn-client.cjs",
+        "default": "./dist/localazy-cdn-client.js"
       }
     }
   },
