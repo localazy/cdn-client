@@ -1,3 +1,11 @@
+## 1.2.1 (2024-03-14)
+
+
+
+### 🐛 Bug Fixes
+
+* Use correct bundle name ([a2de035](https://github.com/localazy/cdn-client/commit/a2de035))
+
 # 1.2.0 (2024-03-14)
 
 
