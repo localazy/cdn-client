@@ -1,6 +1,6 @@
 {
   "name": "@localazy/cdn-client",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Node.js module that allows you to easily interact with the Localazy CDN.",
   "author": "Localazy <team@localazy.com>",
   "license": "MIT",
