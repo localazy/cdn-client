@@ -1,3 +1,11 @@
+## 1.1.2 (2024-03-14)
+
+
+
+### 🐛 Bug Fixes
+
+* Update UMD and CJS bundles config ([447c4e0](https://github.com/localazy/cdn-client/commit/447c4e0))
+
 ## 1.1.1 (2024-03-13)
 
 
