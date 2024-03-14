@@ -1,3 +1,11 @@
+# 1.2.0 (2024-03-14)
+
+
+
+### ✨ Features
+
+* Use fetch instead of axios ([ae5a473](https://github.com/localazy/cdn-client/commit/ae5a473))
+
 ## 1.1.2 (2024-03-14)
 
 
