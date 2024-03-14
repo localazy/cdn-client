@@ -1,9 +1,9 @@
-import { AxiosResponse } from 'axios';
 import { LocalesMap } from '@/cdn/request/locales-map';
-import { CdnResponse } from '@/types/cdn-response';
+import { ApiLocaleRequest } from '@/types/api-locale-request';
 
 export type ResponseFactoryOptions = {
-  responses: AxiosResponse<CdnResponse>[];
+  requests: ApiLocaleRequest[];
+  responses: (string | object)[];
   localesMap: LocalesMap;
   hasSingleFileResponse: boolean;
   hasSingleLocaleResponse: boolean;

@@ -1,4 +1,4 @@
-import axiosMock from '@tests/mocks/axios-mock';
+import fetchMock from '@tests/mocks/fetch-mock';
 import singleFileMetafile from '@tests/fixtures/single-file-metafile/metafile.json';
 import file01En from '@tests/fixtures/single-file-metafile/file01/en/file.json';
 import file01Ms from '@tests/fixtures/single-file-metafile/file01/ms/file.json';
@@ -31,9 +31,9 @@ export const cdnResponses = {
   },
 };
 
-export const mockAxios = (): void => {
-  axiosMock.reset();
-  axiosMock.onGet(url.metafile).reply(200, serverResponses.metafile);
-  axiosMock.onGet(url.file01.en).reply(200, serverResponses.file01.en);
-  axiosMock.onGet(url.file01.ms).reply(200, serverResponses.file01.ms);
+export const mockResponses = (): void => {
+  fetchMock.reset();
+  fetchMock.get(url.metafile, serverResponses.metafile);
+  fetchMock.get(url.file01.en, serverResponses.file01.en);
+  fetchMock.get(url.file01.ms, serverResponses.file01.ms);
 };

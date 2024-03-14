@@ -1,7 +1,5 @@
-import { AxiosResponse } from 'axios';
+import { ApiLocaleRequest } from '@/types/api-locale-request';
 import { Context } from '@/cdn/context/context';
-import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
 import { ResponseFactoryOptions } from '@/types/response-factory-options';
 import { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request';
 import { CdnResponse } from '@/types/cdn-response';
@@ -14,46 +12,48 @@ export class ResponseFactory {
   }
 
   public createCdnResponse(options: ResponseFactoryOptions): CdnResponse {
-    const { responses, hasSingleFileResponse, hasSingleLocaleResponse }: ResponseFactoryOptions = options;
+    const {
+      requests, responses, hasSingleFileResponse, hasSingleLocaleResponse,
+    }: ResponseFactoryOptions = options;
 
     if (responses.length === 0) {
       return {};
     }
 
-    this.cacheResponses(responses);
+    this.cacheResponses(requests, responses);
 
     return hasSingleFileResponse && hasSingleLocaleResponse
-      ? responses[0].data
-      : ResponseFactory.transformResponsesToOutput(options);
+      ? responses[0]
+      : ResponseFactory.transformResponses(options);
   }
 
-  protected cacheResponses(responses: AxiosResponse<CdnResponse>[]): void {
-    responses.forEach((response: AxiosResponse<CdnResponse>): void => {
+  protected cacheResponses(requests: ApiLocaleRequest[], responses: (object | string)[]): void {
+    responses.forEach((response: object | string, index: number): void => {
       const {
         metafileFile,
         metafileLocale,
-      }: Partial<CacheStoreLocalesRequest> = ResponseFactory.extractReference(response);
+      }: Partial<CacheStoreLocalesRequest> = requests[index];
 
       if (metafileFile && metafileLocale) {
-        this.context.cache.setIfMissed({ metafileFile, metafileLocale, data: response.data });
+        this.context.cache.setIfMissed({ metafileFile, metafileLocale, data: response });
       }
     });
   }
 
-  protected static transformResponsesToOutput(options: ResponseFactoryOptions): CdnResponse {
-    const { responses, hasSingleFileResponse }: ResponseFactoryOptions = options;
+  protected static transformResponses(options: ResponseFactoryOptions): CdnResponse {
+    const { requests, responses, hasSingleFileResponse }: ResponseFactoryOptions = options;
 
     return responses.reduce(
-      (acc: CdnResponse, cur: AxiosResponse<CdnResponse>) => {
+      (acc: CdnResponse, cur: object | string, index: number) => {
         const {
           metafileFile,
           metafileLocale,
-        }: Partial<CacheStoreLocalesRequest> = ResponseFactory.extractReference(cur);
+        }: Partial<CacheStoreLocalesRequest> = requests[index];
 
         if (metafileFile && metafileLocale) {
           if (hasSingleFileResponse) {
             // @ts-expect-error fix output type
-            acc[metafileLocale.locale] = cur.data;
+            acc[metafileLocale.locale] = cur;
           } else {
             // @ts-expect-error fix output type
             if (!acc[metafileFile.id]) {
@@ -63,7 +63,7 @@ export class ResponseFactory {
 
             // @ts-expect-error fix output type
             // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-            acc[metafileFile.id][metafileLocale.locale] = cur.data;
+            acc[metafileFile.id][metafileLocale.locale] = cur;
           }
         }
 
@@ -71,17 +71,5 @@ export class ResponseFactory {
       },
       {},
     );
-  }
-
-  protected static extractReference(response: AxiosResponse<CdnResponse>): Partial<CacheStoreLocalesRequest> {
-    const metafileFile: MetafileFile | undefined = response.config.reference?.metafileFile;
-    const metafileLocale: MetafileLocale | undefined = response.config.reference?.metafileLocale;
-    const { data }: AxiosResponse<CdnResponse> = response;
-
-    return {
-      metafileFile,
-      metafileLocale,
-      data,
-    };
   }
 }

@@ -1,4 +1,4 @@
-import axiosMock from '@tests/mocks/axios-mock';
+import fetchMock from '@tests/mocks/fetch-mock';
 import filesWithoutLocalesMetafile
   from '@tests/fixtures/files-without-locales-metafile/metafile.json';
 
@@ -12,7 +12,7 @@ export const serverResponses = {
   metafile: filesWithoutLocalesMetafile,
 };
 
-export const mockAxios = (): void => {
-  axiosMock.reset();
-  axiosMock.onGet(url.metafile).reply(200, serverResponses.metafile);
+export const mockResponses = (): void => {
+  fetchMock.reset();
+  fetchMock.get(url.metafile, serverResponses.metafile);
 };

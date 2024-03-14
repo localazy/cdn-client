@@ -1,4 +1,3 @@
-import { AxiosRequestConfig, AxiosResponse } from 'axios';
 import { MetafileParams } from '@/cdn/metafile/metafile-params';
 import { CdnClientOptions } from '@/types/cdn-client-options';
 import { Context } from '@/cdn/context/context';
@@ -39,15 +38,15 @@ export class CdnMetafile extends CdnBase {
       : locales;
   };
 
-  public refresh = async (config?: AxiosRequestConfig): Promise<void> => {
-    const response: AxiosResponse<IMetafile> = await this.context.api.fetchMetafile(config);
+  public refresh = async (): Promise<void> => {
+    const response: IMetafile = await this.context.api.fetchMetafile();
 
-    this.context.metafile.setMetafile(response.data);
+    this.context.metafile.setMetafile(response);
   };
 
-  public switch = async (options: CdnClientOptions, config?: AxiosRequestConfig): Promise<void> => {
+  public switch = async (options: CdnClientOptions): Promise<void> => {
     this.context.metafile.params = new MetafileParams(options.metafile);
 
-    await this.refresh(config);
+    await this.refresh();
   };
 }

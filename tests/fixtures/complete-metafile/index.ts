@@ -1,4 +1,4 @@
-import axiosMock from '@tests/mocks/axios-mock';
+import fetchMock from '@tests/mocks/fetch-mock';
 import completeMetafile from '@tests/fixtures/complete-metafile/metafile.json';
 import file01En from '@tests/fixtures/complete-metafile/file01/en/file.json';
 import file01MsBn from '@tests/fixtures/complete-metafile/file01/ms-BN/file.json';
@@ -247,19 +247,19 @@ export const cdnResponses = {
   },
 };
 
-export const mockAxios = (): void => {
-  axiosMock.reset();
-  axiosMock.onGet(url.metafile).reply(200, serverResponses.metafile);
-  axiosMock.onGet(url.file01.en).reply(200, serverResponses.file01.en);
-  axiosMock.onGet(url.file01.msBn).reply(200, serverResponses.file01.msBn);
-  axiosMock.onGet(url.file01.msArab).reply(200, serverResponses.file01.msArab);
-  axiosMock.onGet(url.file01.msIdLatn).reply(200, serverResponses.file01.msIdLatn);
-  axiosMock.onGet(url.file02.en).reply(200, serverResponses.file02.en);
-  axiosMock.onGet(url.file02.msBn).reply(200, serverResponses.file02.msBn);
-  axiosMock.onGet(url.file02.msArab).reply(200, serverResponses.file02.msArab);
-  axiosMock.onGet(url.file02.msIdLatn).reply(200, serverResponses.file02.msIdLatn);
-  axiosMock.onGet(url.file03.en).reply(200, serverResponses.file03.en);
-  axiosMock.onGet(url.file03.msBn).reply(200, serverResponses.file03.msBn);
-  axiosMock.onGet(url.file03.msArab).reply(200, serverResponses.file03.msArab);
-  axiosMock.onGet(url.file03.msIdLatn).reply(200, serverResponses.file03.msIdLatn);
+export const mockResponses = (): void => {
+  fetchMock.reset();
+  fetchMock.get(url.metafile, serverResponses.metafile);
+  fetchMock.get(url.file01.en, serverResponses.file01.en);
+  fetchMock.get(url.file01.msBn, serverResponses.file01.msBn);
+  fetchMock.get(url.file01.msArab, serverResponses.file01.msArab);
+  fetchMock.get(url.file01.msIdLatn, serverResponses.file01.msIdLatn);
+  fetchMock.get(url.file02.en, serverResponses.file02.en);
+  fetchMock.get(url.file02.msBn, serverResponses.file02.msBn);
+  fetchMock.get(url.file02.msArab, serverResponses.file02.msArab);
+  fetchMock.get(url.file02.msIdLatn, serverResponses.file02.msIdLatn);
+  fetchMock.get(url.file03.en, serverResponses.file03.en);
+  fetchMock.get(url.file03.msBn, serverResponses.file03.msBn);
+  fetchMock.get(url.file03.msArab, serverResponses.file03.msArab);
+  fetchMock.get(url.file03.msIdLatn, serverResponses.file03.msIdLatn);
 };

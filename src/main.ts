@@ -19,7 +19,7 @@ export * from '@/cdn/cache/memory-cache-adapter';
 export * from '@/cdn/cdn-client';
 export * from '@/cdn/context/context';
 export * from '@/cdn/context/metafile-context';
-export * from '@/cdn/http/axios-http-adapter';
+export * from '@/cdn/http/fetch-http-adapter';
 export * from '@/cdn/metafile/metafile-data';
 export * from '@/cdn/metafile/metafile-file';
 export * from '@/cdn/metafile/metafile-locale';

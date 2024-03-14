@@ -8,7 +8,7 @@ let cdn: CdnClient;
 
 describe('File types', (): void => {
   beforeEach(async (): Promise<void> => {
-    fileTypesMetafile.mockAxios();
+    fileTypesMetafile.mockResponses();
 
     cdn = await CdnClient.create({
       metafile: fileTypesMetafile.url.metafile,

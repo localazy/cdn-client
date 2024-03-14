@@ -1,5 +1,3 @@
-import { AxiosRequestConfig } from 'axios';
-
-export interface IHttpAdapter {
-  get<T = unknown, D = unknown>(url: string, config?: AxiosRequestConfig<D>): Promise<T>;
+export interface IHttpAdapter<T = object> {
+  get: (url: string, config?: T) => Promise<object | string>;
 }

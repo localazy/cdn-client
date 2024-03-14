@@ -21,6 +21,7 @@
     },
     "types": [
       "@types/node",
+      "@types/isomorphic-fetch",
       "@types/lodash"
     ]
   },

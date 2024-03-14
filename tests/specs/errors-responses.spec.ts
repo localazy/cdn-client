@@ -6,7 +6,7 @@ import { CdnClient, CdnFile } from '@/main';
 
 describe('Test error responses', (): void => {
   test('Invalid metafile url', async (): Promise<void> => {
-    completeMetafile.mockAxios();
+    completeMetafile.mockResponses();
 
     await expect(async (): Promise<void> => {
       // @ts-expect-error invalid param
@@ -28,7 +28,7 @@ describe('Test error responses', (): void => {
   });
 
   test('Missing files in metafile.json', async (): Promise<void> => {
-    emptyMetafile.mockAxios();
+    emptyMetafile.mockResponses();
     const cdn: CdnClient = await CdnClient.create({ metafile: emptyMetafile.url.metafile });
 
     expect((): void => {
@@ -49,14 +49,14 @@ describe('Test error responses', (): void => {
   });
 
   test('Missing locales in metafile.json', async (): Promise<void> => {
-    filesWithoutLocalesMetafile.mockAxios();
+    filesWithoutLocalesMetafile.mockResponses();
     const cdn: CdnClient = await CdnClient.create({ metafile: filesWithoutLocalesMetafile.url.metafile });
 
     expect(cdn.metafile.locales()).toStrictEqual([]);
   });
 
   test('Invalid cdn.metafile.files.find() parameters', async (): Promise<void> => {
-    emptyMetafile.mockAxios();
+    emptyMetafile.mockResponses();
     const cdn: CdnClient = await CdnClient.create({ metafile: emptyMetafile.url.metafile });
 
     expect((): void => {
@@ -71,7 +71,7 @@ describe('Test error responses', (): void => {
   });
 
   test('Invalid cdn.metafile.files.filter() parameters', async (): Promise<void> => {
-    emptyMetafile.mockAxios();
+    emptyMetafile.mockResponses();
     const cdn: CdnClient = await CdnClient.create({ metafile: emptyMetafile.url.metafile });
 
     expect((): void => {
@@ -86,7 +86,7 @@ describe('Test error responses', (): void => {
   });
 
   test('Invalid cdn.fetch() params', async (): Promise<void> => {
-    completeMetafile.mockAxios();
+    completeMetafile.mockResponses();
     const cdn: CdnClient = await CdnClient.create({ metafile: completeMetafile.url.metafile });
 
     await expect(async (): Promise<void> => {

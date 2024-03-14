@@ -1,4 +1,4 @@
-import { AxiosRequestConfig, CreateAxiosDefaults } from 'axios';
+import 'isomorphic-fetch';
 import isString from 'lodash/isString';
 import { CdnFetchOptions } from '@/types/cdn-fetch-options';
 import { CdnResponse } from '@/types/cdn-response';
@@ -7,7 +7,7 @@ import { MetafileContext } from '@/cdn/context/metafile-context';
 import { Context } from '@/cdn/context/context';
 import { CdnMetafile } from '@/cdn/methods/cdn-metafile';
 import { RequestBuilder } from '@/cdn/request/request-builder';
-import { AxiosHttpAdapter } from '@/cdn/http/axios-http-adapter';
+import { FetchHttpAdapter } from '@/cdn/http/fetch-http-adapter';
 import { CdnClientOptions } from '@/types/cdn-client-options';
 
 export class CdnClient {
@@ -17,9 +17,9 @@ export class CdnClient {
 
   protected context: Context;
 
-  protected constructor(options: CdnClientOptions, config?: CreateAxiosDefaults) {
+  protected constructor(options: CdnClientOptions) {
     const metafileContext: MetafileContext = new MetafileContext(options);
-    const client: AxiosHttpAdapter = new AxiosHttpAdapter(metafileContext.params.baseUrl, config);
+    const client: FetchHttpAdapter = new FetchHttpAdapter(metafileContext.params.baseUrl);
 
     this.context = new Context({ metafileContext, cdn: this, client });
     this.metafile = new CdnMetafile(this.context);
@@ -35,7 +35,7 @@ export class CdnClient {
     return requestBuilder.getCdnRequest().execute();
   };
 
-  public static async create(options: CdnClientOptions, config?: CreateAxiosDefaults): Promise<CdnClient> {
+  public static async create(options: CdnClientOptions): Promise<CdnClient> {
     if (!options) {
       throw new Error('Invalid param: missing required "options" parameter.');
     }
@@ -44,9 +44,9 @@ export class CdnClient {
       throw new Error('Invalid param: "options.metafile" must be string.');
     }
 
-    const cdn: CdnClient = new CdnClient(options, config);
+    const cdn: CdnClient = new CdnClient(options);
 
-    await cdn.metafile.refresh(config as AxiosRequestConfig);
+    await cdn.metafile.refresh();
 
     return cdn;
   }

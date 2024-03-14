@@ -27,7 +27,8 @@
     "g11n"
   ],
   "type": "module",
-  "main": "./dist/localazy-cdn.js",
+  "main": "./dist/node/localazy-cdn.cjs",
+  "module": "./dist/localazy-cdn.js",
   "unpkg": "./dist/browser/localazy-cdn.umd.min.js",
   "jsdelivr": "./dist/browser/localazy-cdn.umd.min.js",
   "types": "./dist/index.d.ts",
@@ -67,11 +68,12 @@
     "typedoc:md": "rimraf typedoc/md/* && typedoc --plugin typedoc-plugin-markdown --plugin typedoc-plugin-missing-exports --tsconfig tsconfig.typedoc.json --out typedoc/md src/main.ts"
   },
   "dependencies": {
-    "axios": "^1.6.7",
+    "isomorphic-fetch": "^3.0.0",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@localazy/conventional-changelog-preset": "github:localazy/conventional-changelog-preset",
+    "@types/isomorphic-fetch": "^0.0.39",
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.11.26",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -86,6 +88,7 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
+    "fetch-mock": "^9.11.0",
     "reexport": "^1.4.1",
     "rollup-plugin-terser": "^7.0.2",
     "typedoc": "^0.25.12",

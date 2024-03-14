@@ -8,7 +8,7 @@ let cdn: CdnClient;
 
 describe('cdn.metafile', (): void => {
   beforeEach(async (): Promise<void> => {
-    completeMetafile.mockAxios();
+    completeMetafile.mockResponses();
 
     cdn = await CdnClient.create({
       metafile: completeMetafile.url.metafile,
@@ -27,7 +27,7 @@ describe('cdn.metafile', (): void => {
     const result: CdnResponse = await cdn.fetch();
     expect(result).toStrictEqual(completeMetafile.cdnResponses.allFilesAllLocales);
 
-    completeMetafileV2.mockAxios();
+    completeMetafileV2.mockResponses();
     await cdn.metafile.refresh();
     cdn.cache.flush();
 
@@ -39,7 +39,7 @@ describe('cdn.metafile', (): void => {
     const result: CdnResponse = await cdn.fetch();
     expect(result).toStrictEqual(completeMetafile.cdnResponses.allFilesAllLocales);
 
-    completeMetafileV2.mockAxios();
+    completeMetafileV2.mockResponses();
     await cdn.metafile.refresh();
 
     const result2: CdnResponse = await cdn.fetch();
@@ -69,7 +69,7 @@ describe('cdn.metafile', (): void => {
     const result: CdnResponse = await cdn.fetch();
     expect(result).toStrictEqual(completeMetafile.cdnResponses.allFilesAllLocales);
 
-    singleFileMetafile.mockAxios();
+    singleFileMetafile.mockResponses();
     await cdn.metafile.switch({ metafile: singleFileMetafile.url.metafile });
 
     const result2: CdnResponse = await cdn.fetch();

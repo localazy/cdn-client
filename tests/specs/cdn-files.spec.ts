@@ -8,7 +8,7 @@ describe('cdn.fetch()', (): void => {
   let cdn: CdnClient;
 
   beforeEach(async (): Promise<void> => {
-    completeMetafile.mockAxios();
+    completeMetafile.mockResponses();
 
     cdn = await CdnClient.create({
       metafile: completeMetafile.url.metafile,

@@ -1,7 +1,10 @@
-import { AxiosRequestConfig, AxiosResponse, ResponseType } from 'axios';
 import { IMetafile } from '@/interfaces/i-metafile';
 import { ApiLocaleRequest } from '@/types/api-locale-request';
 import { Context } from '@/cdn/context/context';
+
+export type ApiRequestConfig = object & {
+  reference: ApiLocaleRequest;
+};
 
 export class Api {
   protected context: Context;
@@ -10,27 +13,17 @@ export class Api {
     this.context = context;
   }
 
-  public async fetchLocale(options: ApiLocaleRequest): Promise<AxiosResponse> {
-    const config: AxiosRequestConfig = { reference: options };
-
+  public async fetchLocale(options: ApiLocaleRequest): Promise<object | string> {
     if (this.context.cache.has(options)) {
       return new Promise((resolve): void => {
-        resolve({
-          data: this.context.cache.get(options),
-          config,
-        } as AxiosResponse);
+        resolve(this.context.cache.get(options) as object | string);
       });
     }
 
-    const responseType: ResponseType = /\.(json|json5)$/.test(options.metafileFile.file) ? 'json' : 'text';
-
-    return this.context.client.get<AxiosResponse>(options.metafileLocale.uri, { ...config, responseType });
+    return this.context.client.get(options.metafileLocale.uri);
   }
 
-  public async fetchMetafile(config?: AxiosRequestConfig): Promise<AxiosResponse<IMetafile>> {
-    return this.context.client.get(
-      this.context.metafile.params.jsonPath,
-      config,
-    );
+  public async fetchMetafile(): Promise<IMetafile> {
+    return await this.context.client.get(this.context.metafile.params.jsonPath) as IMetafile;
   }
 }
