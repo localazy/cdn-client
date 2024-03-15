@@ -1,3 +1,28 @@
+# 1.3.0 (2024-03-15)
+
+
+
+### ✨ Features
+
+* Add code sandbox support ([86da408](https://github.com/localazy/cdn-client/commit/86da408))
+* Update package.json exports ([00a3cf0](https://github.com/localazy/cdn-client/commit/00a3cf0))
+
+
+### ⚡️ Performance
+
+* Replace lodash with base functiions to reduce bundle size ([da505ab](https://github.com/localazy/cdn-client/commit/da505ab))
+
+
+### 📚 Documentation
+
+* Updated docs ([5fba451](https://github.com/localazy/cdn-client/commit/5fba451))
+
+
+### 🧰 Other Commits
+
+* Add bundle visualizer ([4a7dfc3](https://github.com/localazy/cdn-client/commit/4a7dfc3))
+* Remove unused deps ([757f4ae](https://github.com/localazy/cdn-client/commit/757f4ae))
+
 ## 1.2.1 (2024-03-14)
 
 
