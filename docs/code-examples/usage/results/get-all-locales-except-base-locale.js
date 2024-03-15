@@ -1,4 +1,4 @@
-const locales = [
+const result = [
   {
     isBaseLocale: false,
     isRtl: false,

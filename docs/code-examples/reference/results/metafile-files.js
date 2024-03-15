@@ -1,4 +1,4 @@
-const files = [
+const result = [
   {
     id: 'dfe5b84c1598c8c56b6f1a11efcd483bb3f417ea',
     file: 'file.json',

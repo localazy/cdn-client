@@ -11,15 +11,16 @@ the [metafile](../get-started/metafile.md).
 
 You can select the data you want by specifying the `files` and the `locales` parameters in the [`fetch()`](../reference/client-api.md#fetch-options) function.
 
-As the `files` parameter, you can pass single or multiple [`CdnFile`](../reference/types.md#cdnfile) objects, which are returned by the metafile content
-functions [`metafile.files.list()`](../reference/client-api.md#metafile-files-list), [`metafile.files.filter()`](../reference/client-api.md#metafile-files-filter-options), [`metafile.files.find()`](../reference/client-api.md#metafile-files-find-options), [`metafile.files.first()`](../reference/client-api.md#metafile-files-first).
-Alternatively, you can use the file id or an array of file ids. If none is provided, all files are fetched.
+Optional parameter `options.files` can be a single [`CdnFile`](../reference/types.md#cdnfile) object or an array of [`CdnFile`](../reference/types.md#cdnfile)
+objects. [`CdnFile`](../reference/types.md#cdnfile) objects are returned by the [`metafile.files`](../reference/client-api.md#metafile-files) accessor. Alternatively, it can be a single file ID or an array of file
+IDs. If not provided, all files are fetched.
 
-As the `locales` parameter, you can pass a locale code or an array of locale codes. If none is provided, all locales are fetched.
+Optional parameter `options.locales` can be a single locale or an array of locales. If not provided, all locales are fetched.
 
 ## Single file
 
-In following examples, a single file returned from [`metafile.files.first()`](../reference/client-api.md#metafile-files-first) is used to demonstrate the usage of the [`fetch()`](../reference/client-api.md#fetch-options) function.
+In following examples, a single file returned from [`metafile.files[0]`](../reference/client-api.md#metafile-files) is used to demonstrate the usage of the [`fetch()`](../reference/client-api.md#fetch-options)
+function.
 
 ### Get single locale
 
@@ -55,6 +56,8 @@ Get the locale keys for single file and all locales.
 </details>
 
 ## Multiple files
+
+In following examples, all files returned from [`metafile.files`](../reference/client-api.md#metafile-files) are used to demonstrate the usage of the [`fetch()`](../reference/client-api.md#fetch-options) function.
 
 ### Get single locale
 

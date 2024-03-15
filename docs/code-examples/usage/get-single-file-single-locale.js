@@ -4,7 +4,7 @@ const cdn = await CdnClient.create({
   metafile: 'https://delivery.localazy.com/_a855374211039568660198b39c31/_e0.v2.json',
 });
 
-const response = await cdn.fetch({ // [!code warning]
-  files: cdn.metafile.files.first(), // [!code warning]
-  locales: 'en', // [!code warning]
-}); // [!code warning]
+const result = await cdn.fetch({ // [!code focus]
+  files: cdn.metafile.files[0], // [!code focus]
+  locales: 'en', // [!code focus]
+}); // [!code focus]

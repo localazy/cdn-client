@@ -1,4 +1,4 @@
-const response = {
+const result = {
   en: {
     cdn_info: 'With the CDN you can deliver the translation files instantly',
     cdn_testing: 'We\'re testing the CDN',

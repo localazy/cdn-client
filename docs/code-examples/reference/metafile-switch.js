@@ -4,4 +4,4 @@ const cdn = await CdnClient.create({
   metafile: 'https://delivery.localazy.com/_a855374211039568660198b39c31/_e0.v2.json',
 });
 
-await cdn.metafile.switch({ metafile: 'different-metafile-url' }); // [!code warning]
+await cdn.metafile.switch({ metafile: 'different-metafile-url' }); // [!code focus]

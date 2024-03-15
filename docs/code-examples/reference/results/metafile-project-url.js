@@ -1,1 +1,1 @@
-const projectUrl = 'https://localazy.com/p/cdnarticle';
+const result = 'https://localazy.com/p/cdnarticle';

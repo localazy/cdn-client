@@ -3,7 +3,7 @@
 ## List all files from the metafile
 
 ```javascript
-cdn.metafile.files.list();
+cdn.metafile.files;
 ```
 
 <details><summary><i><samp>example result</samp></i></summary>

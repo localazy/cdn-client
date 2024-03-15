@@ -27,7 +27,7 @@ class LocalazyI18next {
 }
 
 const cdn = new CdnClient({ metafile: 'https://delivery.localazy.com/_a855374211039568660198b39c31/_e0.v2.json' });
-const file = cdn.metafile.files.first();
+const file = cdn.metafile.files[0];
 const cdnPlugin = new LocalazyI18next(cdn, file);
 
 i18next

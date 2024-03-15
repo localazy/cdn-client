@@ -8,7 +8,7 @@ outline: [ 2, 3 ]
 
 ---
 
-### create(options, config?) <Badge type="info" text="async function" />
+### create(options) <Badge type="info" text="async function" />
 
 Fetch the metafile and create a new CDN client instance.
 
@@ -16,10 +16,9 @@ Fetch the metafile and create a new CDN client instance.
 
 #### Parameters
 
-| Name                                         | Type                                                            | Description           |
-|----------------------------------------------|-----------------------------------------------------------------|:----------------------|
-| options                                      | [`CdnClientOptions`](types.md#cdnclientoptions)                 | CDN client options.   |
-| config <Badge type="info" text="optional" /> | [`CreateAxiosDefaults`](https://axios-http.com/docs/req_config) | Axios request config. |
+| Name    | Type                                            | Description         |
+|---------|-------------------------------------------------|:--------------------|
+| options | [`CdnClientOptions`](types.md#cdnclientoptions) | CDN client options. |
 
 #### Returns
 
@@ -28,7 +27,7 @@ Fetch the metafile and create a new CDN client instance.
 | Promise<[`CdnClient`](https://github.com/localazy/cdn-client/blob/main/src/cdn/cdn-client.ts)> | CDN client instance. |
 
 > [!NOTE]
-> Metafile is fetched only once and then cached. If you want to refresh the metafile, use the [`metafile.refresh()`](#metafile-refresh-config) function.
+> Metafile is fetched only once and then cached. If you want to refresh the metafile, use the [`metafile.refresh()`](#metafile-refresh) function.
 
 ## Locales
 
@@ -85,9 +84,7 @@ Get the base locale of the project.
 Get the content of the project files.
 
 Optional parameter `options.files` can be a single [`CdnFile`](types.md#cdnfile) object or an array of [`CdnFile`](types.md#cdnfile) objects. [`CdnFile`](types.md#cdnfile) objects
-are returned by the metafile functions [`metafile.files.list()`](#metafile-files-list), [`metafile.files.filter()`](#metafile-files-filter-options),
-[`metafile.files.find()`](#metafile-files-find-options), [`metafile.files.first()`](#metafile-files-first).
-Alternatively, it can be a single file ID or an array of file IDs. If not provided, all files are fetched.
+are returned by the [`metafile.files`](#metafile-files) accessor. Alternatively, it can be a single file ID or an array of file IDs. If not provided, all files are fetched.
 
 Optional parameter `options.locales` can be a single locale or an array of locales. If not provided, all locales are fetched.
 
@@ -114,15 +111,15 @@ Optional parameter `options.locales` can be a single locale or an array of local
 
 ---
 
-### metafile.files.list() <Badge type="info" text="function" />
+### metafile.files <Badge type="info" text="accessor" />
 
 Get all project files.
 
-<<< ../code-examples/reference/metafile-files-list.js
+<<< ../code-examples/reference/metafile-files.js
 
 <details><summary><i><samp>example result</samp></i></summary>
 
-<<< ../code-examples/reference/results/metafile-files-list.js
+<<< ../code-examples/reference/results/metafile-files.js
 </details>
 
 #### Returns
@@ -130,81 +127,6 @@ Get all project files.
 | Type                            | Description        | 
 |---------------------------------|:-------------------|
 | [`CdnFile[]`](types.md#cdnfile) | All project files. |
-
----
-
-### metafile.files.filter(options) <Badge type="info" text="function" />
-
-Filter project files.
-
-Parameter `options` can be an object with file properties to filter by or a function that returns a boolean value. Check
-the [`CdnFilesSearchOptions`](types.md#cdnfilessearchoptions) type for more details.
-
-<<< ../code-examples/reference/metafile-files-filter.js
-
-<details><summary><i><samp>example result</samp></i></summary>
-
-<<< ../code-examples/reference/results/metafile-files-filter.js
-</details>
-
-#### Parameters
-
-| Name    | Type                                                      | Description           |
-|---------|-----------------------------------------------------------|:----------------------|
-| options | [`CdnFilesSearchOptions`](types.md#cdnfilessearchoptions) | Files filter options. |
-
-#### Returns
-
-| Type                            | Description    | 
-|---------------------------------|:---------------|
-| [`CdnFile[]`](types.md#cdnfile) | Project files. |
-
----
-
-### metafile.files.find(options) <Badge type="info" text="function" />
-
-Get a project file.
-
-Parameter `options` can be an object with file properties to find by or a function that returns a boolean value. Check the
-[`CdnFilesSearchOptions`](types.md#cdnfilessearchoptions) type for more details.
-
-<<< ../code-examples/reference/metafile-files-find.js
-
-<details><summary><i><samp>example result</samp></i></summary>
-
-<<< ../code-examples/reference/results/metafile-files-find.js
-</details>
-
-#### Parameters
-
-| Name    | Type                                                      | Description        |
-|---------|-----------------------------------------------------------|:-------------------|
-| options | [`CdnFilesSearchOptions`](types.md#cdnfilessearchoptions) | Find file options. |
-
-#### Returns
-
-| Type                                         | Description                  | 
-|----------------------------------------------|:-----------------------------|
-| [`CdnFile`](types.md#cdnfile) \| `undefined` | Project file or `undefined`. |
- 
----
-
-### metafile.files.first() <Badge type="info" text="function" />
-
-Get first project file.
-
-<<< ../code-examples/reference/metafile-files-first.js
-
-<details><summary><i><samp>example result</samp></i></summary>
-
-<<< ../code-examples/reference/results/metafile-files-first.js
-</details>
-
-#### Returns
-
-| Type                          | Description         | 
-|-------------------------------|:--------------------|
-| [`CdnFile`](types.md#cdnfile) | First project file. |
 
 ---
 
@@ -246,17 +168,11 @@ Get URL of the project to which the metafile belongs.
 
 ---
 
-### metafile.refresh(config?) <Badge type="info" text="async function" />
+### metafile.refresh() <Badge type="info" text="async function" />
 
 Refresh the [metafile](../get-started/metafile.md).
 
 <<< ../code-examples/reference/metafile-refresh.js
-
-#### Parameters
-
-| Name                                         | Type                                                            | Description           |
-|----------------------------------------------|-----------------------------------------------------------------|:----------------------|
-| config <Badge type="info" text="optional" /> | [`CreateAxiosDefaults`](https://axios-http.com/docs/req_config) | Axios request config. |
 
 #### Returns
 

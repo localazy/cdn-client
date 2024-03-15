@@ -1,4 +1,4 @@
-const baseLocale = {
+const result = {
   locale: 'en',
   isBaseLocale: true,
   language: 'en',
