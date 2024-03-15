@@ -7,7 +7,7 @@ Content can be fetched from JSON file as object or as plain text for other file 
 
 ## How it works
 
-<zoom-img src="/localazy-cdn-client.svg" alt="Localazy CDN Client" />
+<loc-zoom-img src="/localazy-cdn-client.svg" alt="Localazy CDN Client" />
 
 When translators add translations to your project, they are automatically published to the [Localazy CDN](https://localazy.com/docs/cdn/cdn-introduction).
 

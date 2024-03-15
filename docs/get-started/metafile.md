@@ -16,13 +16,13 @@ To get your project metafile URL use the following steps:
 - navigate to **Translation Delivery > CDN**
 - click on the **Metafile URL** button
 
-<zoom-img src="/metafile-url.png" alt="Metafile URL" />
+<loc-zoom-img src="/metafile-url.png" alt="Metafile URL" />
 
 The **CDN Meta File** dialog will appear and then:
 
 - click on the **Copy** button to copy the metafile URL to your clipboard
 
-<zoom-img src="/metafile-url-copy.png" alt="Metafile URL copy" />
+<loc-zoom-img src="/metafile-url-copy.png" alt="Metafile URL copy" />
 
 ## Example Metafile
 
