@@ -1,3 +1,17 @@
+## 1.4.1 (2024-03-15)
+
+
+
+### 🐛 Bug Fixes
+
+* Fix external links style ([89ed1ac](https://github.com/localazy/cdn-client/commit/89ed1ac))
+* Fix missing images ([5baa5a1](https://github.com/localazy/cdn-client/commit/5baa5a1))
+
+
+### 📚 Documentation
+
+* Update sandbox example, remove wrong options from reference ([f5f89d3](https://github.com/localazy/cdn-client/commit/f5f89d3))
+
 # 1.4.0 (2024-03-15)
 
 
