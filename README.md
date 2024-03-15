@@ -6,6 +6,7 @@
 
 [**Documentation**](https://localazy.github.io/cdn-client/) &nbsp;|&nbsp;
 [**Getting Started**](https://localazy.github.io/cdn-client/get-started/introduction.html) &nbsp;|&nbsp;
+[**Live Demo**](https://localazy.github.io/cdn-client/sandbox/live-demo.html) &nbsp;|&nbsp;
 [**API Reference**](https://localazy.github.io/cdn-client/reference/client-api.html)
 
 [//]: # ([**Live Demo**]&#40;&#41;)

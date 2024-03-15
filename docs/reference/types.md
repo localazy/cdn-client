@@ -1,4 +1,4 @@
-# TypeScript definitions
+# TypeScript Definitions
 
 ## CdnClientOptions
 

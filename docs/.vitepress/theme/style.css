@@ -187,3 +187,14 @@ details > summary {
 .vp-doc a[target='_blank']::after {
   margin-right: var(--external-link-margin-right);
 }
+
+.vp-doc .sp-icon-standalone {
+  color: #999999 !important;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.vp-doc .sp-icon-standalone::after {
+  display: none !important;
+}
+

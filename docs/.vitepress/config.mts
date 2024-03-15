@@ -50,26 +50,26 @@ export default defineConfig({
         text: 'Usage',
         items: [
           {
-            text: 'Get locales',
+            text: 'Get Locales',
             link: '/usage/get-locales'
           },
           {
-            text: 'Get content',
+            text: 'Get Content',
             link: '/usage/get-content',
             items: [
-              { text: 'Selecting data', link: '/usage/get-content#selecting-data' },
-              { text: 'Single file', link: '/usage/get-content#single-file' },
-              { text: 'Multiple files', link: '/usage/get-content#multiple-files' }
+              { text: 'Selecting Data', link: '/usage/get-content#selecting-data' },
+              { text: 'Single File', link: '/usage/get-content#single-file' },
+              { text: 'Multiple Files', link: '/usage/get-content#multiple-files' }
             ]
           }
         ]
       },
-      // {
-      //   text: 'Sandbox',
-      //   items: [
-      //     { text: 'Live demo', link: '/sandbox/live-demo' }
-      //   ]
-      // },
+      {
+        text: 'Sandbox',
+        items: [
+          { text: 'Live Demo', link: '/sandbox/live-demo' }
+        ]
+      },
       // {
       //   text: 'Examples',
       //   items: [

@@ -13,6 +13,9 @@ hero:
       text: Get Started
       link: /get-started/introduction
     - theme: alt
+      text: Live Demo
+      link: /sandbox/live-demo
+    - theme: alt
       text: API Reference
       link: /reference/client-api
 

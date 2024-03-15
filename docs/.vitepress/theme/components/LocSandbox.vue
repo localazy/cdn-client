@@ -1,30 +1,36 @@
 <script setup lang="ts">
-import { Sandbox, sandboxProps } from 'vitepress-plugin-sandpack';
+import { sandboxProps } from 'vitepress-plugin-sandpack';
+import { version } from '../../../../package.json';
+import LocSandpack from './LocSandpack.vue';
 
 const props = defineProps(sandboxProps);
 </script>
 
 <template>
-  <Sandbox
-    :rtl="rtl"
-    :template="template"
-    :light-theme="lightTheme"
-    :dark-theme="darkTheme"
-    :options="{
-      ...props,
-      showLineNumbers: true,
-      // showConsoleButton: false,
-      showNavigator: true,
-    }"
-    :custom-setup="{
-      ...props,
-      deps: {
-        '@localazy/cdn-client': 'latest',
-        'vue3-toastify': 'latest'
-      }
-    }"
-    :code-options="codeOptions"
-  >
-    <slot />
-  </Sandbox>
+  <div class="loc-sandbox">
+    <LocSandpack
+      :template="template"
+      :options="{
+        ...props,
+        showLineNumbers: true,
+        showConsoleButton: false,
+        showNavigator: true,
+      }"
+      :custom-setup="{
+        ...props,
+        deps: {
+          '@localazy/cdn-client': version
+        }
+      }"
+      :code-options="codeOptions"
+    >
+      <slot />
+    </LocSandpack>
+  </div>
 </template>
+
+<style scoped>
+.loc-sandbox {
+  margin: 16px 0;
+}
+</style>
