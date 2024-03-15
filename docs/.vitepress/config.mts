@@ -1,9 +1,9 @@
 import { defineConfig } from 'vitepress';
 import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs';
 import { npmCommandsMarkdownPlugin } from 'vitepress-plugin-npm-commands';
-import { version } from '../../package.json';
-import container from 'markdown-it-container';
 import { renderSandbox } from 'vitepress-plugin-sandpack';
+import container from 'markdown-it-container';
+import { version } from '../../package.json';
 
 export default defineConfig({
   title: 'CDN Client',
@@ -19,13 +19,9 @@ export default defineConfig({
     config(md) {
       md.use(tabsMarkdownPlugin);
       md.use(npmCommandsMarkdownPlugin);
-      // rule of 'html tag name' to 'component name'
-      // 'sanbox' -> 'Sandbox'
-      // 'my-sandbox' -> MySandbox
-      // 'sandbox-react-demo' -> SandboxReactDemo
-      md.use(container, 'sandbox', {
+      md.use(container, 'loc-sandbox', {
         render(tokens, idx) {
-          return renderSandbox(tokens, idx, 'sandbox');
+          return renderSandbox(tokens, idx, 'loc-sandbox');
         }
       });
     },
@@ -65,7 +61,7 @@ export default defineConfig({
               { text: 'Single file', link: '/usage/get-content#single-file' },
               { text: 'Multiple files', link: '/usage/get-content#multiple-files' }
             ]
-          },
+          }
         ]
       },
       // {
@@ -95,10 +91,10 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'npm', link: 'https://www.npmjs.com/package/@localazy/cdn-client' },
-      { icon: 'github', link: 'https://github.com/localazy/cdn-client' },
+      { icon: 'github', link: 'https://github.com/localazy/cdn-client' }
     ],
 
-    externalLinkIcon: true,
+    externalLinkIcon: true
   }
 });
 
