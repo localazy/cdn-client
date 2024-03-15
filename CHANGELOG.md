@@ -1,3 +1,21 @@
+# 1.4.0 (2024-03-15)
+
+
+
+### ✨ Features
+
+* Add live demo and update docs ([ef57bcf](https://github.com/localazy/cdn-client/commit/ef57bcf))
+
+
+### 📚 Documentation
+
+* Add i18next example ([59b43fa](https://github.com/localazy/cdn-client/commit/59b43fa))
+
+
+### 🧰 Other Commits
+
+* Update CI ([ddd7478](https://github.com/localazy/cdn-client/commit/ddd7478))
+
 # 1.3.0 (2024-03-15)
 
 
