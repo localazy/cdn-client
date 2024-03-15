@@ -22,10 +22,7 @@ describe('cdn', (): void => {
     expectTypeOf(cdn.metafile.switch).toBeFunction();
     expectTypeOf(cdn.metafile.baseLocale).toBeObject();
     expectTypeOf(cdn.metafile.locales).toBeFunction();
-    expectTypeOf(cdn.metafile.files.list).toBeFunction();
-    expectTypeOf(cdn.metafile.files.first).toBeFunction();
-    expectTypeOf(cdn.metafile.files.find).toBeFunction();
-    expectTypeOf(cdn.metafile.files.filter).toBeFunction();
+    expectTypeOf(cdn.metafile.files).toBeArray();
     expectTypeOf(cdn.fetch).toBeFunction();
     expectTypeOf(cdn.cache.flush).toBeFunction();
   });

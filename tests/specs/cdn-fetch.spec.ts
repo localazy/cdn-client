@@ -36,7 +36,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch selected files with all locales', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: [cdn.metafile.files.first()],
+      files: [cdn.metafile.files[0]],
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocales);
 
@@ -46,7 +46,7 @@ describe('cdn.fetch()', (): void => {
     expect(result2).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocales);
 
     const result3: CdnResponse = await cdn.fetch({
-      files: [cdn.metafile.files.first()],
+      files: [cdn.metafile.files[0]],
     });
     expect(result3).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocales);
 
@@ -58,7 +58,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch selected files with all locales, exclude base locale', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: [cdn.metafile.files.first()],
+      files: [cdn.metafile.files[0]],
       excludeBaseLocale: true,
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocalesExcludeBase);
@@ -88,7 +88,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch single file with all locales', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: cdn.metafile.files.first(),
+      files: cdn.metafile.files[0],
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.singleFileAllLocales);
 
@@ -100,7 +100,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch single file with all locales, exclude base locale', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: cdn.metafile.files.first(),
+      files: cdn.metafile.files[0],
       excludeBaseLocale: true,
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.singleFileAllLocalesExcludeBase);
@@ -114,7 +114,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch single file with selected locales only', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: cdn.metafile.files.first(),
+      files: cdn.metafile.files[0],
       locales: ['en', 'ms'],
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.singleFileSelectedLocales);
@@ -128,7 +128,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch single file with single locale', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: cdn.metafile.files.first(),
+      files: cdn.metafile.files[0],
       locales: 'en',
     });
     expect(result).toStrictEqual(completeMetafile.serverResponses.file01.en);

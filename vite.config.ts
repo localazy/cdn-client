@@ -67,9 +67,6 @@ export default defineConfig({
           banner,
           name: 'LocalazyCDN',
           esModule: false,
-          globals: {
-            axios: 'axios',
-          },
         },
         {
           format: 'umd',
@@ -78,9 +75,6 @@ export default defineConfig({
           banner,
           name: 'LocalazyCDN',
           esModule: false,
-          globals: {
-            axios: 'axios',
-          },
           plugins: [
             // minify output
             // @ts-expect-error plugin is compatible

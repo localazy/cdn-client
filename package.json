@@ -69,8 +69,7 @@
     "typedoc:md": "rimraf typedoc/md/* && typedoc --plugin typedoc-plugin-markdown --plugin typedoc-plugin-missing-exports --tsconfig tsconfig.typedoc.json --out typedoc/md src/main.ts"
   },
   "dependencies": {
-    "isomorphic-fetch": "^3.0.0",
-    "lodash": "^4.17.21"
+    "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@types/isomorphic-fetch": "^0.0.39",

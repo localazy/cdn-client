@@ -1,7 +1,6 @@
-import isPlainObject from 'lodash/isPlainObject';
-import isUndefined from 'lodash/isUndefined';
-import isString from 'lodash/isString';
-import isArray from 'lodash/isArray';
+import {
+  isPlainObject, isArray, isString, isUndefined,
+} from '@/cdn/utils';
 import { CdnFile } from '@/types/cdn-file';
 import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
 import { LocalesMap } from '@/cdn/request/locales-map';

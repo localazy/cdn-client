@@ -1,22 +1,14 @@
+import { MetafileFile } from '@/cdn/metafile/metafile-file';
 import { MetafileParams } from '@/cdn/metafile/metafile-params';
 import { CdnClientOptions } from '@/types/cdn-client-options';
-import { Context } from '@/cdn/context/context';
 import { MetafileData } from '@/cdn/metafile/metafile-data';
 import { CdnBase } from '@/cdn/methods/cdn-base';
-import { CdnMetafileFiles } from '@/cdn/methods/cdn-metafile-files';
+import { CdnFile } from '@/types/cdn-file';
 import { CdnLocalesOptions } from '@/types/cdn-locales-options';
 import { IMetafile } from '@/interfaces/i-metafile';
 import { CdnLocale } from '@/types/cdn-locale';
 
 export class CdnMetafile extends CdnBase {
-  public files: CdnMetafileFiles;
-
-  constructor(context: Context) {
-    super(context);
-
-    this.files = new CdnMetafileFiles(context);
-  }
-
   get projectUrl(): string {
     return this.context.metafile.data.projectUrl;
   }
@@ -27,6 +19,10 @@ export class CdnMetafile extends CdnBase {
 
   get url(): string {
     return this.context.metafile.params.url;
+  }
+
+  get files(): CdnFile[] {
+    return this.context.metafile.data.files.map((file: MetafileFile): CdnFile => file.toCdnFile());
   }
 
   public locales = (options?: CdnLocalesOptions): CdnLocale[] => {

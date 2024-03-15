@@ -1,4 +1,4 @@
-import uniq from 'lodash/uniq';
+import { uniq } from '@/cdn/utils';
 import { ICacheAdapter } from '@/interfaces/i-cache-adapter';
 import { CacheKeyMetafileOptions } from '@/types/cache-key-metafile-options';
 import { CacheGetLocalesRequest } from '@/types/cache-get-locales-request';

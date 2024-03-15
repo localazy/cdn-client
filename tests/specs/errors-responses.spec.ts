@@ -31,19 +31,11 @@ describe('Test error responses', (): void => {
     emptyMetafile.mockResponses();
     const cdn: CdnClient = await CdnClient.create({ metafile: emptyMetafile.url.metafile });
 
-    expect((): void => {
-      cdn.metafile.files.first();
-    }).toThrowError('File is missing in downloaded metafile.');
-
     expect(cdn.metafile.locales()).toStrictEqual([]);
 
-    expect(cdn.metafile.files.list()).toStrictEqual([]);
-
-    expect(cdn.metafile.files.find({ id: 'file01' })).toBeUndefined();
+    expect(cdn.metafile.files).toStrictEqual([]);
 
     expect(cdn.metafile.files.find((i: CdnFile): boolean => i.id === 'file01')).toBeUndefined();
-
-    expect(cdn.metafile.files.filter({ id: 'file01' })).toStrictEqual([]);
 
     expect(cdn.metafile.files.filter((i: CdnFile): boolean => i.id === 'file01')).toStrictEqual([]);
   });
@@ -53,36 +45,6 @@ describe('Test error responses', (): void => {
     const cdn: CdnClient = await CdnClient.create({ metafile: filesWithoutLocalesMetafile.url.metafile });
 
     expect(cdn.metafile.locales()).toStrictEqual([]);
-  });
-
-  test('Invalid cdn.metafile.files.find() parameters', async (): Promise<void> => {
-    emptyMetafile.mockResponses();
-    const cdn: CdnClient = await CdnClient.create({ metafile: emptyMetafile.url.metafile });
-
-    expect((): void => {
-      // @ts-expect-error invalid param
-      cdn.metafile.files.find();
-    }).toThrowError('Invalid param: missing required "options" parameter.');
-
-    expect((): void => {
-      // @ts-expect-error invalid param
-      cdn.metafile.files.find([]);
-    }).toThrowError('Invalid param: "options" must be function or object.');
-  });
-
-  test('Invalid cdn.metafile.files.filter() parameters', async (): Promise<void> => {
-    emptyMetafile.mockResponses();
-    const cdn: CdnClient = await CdnClient.create({ metafile: emptyMetafile.url.metafile });
-
-    expect((): void => {
-      // @ts-expect-error invalid param
-      cdn.metafile.files.filter();
-    }).toThrowError('Invalid param: missing required "options" parameter.');
-
-    expect((): void => {
-      // @ts-expect-error invalid param
-      cdn.metafile.files.filter([]);
-    }).toThrowError('Invalid param: "options" must be function or object.');
   });
 
   test('Invalid cdn.fetch() params', async (): Promise<void> => {

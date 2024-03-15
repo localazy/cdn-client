@@ -1,5 +1,5 @@
 import 'isomorphic-fetch';
-import isString from 'lodash/isString';
+import { isString } from '@/cdn/utils';
 import { CdnFetchOptions } from '@/types/cdn-fetch-options';
 import { CdnResponse } from '@/types/cdn-response';
 import { CdnCache } from '@/cdn/methods/cdn-cache';

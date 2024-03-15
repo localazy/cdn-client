@@ -1,4 +1,4 @@
-import uniqBy from 'lodash/uniqBy';
+import { uniqBy } from '@/cdn/utils';
 import { MetafileParams } from '@/cdn/metafile/metafile-params';
 import { CdnLocale } from '@/types/cdn-locale';
 import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
@@ -89,6 +89,6 @@ export class MetafileData implements Omit<IMetafile, 'files' | 'baseLocale'> {
       [],
     );
 
-    return uniqBy(locales, (cdnLocale: CdnLocale) => cdnLocale.locale);
+    return uniqBy(locales, (cdnLocale: CdnLocale): string => cdnLocale.locale);
   }
 }
