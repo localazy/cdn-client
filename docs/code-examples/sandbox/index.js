@@ -5,7 +5,7 @@ const cdn = await CdnClient.create({
 });
 
 const result = await cdn.fetch({
-  files: cdn.metafile.files,
+  files: cdn.metafile.files[0],
   locales: ['en', 'de'],
 });
 

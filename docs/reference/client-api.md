@@ -182,7 +182,7 @@ Refresh the [metafile](../get-started/metafile.md).
 
 ---
 
-### metafile.switch(options, config?) <Badge type="info" text="async function" />
+### metafile.switch(options) <Badge type="info" text="async function" />
 
 Switch to a different [metafile](../get-started/metafile.md).
 
@@ -193,7 +193,6 @@ Switch to a different [metafile](../get-started/metafile.md).
 | Name                                         | Type                                                            | Description           |
 |----------------------------------------------|-----------------------------------------------------------------|:----------------------|
 | options                                      | [`CdnClientOptions`](types.md#cdnclientoptions)                 | CDN client options.   |
-| config <Badge type="info" text="optional" /> | [`CreateAxiosDefaults`](https://axios-http.com/docs/req_config) | Axios request config. |
 
 | Type            |
 |:----------------|
