@@ -19,7 +19,8 @@ const props = defineProps(sandboxProps);
       :custom-setup="{
         ...props,
         deps: {
-          '@localazy/cdn-client': version
+          '@localazy/cdn-client': version,
+          'i18next': 'latest',
         }
       }"
       :code-options="codeOptions"

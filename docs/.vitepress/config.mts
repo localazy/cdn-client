@@ -70,12 +70,12 @@ export default defineConfig({
           { text: 'Live Demo', link: '/sandbox/live-demo' }
         ]
       },
-      // {
-      //   text: 'Examples',
-      //   items: [
-      //     { text: 'i18next', link: '/examples/i18next' }
-      //   ]
-      // },
+      {
+        text: 'Examples',
+        items: [
+          { text: 'i18next', link: '/examples/i18next' }
+        ]
+      },
       {
         text: 'Reference',
         items: [
