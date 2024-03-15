@@ -176,6 +176,10 @@ details > summary {
   align-items: center;
 }
 
+.vp-doc a > code {
+  line-height: 1;
+}
+
 :is(.vp-external-link-icon, .vp-doc a[href*='://'], .vp-doc a[target='_blank']):not(.no-icon)::after {
   --icon: var(--external-link-icon);
   display: inline-flex;
