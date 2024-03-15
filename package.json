@@ -1,6 +1,6 @@
 {
   "name": "@localazy/cdn-client",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "Node.js module that allows you to easily interact with the Localazy CDN.",
   "author": "Localazy <team@localazy.com>",
   "license": "MIT",
@@ -73,6 +73,7 @@
     "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "@localazy/conventional-changelog-preset": "github:localazy/conventional-changelog-preset",
     "@types/isomorphic-fetch": "^0.0.39",
     "@types/lodash": "^4.17.0",
     "@types/node": "^20.11.26",
@@ -80,6 +81,10 @@
     "@typescript-eslint/parser": "^7.2.0",
     "@vitest/coverage-v8": "^1.3.1",
     "@vitest/ui": "^1.3.1",
+    "conventional-changelog": "^5.1.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "conventional-changelog-writer": "github:localazy/conventional-changelog-writer",
+    "conventional-recommended-bump": "^9.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
