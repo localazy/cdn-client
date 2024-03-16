@@ -8,7 +8,7 @@ import {
 } from 'sandpack-vue3';
 import { githubLight } from '@codesandbox/sandpack-themes';
 import { getCustomSetupFromProps, getSandpackFiles, getSandpackOptions, sandboxProps } from 'vitepress-plugin-sandpack';
-import { computed, nextTick, onBeforeMount, onMounted, PropType, ref, toRaw, useSlots, watch } from 'vue';
+import { computed, nextTick, onBeforeMount, onMounted, ref, useSlots, watch } from 'vue';
 
 const props = defineProps(sandboxProps);
 

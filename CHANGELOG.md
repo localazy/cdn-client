@@ -42,7 +42,7 @@
 
 ### ⚡️ Performance
 
-* Replace lodash with base functiions to reduce bundle size ([da505ab](https://github.com/localazy/cdn-client/commit/da505ab))
+* Replace lodash with base functions to reduce bundle size ([da505ab](https://github.com/localazy/cdn-client/commit/da505ab))
 
 
 ### 📚 Documentation

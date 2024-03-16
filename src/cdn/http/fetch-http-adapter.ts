@@ -19,7 +19,7 @@ export class FetchHttpAdapter implements IHttpAdapter {
       throw new Error(`Request failed with status code ${response.status}`);
     }
 
-    let result: string | object = '';
+    let result: string | object;
 
     if (isJson) {
       try {

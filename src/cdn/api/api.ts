@@ -2,10 +2,6 @@ import { IMetafile } from '@/interfaces/i-metafile';
 import { ApiLocaleRequest } from '@/types/api-locale-request';
 import { Context } from '@/cdn/context/context';
 
-export type ApiRequestConfig = object & {
-  reference: ApiLocaleRequest;
-};
-
 export class Api {
   protected context: Context;
 

@@ -19,11 +19,11 @@ Node.js module that allows you to easily interact with the [Localazy CDN](https:
 
 </div>
 
-## 🔧 Install
+## 🚀 Install
 
 ```bash
 npm install @localazy/cdn-client
-# or use your favorite package manager
+# or use your favourite package manager
 ```
 
 For more information, visit the [installation guide](https://localazy.github.io/cdn-client/get-started/install.html).
@@ -35,17 +35,20 @@ For more information, visit the [installation guide](https://localazy.github.io/
 - [Discussion forum](https://discuss.localazy.com/)
 - [team@localazy.com](mailto:team@localazy.com)
 
-## 💙 Localazy Ecosystem
+## 💙 Localazy Packages
 
-Check out other npm packages from Localazy:
+Check out all npm packages from Localazy:
 
-- [@localazy/cli](https://www.npmjs.com/package/@localazy/cli)
-- [@localazy/api-client](https://www.npmjs.com/package/@localazy/api-client)
-- [@localazy/cdn-client](https://www.npmjs.com/package/@localazy/cdn-client)
-- [@localazy/languages](https://www.npmjs.com/package/@localazy/languages)
-- [@localazy/strapi-plugin](https://www.npmjs.com/package/@localazy/strapi-plugin)
+| Package                                                                                                      | Description                                                              |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| [@localazy/cli](https://www.npmjs.com/package/@localazy/cli)                                                 | Localazy CLI tool for app and software localization and translation.     |
+| [@localazy/api-client](https://www.npmjs.com/package/@localazy/api-client)                                   | Node.js module that allows you to easily interact with the Localazy API. |
+| [@localazy/cdn-client](https://www.npmjs.com/package/@localazy/cdn-client)                                   | Node.js module that allows you to easily interact with the Localazy CDN. |
+| [@localazy/languages](https://www.npmjs.com/package/@localazy/languages)                                     | Available Localazy Languages                                             |
+| [@localazy/strapi-plugin](https://www.npmjs.com/package/@localazy/strapi-plugin)                             | The official Strapi Plugin by Localazy.                                  |
+| [@localazy/directus-extension-localazy](https://www.npmjs.com/package/@localazy/directus-extension-localazy) | The official Localazy module extension for Directus                      |
 
-Discover all available [integration options and localization examples](https://github.com/localazy).
+Discover all available [integration options](https://github.com/localazy) and [localization examples](https://github.com/localazy).
 
 ## 📜 License
 

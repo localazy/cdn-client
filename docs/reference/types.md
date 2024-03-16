@@ -27,7 +27,3 @@
 ## CdnFileLocale
 
 <<< ../../src/types/cdn-file-locale.ts#typedef
-
-## CdnFilesSearchOptions
-
-<<< ../../src/types/cdn-files-search-options.ts#typedef
