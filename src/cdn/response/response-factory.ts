@@ -12,9 +12,7 @@ export class ResponseFactory {
   }
 
   public createCdnResponse(options: ResponseFactoryOptions): CdnResponse {
-    const {
-      requests, responses, hasSingleFileResponse, hasSingleLocaleResponse,
-    }: ResponseFactoryOptions = options;
+    const { requests, responses, hasSingleFileResponse, hasSingleLocaleResponse }: ResponseFactoryOptions = options;
 
     if (responses.length === 0) {
       return {};
@@ -29,10 +27,7 @@ export class ResponseFactory {
 
   protected cacheResponses(requests: ApiLocaleRequest[], responses: (object | string)[]): void {
     responses.forEach((response: object | string, index: number): void => {
-      const {
-        metafileFile,
-        metafileLocale,
-      }: Partial<CacheStoreLocalesRequest> = requests[index];
+      const { metafileFile, metafileLocale }: Partial<CacheStoreLocalesRequest> = requests[index];
 
       if (metafileFile && metafileLocale) {
         this.context.cache.setIfMissed({ metafileFile, metafileLocale, data: response });
@@ -43,33 +38,27 @@ export class ResponseFactory {
   protected static transformResponses(options: ResponseFactoryOptions): CdnResponse {
     const { requests, responses, hasSingleFileResponse }: ResponseFactoryOptions = options;
 
-    return responses.reduce(
-      (acc: CdnResponse, cur: object | string, index: number) => {
-        const {
-          metafileFile,
-          metafileLocale,
-        }: Partial<CacheStoreLocalesRequest> = requests[index];
+    return responses.reduce((acc: CdnResponse, cur: object | string, index: number) => {
+      const { metafileFile, metafileLocale }: Partial<CacheStoreLocalesRequest> = requests[index];
 
-        if (metafileFile && metafileLocale) {
-          if (hasSingleFileResponse) {
+      if (metafileFile && metafileLocale) {
+        if (hasSingleFileResponse) {
+          // @ts-expect-error fix output type
+          acc[metafileLocale.locale] = cur;
+        } else {
+          // @ts-expect-error fix output type
+          if (!acc[metafileFile.id]) {
             // @ts-expect-error fix output type
-            acc[metafileLocale.locale] = cur;
-          } else {
-            // @ts-expect-error fix output type
-            if (!acc[metafileFile.id]) {
-              // @ts-expect-error fix output type
-              acc[metafileFile.id] = {};
-            }
-
-            // @ts-expect-error fix output type
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
-            acc[metafileFile.id][metafileLocale.locale] = cur;
+            acc[metafileFile.id] = {};
           }
-        }
 
-        return acc;
-      },
-      {},
-    );
+          // @ts-expect-error fix output type
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+          acc[metafileFile.id][metafileLocale.locale] = cur;
+        }
+      }
+
+      return acc;
+    }, {});
   }
 }

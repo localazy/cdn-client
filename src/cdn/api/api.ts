@@ -20,6 +20,6 @@ export class Api {
   }
 
   public async fetchMetafile(): Promise<IMetafile> {
-    return await this.context.client.get(this.context.metafile.params.jsonPath) as IMetafile;
+    return (await this.context.client.get(this.context.metafile.params.jsonPath)) as IMetafile;
   }
 }

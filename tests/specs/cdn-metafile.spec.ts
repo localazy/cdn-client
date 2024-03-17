@@ -1,6 +1,4 @@
-import {
-  describe, test, expect, beforeEach,
-} from 'vitest';
+import { describe, test, expect, beforeEach } from 'vitest';
 import { completeMetafile, completeMetafileV2, singleFileMetafile } from '@tests/fixtures';
 import { CdnClient, CdnLocale, CdnResponse } from '@/main';
 

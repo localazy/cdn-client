@@ -1,5 +1,5 @@
 ---
-outline: [ 2, 3 ]
+outline: [2, 3]
 ---
 
 # Client API
@@ -17,13 +17,13 @@ Fetch the metafile and create a new CDN client instance.
 #### Parameters
 
 | Name    | Type                                            | Description         |
-|---------|-------------------------------------------------|:--------------------|
+| ------- | ----------------------------------------------- | :------------------ |
 | options | [`CdnClientOptions`](types.md#cdnclientoptions) | CDN client options. |
 
 #### Returns
 
 | Type                                                                                           | Description          |
-|:-----------------------------------------------------------------------------------------------|:---------------------|
+| :--------------------------------------------------------------------------------------------- | :------------------- |
 | Promise<[`CdnClient`](https://github.com/localazy/cdn-client/blob/main/src/cdn/cdn-client.ts)> | CDN client instance. |
 
 > [!NOTE]
@@ -42,18 +42,19 @@ Get all project locales.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/reference/results/metafile-locales.js
+
 </details>
 
 #### Parameters
 
 | Name                                          | Type                                              | Description      |
-|-----------------------------------------------|---------------------------------------------------|:-----------------|
+| --------------------------------------------- | ------------------------------------------------- | :--------------- |
 | options <Badge type="info" text="optional" /> | [`CdnLocalesOptions`](types.md#cdnlocalesoptions) | Locales options. |
 
 #### Returns
 
-| Type                                | Description      | 
-|-------------------------------------|:-----------------|
+| Type                                | Description      |
+| ----------------------------------- | :--------------- |
 | [`CdnLocale[]`](types.md#cdnlocale) | Project locales. |
 
 ---
@@ -67,12 +68,13 @@ Get the base locale of the project.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/reference/results/metafile-base-locale.js
+
 </details>
 
 #### Returns
 
-| Type                              | Description                 | 
-|-----------------------------------|:----------------------------|
+| Type                              | Description                 |
+| --------------------------------- | :-------------------------- |
 | [`CdnLocale`](types.md#cdnlocale) | Base locale of the project. |
 
 ## Files content
@@ -93,18 +95,19 @@ Optional parameter `options.locales` can be a single locale or an array of local
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/reference/results/fetch.js
+
 </details>
 
 #### Parameters
 
 | Name                                          | Type                                          | Description                                           |
-|-----------------------------------------------|-----------------------------------------------|:------------------------------------------------------|
+| --------------------------------------------- | --------------------------------------------- | :---------------------------------------------------- |
 | options <Badge type="info" text="optional" /> | [`CdnFetchOptions`](types.md#cdnfetchoptions) | Options object containing selected files and locales. |
 
 #### Returns
 
-| Type                                           | Description                                                      | 
-|------------------------------------------------|:-----------------------------------------------------------------|
+| Type                                           | Description                                                      |
+| ---------------------------------------------- | :--------------------------------------------------------------- |
 | Promise<[`CdnResponse`](types.md#cdnresponse)> | Object containing the content of the selected files and locales. |
 
 ## Metafile content
@@ -120,12 +123,13 @@ Get all project files.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/reference/results/metafile-files.js
+
 </details>
 
 #### Returns
 
-| Type                            | Description        | 
-|---------------------------------|:-------------------|
+| Type                            | Description        |
+| ------------------------------- | :----------------- |
 | [`CdnFile[]`](types.md#cdnfile) | All project files. |
 
 ---
@@ -139,12 +143,13 @@ Get URL of current metafile.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/reference/results/metafile-url.js
+
 </details>
 
 #### Returns
 
-| Type     | Description   | 
-|----------|:--------------|
+| Type     | Description   |
+| -------- | :------------ |
 | `string` | Metafile URL. |
 
 ---
@@ -158,12 +163,13 @@ Get URL of the project to which the metafile belongs.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/reference/results/metafile-project-url.js
+
 </details>
 
 #### Returns
 
-| Type     | Description  | 
-|----------|:-------------|
+| Type     | Description  |
+| -------- | :----------- |
 | `string` | Project URL. |
 
 ---
@@ -177,7 +183,7 @@ Refresh the [metafile](../get-started/metafile.md).
 #### Returns
 
 | Type            |
-|:----------------|
+| :-------------- |
 | Promise<`void`> |
 
 ---
@@ -190,10 +196,10 @@ Switch to a different [metafile](../get-started/metafile.md).
 
 #### Parameters
 
-| Name                                         | Type                                                            | Description           |
-|----------------------------------------------|-----------------------------------------------------------------|:----------------------|
-| options                                      | [`CdnClientOptions`](types.md#cdnclientoptions)                 | CDN client options.   |
+| Name    | Type                                            | Description         |
+| ------- | ----------------------------------------------- | :------------------ |
+| options | [`CdnClientOptions`](types.md#cdnclientoptions) | CDN client options. |
 
 | Type            |
-|:----------------|
+| :-------------- |
 | Promise<`void`> |

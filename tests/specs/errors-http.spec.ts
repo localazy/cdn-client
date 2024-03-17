@@ -1,6 +1,4 @@
-import {
-  describe, test, expect,
-} from 'vitest';
+import { describe, test, expect } from 'vitest';
 import { serverErrorMetafile } from '@tests/fixtures';
 import { CdnClient } from '@/main';
 

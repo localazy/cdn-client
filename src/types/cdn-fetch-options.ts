@@ -14,7 +14,7 @@ export type CdnFetchOptions = {
    *
    * Default: all locales in the metafile.
    */
-  locales?: string[] | string,
+  locales?: string[] | string;
 
   /**
    * Exclude the base locale from the list of locales to fetch.

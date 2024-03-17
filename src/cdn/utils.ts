@@ -4,8 +4,8 @@ export const isUndefined = (value: unknown): value is undefined => typeof value 
 
 export const isArray = <T>(value: unknown): value is T[] => Array.isArray(value);
 
-export const isPlainObject = (value: unknown): value is Record<string, unknown> => Object
-  .prototype.toString.call(value) === '[object Object]';
+export const isPlainObject = (value: unknown): value is Record<string, unknown> =>
+  Object.prototype.toString.call(value) === '[object Object]';
 
 export const uniq = <T>(array: T[]): T[] => [...new Set(array)];
 

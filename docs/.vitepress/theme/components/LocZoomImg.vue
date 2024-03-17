@@ -7,8 +7,8 @@ defineProps({
   src: String,
   alt: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 });
 
 const imgRef = ref(null);
@@ -19,7 +19,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <img ref="imgRef" :src="withBase(src)" :alt="alt">
+  <img ref="imgRef" :src="withBase(src)" :alt="alt" />
 </template>
 
 <style>

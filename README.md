@@ -9,7 +9,7 @@
 [**Live Demo**](https://localazy.github.io/cdn-client/sandbox/live-demo.html) &nbsp;|&nbsp;
 [**API Reference**](https://localazy.github.io/cdn-client/reference/client-api.html)
 
-[//]: # ([**Live Demo**]&#40;&#41;)
+[//]: # '[**Live Demo**]()'
 
 Node.js module that allows you to easily interact with the [Localazy CDN](https://localazy.com/docs/cdn/cdn-introduction).
 
@@ -40,7 +40,7 @@ For more information, visit the [installation guide](https://localazy.github.io/
 Check out all npm packages from Localazy:
 
 | Package                                                                                                      | Description                                                              |
-|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | [@localazy/cli](https://www.npmjs.com/package/@localazy/cli)                                                 | Localazy CLI tool for app and software localization and translation.     |
 | [@localazy/api-client](https://www.npmjs.com/package/@localazy/api-client)                                   | Node.js module that allows you to easily interact with the Localazy API. |
 | [@localazy/cdn-client](https://www.npmjs.com/package/@localazy/cdn-client)                                   | Node.js module that allows you to easily interact with the Localazy CDN. |

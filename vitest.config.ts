@@ -12,16 +12,9 @@ export default defineConfig({
 
   test: {
     coverage: {
-      reporter: [
-        ...configDefaults.coverage.reporter || [],
-        'json-summary',
-      ],
+      reporter: [...(configDefaults.coverage.reporter || []), 'json-summary'],
       reportOnFailure: true,
-      exclude: [
-        ...configDefaults.coverage.exclude || [],
-        'typedoc/**',
-        'docs/**',
-      ],
+      exclude: [...(configDefaults.coverage.exclude || []), 'typedoc/**', 'docs/**'],
     },
   },
 });

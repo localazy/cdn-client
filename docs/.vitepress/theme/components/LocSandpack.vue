@@ -4,7 +4,7 @@ import {
   SandpackPreview,
   SandpackCodeEditor,
   SandpackLayout,
-  type SandpackFiles
+  type SandpackFiles,
 } from 'sandpack-vue3';
 import { githubLight } from '@codesandbox/sandpack-themes';
 import { getCustomSetupFromProps, getSandpackFiles, getSandpackOptions, sandboxProps } from 'vitepress-plugin-sandpack';
@@ -30,7 +30,7 @@ onBeforeMount(resolveFiles);
 
 const isDark = ref(true);
 
-const docsTheme = computed(() => isDark.value ? 'dark' : githubLight);
+const docsTheme = computed(() => (isDark.value ? 'dark' : githubLight));
 
 const detectHtmlDarkMode = () => {
   if (typeof document !== 'undefined' && document.documentElement) {
@@ -48,7 +48,7 @@ onMounted(() => {
 
       mb.observe(document.documentElement, {
         attributes: true,
-        attributeFilter: ['class']
+        attributeFilter: ['class'],
       });
     }
 
@@ -59,10 +59,14 @@ onMounted(() => {
 /* height */
 
 const getOpt = (propName: string) => props[propName] ?? (props?.options || {})?.[propName];
-const previewHeight = computed(() => isNaN(Number(getOpt('previewHeight'))) ? undefined : Number(getOpt('previewHeight')));
-const previewHeightStyle = computed(() => previewHeight.value ? `${previewHeight.value}px` : 'var(--sp-layout-height)');
-const coderHeight = computed(() => isNaN(Number(getOpt('coderHeight'))) ? undefined : Number(getOpt('coderHeight')));
-const coderHeightStyle = computed(() => coderHeight.value ? `${coderHeight.value}px` : 'var(--sp-layout-height)');
+const previewHeight = computed(() =>
+  isNaN(Number(getOpt('previewHeight'))) ? undefined : Number(getOpt('previewHeight')),
+);
+const previewHeightStyle = computed(() =>
+  previewHeight.value ? `${previewHeight.value}px` : 'var(--sp-layout-height)',
+);
+const coderHeight = computed(() => (isNaN(Number(getOpt('coderHeight'))) ? undefined : Number(getOpt('coderHeight'))));
+const coderHeightStyle = computed(() => (coderHeight.value ? `${coderHeight.value}px` : 'var(--sp-layout-height)'));
 
 /* options */
 
@@ -73,7 +77,6 @@ const options = computed(() => {
 const customSetup = computed(() => {
   return getCustomSetupFromProps(props);
 });
-
 </script>
 
 <template>

@@ -1,6 +1,4 @@
-import {
-  describe, test, expect,
-} from 'vitest';
+import { describe, test, expect } from 'vitest';
 import { completeMetafile, emptyMetafile, filesWithoutLocalesMetafile } from '@tests/fixtures';
 import { CdnClient, CdnFile } from '@/main';
 
@@ -89,12 +87,8 @@ describe('Test error responses', (): void => {
       await cdn.fetch({ locales: [123] });
     }).rejects.toThrowError('Invalid param: array "request.locales" must contain strings.');
 
-    expect(
-      await cdn.fetch({ locales: 'random-string' }),
-    ).toStrictEqual({});
+    expect(await cdn.fetch({ locales: 'random-string' })).toStrictEqual({});
 
-    expect(
-      await cdn.fetch({ locales: ['random-string'] }),
-    ).toStrictEqual({});
+    expect(await cdn.fetch({ locales: ['random-string'] })).toStrictEqual({});
   });
 });

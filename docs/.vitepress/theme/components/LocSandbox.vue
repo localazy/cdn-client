@@ -20,8 +20,8 @@ const props = defineProps(sandboxProps);
         ...props,
         deps: {
           '@localazy/cdn-client': version,
-          'i18next': 'latest',
-        }
+          i18next: 'latest',
+        },
       }"
       :code-options="codeOptions"
     >

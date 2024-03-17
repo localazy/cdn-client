@@ -1,6 +1,4 @@
-import {
-  isPlainObject, isArray, isString, isUndefined,
-} from '@/cdn/utils';
+import { isPlainObject, isArray, isString, isUndefined } from '@/cdn/utils';
 import { CdnFile } from '@/types/cdn-file';
 import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
 import { LocalesMap } from '@/cdn/request/locales-map';
@@ -106,38 +104,29 @@ export class RequestBuilder implements IRequestBuilder {
 
     if (isString(locales)) {
       this.request.hasSingleLocaleResponse = true;
-      this.request.files.reduce(
-        (acc: LocalesMap, cur: MetafileFile) => {
-          acc.data[cur.id] = cur.locales.filter(
-            (metafileLocale: MetafileLocale): boolean => metafileLocale.locale === locales,
-          );
+      this.request.files.reduce((acc: LocalesMap, cur: MetafileFile) => {
+        acc.data[cur.id] = cur.locales.filter(
+          (metafileLocale: MetafileLocale): boolean => metafileLocale.locale === locales,
+        );
 
-          return acc;
-        },
-        this.request.localesMap,
-      );
+        return acc;
+      }, this.request.localesMap);
     } else if (isUndefined(locales)) {
-      this.request.files.reduce(
-        (acc: LocalesMap, cur: MetafileFile) => {
-          acc.data[cur.id] = excludeBaseLocale
-            ? cur.locales.filter((metafileLocale: MetafileLocale): boolean => !metafileLocale.isBaseLocale)
-            : cur.locales;
+      this.request.files.reduce((acc: LocalesMap, cur: MetafileFile) => {
+        acc.data[cur.id] = excludeBaseLocale
+          ? cur.locales.filter((metafileLocale: MetafileLocale): boolean => !metafileLocale.isBaseLocale)
+          : cur.locales;
 
-          return acc;
-        },
-        this.request.localesMap,
-      );
+        return acc;
+      }, this.request.localesMap);
     } else if (isArray(locales)) {
-      this.request.files.reduce(
-        (acc: LocalesMap, cur: MetafileFile) => {
-          acc.data[cur.id] = cur.locales.filter(
-            (metafileLocale: MetafileLocale) => locales.includes(metafileLocale.locale),
-          );
+      this.request.files.reduce((acc: LocalesMap, cur: MetafileFile) => {
+        acc.data[cur.id] = cur.locales.filter((metafileLocale: MetafileLocale) =>
+          locales.includes(metafileLocale.locale),
+        );
 
-          return acc;
-        },
-        this.request.localesMap,
-      );
+        return acc;
+      }, this.request.localesMap);
     }
 
     return this;

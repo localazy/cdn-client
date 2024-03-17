@@ -47,11 +47,13 @@ export class MetafileFile implements Omit<IMetafileFile, 'locales'> {
       module: this.module,
       buildType: this.buildType,
       productFlavors: this.productFlavors,
-      locales: this.locales.map((locale: MetafileLocale): CdnFileLocale => ({
-        locale: locale.locale,
-        isBaseLocale: locale.isBaseLocale,
-        uri: `${this.baseUrl}${locale.uri}`,
-      })),
+      locales: this.locales.map(
+        (locale: MetafileLocale): CdnFileLocale => ({
+          locale: locale.locale,
+          isBaseLocale: locale.isBaseLocale,
+          uri: `${this.baseUrl}${locale.uri}`,
+        }),
+      ),
     };
   }
 }

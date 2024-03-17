@@ -10,10 +10,7 @@ export class FetchHttpAdapter implements IHttpAdapter {
   async get(url: string): Promise<string | object> {
     const response: Response = await fetch(`${this.baseUrl}${url}`);
     const contentType: string = response.headers.get('content-type') || '';
-    const isJson: boolean = [
-      'application/json5',
-      'application/json',
-    ].includes(contentType);
+    const isJson: boolean = ['application/json5', 'application/json'].includes(contentType);
 
     if (response.status >= 400) {
       throw new Error(`Request failed with status code ${response.status}`);
@@ -23,7 +20,7 @@ export class FetchHttpAdapter implements IHttpAdapter {
 
     if (isJson) {
       try {
-        result = await response.json() as object;
+        result = (await response.json()) as object;
       } catch (error) {
         result = {};
       }

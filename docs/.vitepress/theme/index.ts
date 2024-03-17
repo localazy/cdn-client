@@ -24,5 +24,5 @@ export default {
     ctx.app.component('LocSandboxLayout', LocSandboxLayout);
     ctx.app.component('LocSandbox', LocSandbox);
     ctx.app.component('LocZoomImg', LocZoomImg);
-  }
+  },
 };

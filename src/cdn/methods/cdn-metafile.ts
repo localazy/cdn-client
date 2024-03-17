@@ -29,9 +29,7 @@ export class CdnMetafile extends CdnBase {
     const { excludeBaseLocale }: CdnLocalesOptions = options || {};
     const { locales }: MetafileData = this.context.metafile.data;
 
-    return excludeBaseLocale
-      ? locales.filter((cdnLocale: CdnLocale): boolean => !cdnLocale.isBaseLocale)
-      : locales;
+    return excludeBaseLocale ? locales.filter((cdnLocale: CdnLocale): boolean => !cdnLocale.isBaseLocale) : locales;
   };
 
   public refresh = async (): Promise<void> => {

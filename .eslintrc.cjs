@@ -6,19 +6,16 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended-type-checked',
-    'prettier',
     'airbnb-base',
     'airbnb-typescript/base',
+    'prettier',
   ],
   parserOptions: {
     project: ['tsconfig.json', 'tsconfig.node.json'],
     tsconfigRootDir: __dirname,
   },
   parser: '@typescript-eslint/parser',
-  plugins: [
-    'prettier',
-    '@typescript-eslint',
-  ],
+  plugins: ['prettier', '@typescript-eslint'],
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',

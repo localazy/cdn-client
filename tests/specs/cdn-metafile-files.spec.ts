@@ -1,6 +1,4 @@
-import {
-  describe, test, expectTypeOf, beforeEach,
-} from 'vitest';
+import { describe, test, expectTypeOf, beforeEach } from 'vitest';
 import { completeMetafile } from '@tests/fixtures';
 import { CdnClient, CdnFile } from '@/main';
 
@@ -36,8 +34,8 @@ describe('cdn.metafile.files', (): void => {
   });
 
   test('Filter metafile files', (): void => {
-    const result: CdnFile[] = cdn.metafile.files.filter(
-      (metafileFile: CdnFile) => ['file01', 'file03'].includes(metafileFile.id),
+    const result: CdnFile[] = cdn.metafile.files.filter((metafileFile: CdnFile) =>
+      ['file01', 'file03'].includes(metafileFile.id),
     );
 
     expectTypeOf(result).toMatchTypeOf<CdnFile[]>();

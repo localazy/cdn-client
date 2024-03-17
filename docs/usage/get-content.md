@@ -1,5 +1,5 @@
 ---
-outline: [ 2, 3 ]
+outline: [2, 3]
 ---
 
 # Get Content
@@ -31,6 +31,7 @@ Get the locale keys for single file and single locale.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-single-file-single-locale.js
+
 </details>
 
 ### Get Multiple Locales
@@ -42,6 +43,7 @@ Get the locale keys for single file and multiple locales.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-single-file-multiple-locales.js
+
 </details>
 
 ### Get All Locales
@@ -53,6 +55,7 @@ Get the locale keys for single file and all locales.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-single-file-all-locales.js
+
 </details>
 
 ## Multiple Files
@@ -68,6 +71,7 @@ Get the locale keys for multiple files and single locale.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-multiple-files-single-locale.js
+
 </details>
 
 ### Get Multiple Locales
@@ -79,6 +83,7 @@ Get the locale keys for multiple files and multiple locales.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-multiple-files-multiple-locales.js
+
 </details>
 
 ### Get All Locales
@@ -90,6 +95,7 @@ Get the locale keys for multiple files and all locales.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-multiple-files-all-locales.js
+
 </details>
 
 ## All Files Content
@@ -103,4 +109,5 @@ Get the locale keys for all files and all locales.
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-all-files-all-locales.js
+
 </details>

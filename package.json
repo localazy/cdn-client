@@ -56,7 +56,7 @@
     "build": "rimraf dist && npm run main-ts:build && vite build",
     "main-ts:build": "reexport src/main.ts",
     "main-ts:watch": "reexport --watch src/main.ts",
-    "check": "npm run typecheck && npm run test:coverage && npm run lint",
+    "check": "npm run typecheck && npm run test:coverage && npm run lint && npm run prettier",
     "typecheck": "npx tsc --noemit",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",

@@ -1,8 +1,7 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template>
-  <footer class="footer-links ">
+  <footer class="footer-links">
     <div class="footer-links__container">
       <div class="footer-links__nav">
         <div class="footer-links__col">
@@ -46,10 +45,20 @@
           </div>
           <ul>
             <li><a href="https://www.npmjs.com/package/@localazy/cli" target="_blank">@localazy/cli</a></li>
-            <li><a href="https://www.npmjs.com/package/@localazy/api-client" target="_blank">@localazy/api-client</a></li>
+            <li>
+              <a href="https://www.npmjs.com/package/@localazy/api-client" target="_blank">@localazy/api-client</a>
+            </li>
             <li><a href="https://www.npmjs.com/package/@localazy/languages" target="_blank">@localazy/languages</a></li>
-            <li><a href="https://www.npmjs.com/package/@localazy/strapi-plugin" target="_blank">@localazy/strapi-plugin</a></li>
-            <li><a href="https://www.npmjs.com/package/@localazy/directus-extension-localazy" target="_blank">@localazy/directus-extension-localazy</a></li>
+            <li>
+              <a href="https://www.npmjs.com/package/@localazy/strapi-plugin" target="_blank">
+                @localazy/strapi-plugin
+              </a>
+            </li>
+            <li>
+              <a href="https://www.npmjs.com/package/@localazy/directus-extension-localazy" target="_blank">
+                @localazy/directus-extension-localazy
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -76,7 +85,8 @@
       </div>
 
       <div class="footer-links__licence">
-        © {{ new Date().getFullYear() }} Localazy. Released under the <a href="https://github.com/localazy/cdn-client/blob/main/LICENSE" target="_blank">MIT license</a>.
+        © {{ new Date().getFullYear() }} Localazy. Released under the
+        <a href="https://github.com/localazy/cdn-client/blob/main/LICENSE" target="_blank">MIT license</a>.
       </div>
     </div>
   </footer>
@@ -206,10 +216,10 @@
 
 .social-link:hover {
   transition: opacity var(--transition);
-  opacity: .37;
+  opacity: 0.37;
 }
 
-.social-link > :deep([class^="vpi-social-"]) {
+.social-link > :deep([class^='vpi-social-']) {
   width: 20px;
   height: 20px;
   fill: currentColor;
@@ -238,7 +248,7 @@
 }
 
 .footer-links__licence a[target='_blank']::after {
-  opacity: .37;
+  opacity: 0.37;
 }
 .footer-links__col ul a[target='_blank']::after {
   opacity: 0;

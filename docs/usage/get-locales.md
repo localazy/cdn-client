@@ -9,6 +9,7 @@ Once you have initialized the [CdnClient](../reference/client-api.md#constructor
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-all-locales.js
+
 </details>
 
 ## Get All Locales Except the Base Locale
@@ -18,6 +19,7 @@ Once you have initialized the [CdnClient](../reference/client-api.md#constructor
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-all-locales-except-base-locale.js
+
 </details>
 
 ## Get Base Locale
@@ -27,4 +29,5 @@ Once you have initialized the [CdnClient](../reference/client-api.md#constructor
 <details><summary><i><samp>example result</samp></i></summary>
 
 <<< ../code-examples/usage/results/get-base-locale.js
+
 </details>

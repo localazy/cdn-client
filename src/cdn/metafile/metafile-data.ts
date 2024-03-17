@@ -44,50 +44,37 @@ export class MetafileData implements Omit<IMetafile, 'files' | 'baseLocale'> {
   }
 
   protected static filesFactory(files: IMetafileFiles, baseLocale: string, params: MetafileParams): MetafileFile[] {
-    return Object.keys(files).reduce(
-      (acc: MetafileFile[], cur: string) => {
-        const locales: MetafileLocale[] = files[cur].locales.map(
-          (locale: IMetafileFileLocale) => new MetafileLocale(locale, baseLocale),
-        );
+    return Object.keys(files).reduce((acc: MetafileFile[], cur: string) => {
+      const locales: MetafileLocale[] = files[cur].locales.map(
+        (locale: IMetafileFileLocale) => new MetafileLocale(locale, baseLocale),
+      );
 
-        acc.push(
-          new MetafileFile({
-            ...files[cur],
-            id: cur,
-            locales,
-            baseUrl: params.baseUrl,
-          }),
-        );
+      acc.push(
+        new MetafileFile({
+          ...files[cur],
+          id: cur,
+          locales,
+          baseUrl: params.baseUrl,
+        }),
+      );
 
-        return acc;
-      },
-      [],
-    );
+      return acc;
+    }, []);
   }
 
   protected static filesMapFactory(files: MetafileFile[]): FilesMap {
-    return files.reduce(
-      (acc: FilesMap, cur: MetafileFile) => {
-        acc[cur.id] = cur;
+    return files.reduce((acc: FilesMap, cur: MetafileFile) => {
+      acc[cur.id] = cur;
 
-        return acc;
-      },
-      {},
-    );
+      return acc;
+    }, {});
   }
 
   protected static localesFactory(files: MetafileFile[]): CdnLocale[] {
-    const locales: CdnLocale[] = files.reduce(
-      (acc: CdnLocale[], cur: MetafileFile) => {
-        acc.push(
-          ...cur.locales.map(
-            (locale: MetafileLocale): CdnLocale => locale.toCdnLocale(),
-          ),
-        );
-        return acc;
-      },
-      [],
-    );
+    const locales: CdnLocale[] = files.reduce((acc: CdnLocale[], cur: MetafileFile) => {
+      acc.push(...cur.locales.map((locale: MetafileLocale): CdnLocale => locale.toCdnLocale()));
+      return acc;
+    }, []);
 
     return uniqBy(locales, (cdnLocale: CdnLocale): string => cdnLocale.locale);
   }

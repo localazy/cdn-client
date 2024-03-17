@@ -43,9 +43,7 @@ export default defineConfig({
           format: 'esm',
           entryFileNames: 'localazy-cdn-client.min.js',
           banner,
-          plugins: [
-            terser(),
-          ],
+          plugins: [terser()],
         },
         // Browser UMD + JS CDNs
         {
@@ -55,15 +53,11 @@ export default defineConfig({
           banner,
           name: 'LocalazyCDN',
           esModule: false,
-          plugins: [
-            terser(),
-          ],
+          plugins: [terser()],
         },
       ],
 
-      external: [
-        ...Object.keys(pkg.devDependencies || {}),
-      ],
+      external: [...Object.keys(pkg.devDependencies || {})],
     },
   },
 

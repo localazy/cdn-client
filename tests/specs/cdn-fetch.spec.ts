@@ -1,6 +1,4 @@
-import {
-  describe, test, expect, beforeEach,
-} from 'vitest';
+import { describe, test, expect, beforeEach } from 'vitest';
 import { completeMetafile } from '@tests/fixtures';
 import { CdnResponse, CdnClient, CdnFile } from '@/main';
 
@@ -72,9 +70,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch selected files with selected locales only', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: cdn.metafile.files.filter(
-        (metafileFile: CdnFile) => ['file01', 'file03'].includes(metafileFile.id),
-      ),
+      files: cdn.metafile.files.filter((metafileFile: CdnFile) => ['file01', 'file03'].includes(metafileFile.id)),
       locales: ['en', 'ms_BN'],
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.selectedFilesSelectedLocales);

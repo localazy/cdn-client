@@ -12,22 +12,10 @@
     "declaration": true,
     "baseUrl": "src",
     "paths": {
-      "@/*": [
-        "./*"
-      ],
-      "@tests/*": [
-        "./../tests/*"
-      ]
+      "@/*": ["./*"],
+      "@tests/*": ["./../tests/*"]
     },
-    "types": [
-      "@types/node",
-    ]
+    "types": ["@types/node"]
   },
-  "exclude": [
-    "node_modules",
-    "coverage",
-    "typedoc",
-    "dist",
-    "tests/fixtures/file-types-metafile/file14-ts/"
-  ]
+  "exclude": ["node_modules", "coverage", "typedoc", "dist", "tests/fixtures/file-types-metafile/file14-ts/"]
 }

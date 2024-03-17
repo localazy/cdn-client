@@ -15,22 +15,24 @@ CDN Client is written in TypeScript and provides type definitions. You can impor
 :::tabs
 
 == TS
+
 ```typescript
 import { CdnClient } from '@localazy/cdn-client';
 ```
 
 == ESM
+
 ```javascript
 import { CdnClient } from '@localazy/cdn-client';
 ```
 
 == CommonJS
+
 ```javascript
 const { CdnClient } = require('@localazy/cdn-client');
 ```
 
 :::
-
 
 ## Browser
 
@@ -39,17 +41,19 @@ You can import the CDN Client directly in the browser using a script tag. Choose
 :::tabs
 
 == ESM <script type="module">
+
 ```html
 <script type="module">
-import { CdnClient } from 'https://cdn.jsdelivr.net/npm/@localazy/cdn-client/+esm';
+  import { CdnClient } from 'https://cdn.jsdelivr.net/npm/@localazy/cdn-client/+esm';
 </script>
 ```
 
 == UMD <script>
+
 ```html
 <script src="https://cdn.jsdelivr.net/npm/@localazy/cdn-client/dist/localazy-cdn-client.min.js"></script>
 <script>
-const { CdnClient } = LocalazyCDN;
+  const { CdnClient } = LocalazyCDN;
 </script>
 ```
 
