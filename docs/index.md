@@ -3,8 +3,9 @@
 layout: home
 
 hero:
-  text: Localazy CDN Client
-  tagline: Node.js module that allows you to easily interact with the Localazy CDN
+  name: Localazy
+  text: CDN Client
+  tagline: Node.js module that allows you to easily<br>interact with the Localazy CDN
   image:
     src: /hero.svg
     alt: Localazy CDN Client

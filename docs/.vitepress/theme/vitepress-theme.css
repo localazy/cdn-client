@@ -1,18 +1,3 @@
-/* Localazy Theme colors */
-
-:root {
-  --primary-darken-4: #021c3c;
-  --primary-darken-3: #032c5e;
-  --primary-darken-2: #04418b;
-  --primary-darken-1: #0558bd;
-  --primary: #066fef;
-  --primary-lighten-1: #2e8dfa;
-  --primary-lighten-2: #6aaefb;
-  --primary-lighten-3: #a1cbfd;
-  --primary-lighten-4: #d7eafe;
-  --primary-lighten-5: #f5faff;
-}
-
 /**
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
@@ -23,7 +8,7 @@
  *
  * Each colors have exact same color scale system with 3 levels of solid
  * colors with different brightness, and 1 soft color.
- * 
+ *
  * - `XXX-1`: The most solid color used mainly for colored text. It must
  *   satisfy the contrast ratio against when used on top of `XXX-soft`.
  *
@@ -59,6 +44,21 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  /* Localazy Theme colors */
+
+  --primary-darken-4: #021c3c;
+  --primary-darken-3: #032c5e;
+  --primary-darken-2: #04418b;
+  --primary-darken-1: #0558bd;
+  --primary: #066fef;
+  --primary-lighten-1: #2e8dfa;
+  --primary-lighten-2: #6aaefb;
+  --primary-lighten-3: #a1cbfd;
+  --primary-lighten-4: #d7eafe;
+  --primary-lighten-5: #f5faff;
+
+  /* Override: Palette */
+
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
@@ -74,131 +74,26 @@
   --vp-c-tip-3: var(--vp-c-brand-3);
   --vp-c-tip-soft: var(--vp-c-brand-soft);
 
-  --vp-c-warning-1: var(--vp-c-yellow-1);
-  --vp-c-warning-2: var(--vp-c-yellow-2);
-  --vp-c-warning-3: var(--vp-c-yellow-3);
-  --vp-c-warning-soft: var(--vp-c-yellow-soft);
+  /* Override: Button */
 
-  --vp-c-danger-1: var(--vp-c-red-1);
-  --vp-c-danger-2: var(--vp-c-red-2);
-  --vp-c-danger-3: var(--vp-c-red-3);
-  --vp-c-danger-soft: var(--vp-c-red-soft);
-}
-
-/**
- * Component: Link
- * -------------------------------------------------------------------------- */
-
-.dark {
-  --vp-code-link-color: var(--primary-lighten-1);
-  --vp-code-link-hover-color: var(--primary);
-}
-
-/**
- * Component: Button
- * -------------------------------------------------------------------------- */
-
-:root {
   --vp-button-brand-bg: var(--vp-c-brand-1);
   --vp-button-brand-hover-bg: var(--vp-c-brand-2);
   --vp-button-brand-active-bg: var(--vp-c-brand-3);
-}
 
-/**
- * Component: Home
- * -------------------------------------------------------------------------- */
+  /* Override: Custom Block */
 
-@media (min-width: 960px) {
-  .image-src.VPImage {
-    max-width: 400px;
-    max-height: 400px;
-  }
-}
-
-/**
- * Component: Custom Block
- * -------------------------------------------------------------------------- */
-
-:root {
   --vp-custom-block-tip-border: transparent;
   --vp-custom-block-tip-text: var(--vp-c-text-1);
   --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
-}
 
-/**
- * Component: Algolia
- * -------------------------------------------------------------------------- */
+  /* Override: Code */
 
-.DocSearch {
-  --docsearch-primary-color: var(--vp-c-brand-1) !important;
-}
-
-/**
- * Component: Code Block
- * -------------------------------------------------------------------------- */
-
-:root {
   --vp-code-block-divider-color: var(--vp-c-gray-1);
   --vp-code-block-bg: var(--vp-c-bg);
-}
 
-div[class*='language-'] {
-  border: 1px solid var(--vp-c-gray-1);
-}
+  /* Override: Typography */
 
-/**
- * Typography
- * -------------------------------------------------------------------------- */
-
-:root {
   --vp-font-family-base: Roboto, 'Chinese Quotes', 'Inter var', 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   --vp-font-family-mono: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
 }
-
-details > summary {
-  cursor: pointer;
-}
-
-/**
- * External Link Icon
- * -------------------------------------------------------------------------- */
-
-:root {
-  --external-link-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6.75 1.75h-5v12.5h12.5v-5m0-4v-3.5h-3.5M8 8l5.5-5.5" /></svg>');
-  --external-link-margin-left: 5px;
-  --external-link-margin-right: 3px;
-}
-
-.VPNavBarMenu .VPLink.link,
-.vp-doc a {
-  display: inline-flex;
-  align-items: center;
-}
-
-.vp-doc a > code {
-  line-height: 1;
-}
-
-:is(.vp-external-link-icon, .vp-doc a[href*='://'], .vp-doc a[target='_blank']):not(.no-icon)::after {
-  --icon: var(--external-link-icon);
-  display: inline-flex;
-  margin-left: var(--external-link-margin-left);
-  width: 14px;
-  height: 14px;
-}
-
-.vp-doc a[target='_blank']::after {
-  margin-right: var(--external-link-margin-right);
-}
-
-.vp-doc .sp-icon-standalone {
-  color: #999999 !important;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.vp-doc .sp-icon-standalone::after {
-  display: none !important;
-}
-

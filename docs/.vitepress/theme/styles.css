@@ -1,0 +1,66 @@
+/* Home */
+
+@media (min-width: 960px) {
+  .image-src.VPImage {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+
+/* Search */
+
+.DocSearch {
+  --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+/* Code */
+
+div[class*='language-'] {
+  border: 1px solid var(--vp-c-gray-1);
+}
+
+/* Details Summary */
+
+.vp-doc details > summary {
+  cursor: pointer;
+}
+
+/* External Link Icon */
+
+:root {
+  --external-link-icon: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="none" stroke="currentcolor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6.75 1.75h-5v12.5h12.5v-5m0-4v-3.5h-3.5M8 8l5.5-5.5" /></svg>');
+  --external-link-margin-left: 5px;
+  --external-link-margin-right: 3px;
+}
+
+.VPNavBarMenu .VPLink.link,
+.vp-doc a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.vp-doc a > code {
+  line-height: 1;
+}
+
+:is(.vp-external-link-icon, .vp-doc a[href*='://'], .vp-doc a[target='_blank']):not(.no-icon)::after {
+  --icon: var(--external-link-icon);
+  display: inline-flex;
+  margin-left: var(--external-link-margin-left);
+  width: 14px;
+  height: 14px;
+}
+
+.vp-doc a[target='_blank']::after {
+  margin-right: var(--external-link-margin-right);
+}
+
+.vp-doc .sp-icon-standalone {
+  color: #999999 !important;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.vp-doc .sp-icon-standalone::after {
+  display: none !important;
+}

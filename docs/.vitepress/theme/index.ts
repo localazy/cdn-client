@@ -6,7 +6,7 @@ import FooterLinks from './components/FooterLinks.vue';
 import LocSandboxLayout from './components/LocSandboxLayout.vue';
 import LocSandbox from './components/LocSandbox.vue';
 import LocZoomImg from './components/LocZoomImg.vue';
-import './style.css';
+import './index.css';
 
 export default {
   ...DefaultTheme,
