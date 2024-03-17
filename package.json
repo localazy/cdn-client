@@ -87,6 +87,7 @@
     "typedoc": "^0.25.12",
     "typedoc-plugin-markdown": "^3.17.1",
     "typedoc-plugin-missing-exports": "^2.2.0",
+    "unplugin-replace": "^0.2.1",
     "vite": "^5.1.6",
     "vite-bundle-visualizer": "^1.1.0",
     "vite-plugin-dts": "^3.7.3",

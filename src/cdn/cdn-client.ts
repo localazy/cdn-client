@@ -16,6 +16,8 @@ export class CdnClient {
 
   protected context: Context;
 
+  public static version = '__CLIENT_VERSION__';
+
   protected constructor(options: CdnClientOptions) {
     const metafileContext: MetafileContext = new MetafileContext(options);
     const client: FetchHttpAdapter = new FetchHttpAdapter(metafileContext.params.baseUrl);

@@ -3,6 +3,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
 import dts from 'vite-plugin-dts'; // Generate index.d.ts file
 import terser from '@rollup/plugin-terser'; // Minify output
+import Replace from 'unplugin-replace/vite'; // Replace variables in files
 import pkg from './package.json';
 
 const banner: string = `/* ${pkg.name}@${pkg.version}
@@ -24,11 +25,20 @@ export default defineConfig({
     sourcemap: true,
     rollupOptions: {
       output: [
+        // Node ES Module
         {
           format: 'esm',
           entryFileNames: 'localazy-cdn-client.js',
           banner,
         },
+        // Node CommonJS
+        {
+          format: 'cjs',
+          dir: 'dist/node',
+          entryFileNames: 'localazy-cdn-client.cjs',
+          banner,
+        },
+        // Browser ES Module
         {
           format: 'esm',
           entryFileNames: 'localazy-cdn-client.min.js',
@@ -37,29 +47,7 @@ export default defineConfig({
             terser(),
           ],
         },
-        {
-          format: 'cjs',
-          dir: 'dist/node',
-          entryFileNames: 'localazy-cdn-client.cjs',
-          banner,
-        },
-        {
-          format: 'cjs',
-          dir: 'dist/node',
-          entryFileNames: 'localazy-cdn-client.min.cjs',
-          banner,
-          plugins: [
-            terser(),
-          ],
-        },
-        {
-          format: 'umd',
-          dir: 'dist/browser',
-          entryFileNames: 'localazy-cdn-client.umd.js',
-          banner,
-          name: 'LocalazyCDN',
-          esModule: false,
-        },
+        // Browser UMD + JS CDNs
         {
           format: 'umd',
           dir: 'dist/browser',
@@ -81,5 +69,12 @@ export default defineConfig({
 
   plugins: [
     dts({ rollupTypes: true }),
+
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
+    Replace({
+      values: {
+        __CLIENT_VERSION__: pkg.version,
+      },
+    }),
   ],
 });
