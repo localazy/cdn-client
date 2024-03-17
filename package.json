@@ -69,9 +69,6 @@
     "typedoc:md": "rimraf typedoc/md/* && typedoc --plugin typedoc-plugin-markdown --plugin typedoc-plugin-missing-exports --tsconfig tsconfig.typedoc.json --out typedoc/md src/main.ts",
     "bundle:visualize": "vite-bundle-visualizer"
   },
-  "dependencies": {
-    "isomorphic-fetch": "^3.0.0"
-  },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.4",
     "@types/isomorphic-fetch": "^0.0.39",
@@ -83,7 +80,9 @@
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-plugin-import": "^2.29.1",
     "fetch-mock": "^9.11.0",
+    "isomorphic-fetch": "^3.0.0",
     "reexport": "^1.4.1",
     "typedoc": "^0.25.12",
     "typedoc-plugin-markdown": "^3.17.1",

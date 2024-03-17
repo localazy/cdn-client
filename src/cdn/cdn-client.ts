@@ -1,4 +1,3 @@
-import 'isomorphic-fetch';
 import { isString } from '@/cdn/utils';
 import { CdnFetchOptions } from '@/types/cdn-fetch-options';
 import { CdnResponse } from '@/types/cdn-response';
