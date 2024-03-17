@@ -73,6 +73,7 @@
     "isomorphic-fetch": "^3.0.0"
   },
   "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
     "@types/isomorphic-fetch": "^0.0.39",
     "@types/node": "^20.11.28",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -84,7 +85,6 @@
     "eslint-config-airbnb-typescript": "^18.0.0",
     "fetch-mock": "^9.11.0",
     "reexport": "^1.4.1",
-    "rollup-plugin-terser": "^7.0.2",
     "typedoc": "^0.25.12",
     "typedoc-plugin-markdown": "^3.17.1",
     "typedoc-plugin-missing-exports": "^2.2.0",

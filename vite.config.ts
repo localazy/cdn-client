@@ -1,8 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import { defineConfig } from 'vite';
 import { resolve } from 'node:path';
-import dts from 'vite-plugin-dts';
-import { terser } from 'rollup-plugin-terser';
+import dts from 'vite-plugin-dts'; // Generate index.d.ts file
+import terser from '@rollup/plugin-terser'; // Minify output
 import pkg from './package.json';
 
 const banner: string = `/* ${pkg.name}@${pkg.version}
@@ -20,10 +20,8 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/main.ts'),
     },
-
     minify: false,
     sourcemap: true,
-
     rollupOptions: {
       output: [
         {
@@ -36,9 +34,6 @@ export default defineConfig({
           entryFileNames: 'localazy-cdn-client.min.js',
           banner,
           plugins: [
-            // minify output
-            // @ts-expect-error plugin is compatible
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-call
             terser(),
           ],
         },
@@ -54,9 +49,6 @@ export default defineConfig({
           entryFileNames: 'localazy-cdn-client.min.cjs',
           banner,
           plugins: [
-            // minify output
-            // @ts-expect-error plugin is compatible
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-call
             terser(),
           ],
         },
@@ -76,23 +68,18 @@ export default defineConfig({
           name: 'LocalazyCDN',
           esModule: false,
           plugins: [
-            // minify output
-            // @ts-expect-error plugin is compatible
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-call
             terser(),
           ],
         },
       ],
 
       external: [
-        ...Object.keys(pkg.dependencies || {}),
         ...Object.keys(pkg.devDependencies || {}),
       ],
     },
   },
 
   plugins: [
-    // Generate index.d.ts file.
     dts({ rollupTypes: true }),
   ],
 });
