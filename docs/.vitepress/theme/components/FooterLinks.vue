@@ -7,7 +7,7 @@
         <div class="footer-links__col">
           <div class="footer-links__col-header">
             <a href="https://localazy.com" target="_blank" class="logo-link">
-              <img src="/localazy-logo-white-large.svg" alt="Localazy" width="150" />
+              <img src="/theme/localazy-logo-white.svg" alt="Localazy" width="150" />
             </a>
           </div>
           <ul>

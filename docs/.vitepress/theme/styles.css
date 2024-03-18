@@ -2,6 +2,7 @@
 
 @media (min-width: 960px) {
   .image-src.VPImage {
+    margin-top: 10px;
     max-width: 400px;
     max-height: 400px;
   }
