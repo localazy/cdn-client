@@ -10,13 +10,13 @@
     {
       "fileName": "coverage.svg",
       "label": "coverage",
-      "status": 99.5,
+      "status": "99.68",
       "icon": "vitest"
     },
     {
       "fileName": "size.svg",
       "label": "minzipped size",
-      "status": "3.53 kB",
+      "status": "3524",
       "icon": "speed",
       "color": "43b816"
     },
