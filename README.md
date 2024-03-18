@@ -9,24 +9,61 @@
 [**Live Demo**](https://localazy.github.io/cdn-client/sandbox/live-demo.html) &nbsp;|&nbsp;
 [**API Reference**](https://localazy.github.io/cdn-client/reference/client-api.html)
 
-[//]: # '[**Live Demo**]()'
-
 Node.js module that allows you to easily interact with the [Localazy CDN](https://localazy.com/docs/cdn/cdn-introduction).
 
-[![coverage](.github/badges/version.svg)](https://www.npmjs.com/package/@localazy/cdn-client)
-[![coverage](.github/badges/license.svg)](https://github.com/localazy/cdn-client/blob/main/LICENSE)
+[![npm](.github/badges/npm.svg)](https://www.npmjs.com/package/@localazy/cdn-client)
+[![maintainer](.github/badges/maintainer.svg)](https://github.com/localazy)
+[![license](.github/badges/license.svg)](https://github.com/localazy/cdn-client/blob/main/LICENSE)<br>
 [![coverage](.github/badges/coverage.svg)](https://github.com/localazy/cdn-client/actions)
+[![size](.github/badges/size.svg)](https://bundlephobia.com/package/@localazy/cdn-client)
 
 </div>
 
-## 🚀 Install
+## 🚀 Quick Start
 
 ```bash
 npm install @localazy/cdn-client
 # or use your favourite package manager
 ```
 
-For more information, visit the [installation guide](https://localazy.github.io/cdn-client/get-started/install.html).
+```javascript
+import { CdnClient } from '@localazy/cdn-client';
+
+const cdn = await CdnClient.create({
+  // use your own metafile
+  metafile: 'https://delivery.localazy.com/_a855374211039568660198b39c31/_e0.v2.json',
+});
+
+const result = await cdn.fetch({
+  // select files from metafile
+  files: cdn.metafile.files[0],
+  // select locales
+  locales: ['en', 'de'],
+});
+```
+
+<details><summary><i><samp>example result</samp></i></summary>
+
+```javascript
+const result = {
+  en: {
+    cdn_info: 'With the CDN you can deliver the translation files instantly',
+    cdn_testing: 'We\'re testing the CDN',
+    hello_localazy: 'Hello Localazy!',
+    using_javascript: 'In this project we decided to use JavaScript'
+  },
+  de: {
+    cdn_info: 'Mit dem CDN können Sie die Übersetzungsdateien sofort liefern',
+    cdn_testing: 'Wir testen das CDN',
+    hello_localazy: 'Hallo Localazy!',
+    using_javascript: 'In diesem Projekt haben wir uns für JavaScript entschieden'
+  }
+};
+```
+
+</details>
+
+For more information, visit [Installation](https://localazy.github.io/cdn-client/get-started/install.html) guide.
 
 ## 🛟 Support
 
@@ -40,7 +77,7 @@ For more information, visit the [installation guide](https://localazy.github.io/
 Check out all npm packages from Localazy:
 
 | Package                                                                                                      | Description                                                              |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | [@localazy/cli](https://www.npmjs.com/package/@localazy/cli)                                                 | Localazy CLI tool for app and software localization and translation.     |
 | [@localazy/api-client](https://www.npmjs.com/package/@localazy/api-client)                                   | Node.js module that allows you to easily interact with the Localazy API. |
 | [@localazy/cdn-client](https://www.npmjs.com/package/@localazy/cdn-client)                                   | Node.js module that allows you to easily interact with the Localazy CDN. |

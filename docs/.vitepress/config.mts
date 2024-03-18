@@ -48,7 +48,7 @@ export default defineConfig({
         text: 'Get Started',
         items: [
           { text: 'Introduction', link: '/get-started/introduction' },
-          { text: 'Install', link: '/get-started/install' },
+          { text: 'Installation', link: '/get-started/installation' },
           { text: 'Metafile', link: '/get-started/metafile' },
         ],
       },

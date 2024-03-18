@@ -1,4 +1,4 @@
-# Install
+# Installation
 
 You can install the CDN Client as a Node.js module or import it directly in the browser.
 
