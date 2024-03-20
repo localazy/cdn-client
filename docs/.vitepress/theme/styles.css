@@ -2,9 +2,7 @@
 
 @media (min-width: 960px) {
   .image-src.VPImage {
-    margin-top: 10px;
-    max-width: 400px;
-    max-height: 400px;
+    margin-top: 40px;
   }
 }
 
@@ -18,6 +16,17 @@
 
 div[class*='language-'] {
   border: 1px solid var(--vp-c-gray-1);
+}
+
+.vp-doc .custom-block div[class*='language-'] {
+  border-radius: 6px;
+}
+
+@media (min-width: 640px) {
+  .vp-doc div[class*='language-'],
+  .vp-block {
+    border-radius: 6px;
+  }
 }
 
 /* Details Summary */

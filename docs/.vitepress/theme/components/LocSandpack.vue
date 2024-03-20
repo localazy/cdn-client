@@ -6,9 +6,9 @@ import {
   SandpackLayout,
   type SandpackFiles,
 } from 'sandpack-vue3';
-import { githubLight } from '@codesandbox/sandpack-themes';
 import { getCustomSetupFromProps, getSandpackFiles, getSandpackOptions, sandboxProps } from 'vitepress-plugin-sandpack';
 import { computed, nextTick, onBeforeMount, onMounted, ref, useSlots, watch } from 'vue';
+import { githubDark, githubLight } from './github-themes';
 
 const props = defineProps(sandboxProps);
 
@@ -30,7 +30,7 @@ onBeforeMount(resolveFiles);
 
 const isDark = ref(true);
 
-const docsTheme = computed(() => (isDark.value ? 'dark' : githubLight));
+const docsTheme = computed(() => (isDark.value ? githubDark : githubLight));
 
 const detectHtmlDarkMode = () => {
   if (typeof document !== 'undefined' && document.documentElement) {
@@ -100,13 +100,25 @@ const customSetup = computed(() => {
 <style>
 .sp-layout > .sp-stack.sp-editor {
   height: v-bind(coderHeightStyle);
+  gap: 0;
 }
 
 .sp-layout > .sp-stack.sp-preview {
   height: v-bind(previewHeightStyle);
+  gap: 0;
 }
 
 .sp-bridge-frame {
   display: none;
+}
+
+:root {
+  .sp-layout {
+    --sp-border-radius: 6px;
+  }
+}
+
+.cm-editor .cm-gutter.cm-lineNumbers {
+  font-size: 13px;
 }
 </style>
