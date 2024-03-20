@@ -241,6 +241,8 @@
   margin-right: var(--external-link-margin-right);
   width: 12px;
   height: 12px;
+  min-height: 12px;
+  min-width: 12px;
   background: currentColor;
   -webkit-mask-image: var(--external-link-icon);
   mask-image: var(--external-link-icon);
