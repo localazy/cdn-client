@@ -1,3 +1,13 @@
+## 1.5.2 (2024-05-01)
+### 🔀 Pull Requests
+
+- [Fix og image path #12](https://github.com/localazy/cdn-client/pull/12)
+
+### 🐛 Bug Fixes
+
+- Fix OG image path ([29c624d](https://github.com/localazy/cdn-client/commit/29c624d)) ([#12](https://github.com/localazy/cdn-client/pull/12))
+- Fix favicon ([29c624d](https://github.com/localazy/cdn-client/commit/29c624d)) ([#12](https://github.com/localazy/cdn-client/pull/12))
+
 ## 1.5.1 (2024-05-01)
 
 ### 🔀 Pull Requests
