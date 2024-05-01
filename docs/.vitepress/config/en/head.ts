@@ -2,9 +2,9 @@ import { HeadConfig } from 'vitepress';
 
 export const head = (): HeadConfig[] => [
   // Favicon
-  ['link', { rel: 'icon', href: '/cdn-client/favicon.ico', sizes: '32x32' }],
-  ['link', { rel: 'icon', href: '/cdn-client/theme/localazy-logo.svg', type: 'image/svg+xml' }],
-  ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/cdn-client/theme/apple-touch-icon.png' }],
+  ['link', { rel: 'icon', href: '/favicon.ico', sizes: '32x32' }],
+  ['link', { rel: 'icon', href: '/theme/localazy-logo.svg', type: 'image/svg+xml' }],
+  ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/theme/apple-touch-icon.png' }],
 
   // Fonts
   [
@@ -32,7 +32,7 @@ export const head = (): HeadConfig[] => [
     'meta',
     {
       property: 'og:image',
-      content: 'https://localazy.github.io/cdn-client/cdn-client/theme/localazy-cdn-client-og.png',
+      content: 'https://localazy.github.io/cdn-client/theme/localazy-cdn-client-og.png',
     },
   ],
   ['meta', { property: 'og:url', content: 'https://localazy.github.io/cdn-client/' }],
@@ -52,7 +52,7 @@ export const head = (): HeadConfig[] => [
     'meta',
     {
       property: 'twitter:image',
-      content: 'https://localazy.github.io/cdn-client/cdn-client/theme/localazy-cdn-client-og.png',
+      content: 'https://localazy.github.io/cdn-client/theme/localazy-cdn-client-og.png',
     },
   ],
 ];
