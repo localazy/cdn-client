@@ -32,7 +32,7 @@ export const head = (): HeadConfig[] => [
     'meta',
     {
       property: 'og:image',
-      content: 'https://localazy.github.io/cdn-client/cdn-client/theme/localazy-cdn-client-og.png',
+      content: 'https://localazy.github.io/cdn-client/theme/localazy-cdn-client-og.png',
     },
   ],
   ['meta', { property: 'og:url', content: 'https://localazy.github.io/cdn-client/' }],
@@ -52,7 +52,7 @@ export const head = (): HeadConfig[] => [
     'meta',
     {
       property: 'twitter:image',
-      content: 'https://localazy.github.io/cdn-client/cdn-client/theme/localazy-cdn-client-og.png',
+      content: 'https://localazy.github.io/cdn-client/theme/localazy-cdn-client-og.png',
     },
   ],
 ];
