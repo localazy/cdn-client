@@ -1,3 +1,29 @@
+## 1.5.1 (2024-05-01)
+
+### 🔀 Pull Requests
+
+- [Change base url #10](https://github.com/localazy/cdn-client/pull/10)
+
+### 🐛 Bug Fixes
+
+- Fix external link icon when link is multiline ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+
+### 📚 Documentation
+
+- Update vitepress theme, change hero, add headers ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+
+### 🧪 Tests
+
+- Fix tests coverage ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+
+### 🧰 Other Commits
+
+- Change base url ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+- Fix prettier ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+- Prettier formatting ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+- Run Prettier in QA workflow ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+- Sync code highlight theme between code and sandpack ([3106937](https://github.com/localazy/cdn-client/commit/3106937)) ([#10](https://github.com/localazy/cdn-client/pull/10))
+
 # 1.5.0 (2024-03-18)
 
 ### ✨ Features

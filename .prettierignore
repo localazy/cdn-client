@@ -1,3 +1,4 @@
 tests/fixtures/
 docs/code-examples/
 docs/.vitepress/cache/
+CHANGELOG.md
