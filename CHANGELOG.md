@@ -1,26 +1,22 @@
 # 1.5.0 (2024-03-18)
 
-
-
 ### ✨ Features
 
-* Add package version to the CdnClient class ([1a90771](https://github.com/localazy/cdn-client/commit/1a90771))
-
+- Add package version to the CdnClient class ([1a90771](https://github.com/localazy/cdn-client/commit/1a90771))
 
 ### 📚 Documentation
 
-* Update README.md and add badges ([1fd6ac2](https://github.com/localazy/cdn-client/commit/1fd6ac2))
-
+- Update README.md and add badges ([1fd6ac2](https://github.com/localazy/cdn-client/commit/1fd6ac2))
 
 ### 🧰 Other Commits
 
-* Add prettier ([91d4c12](https://github.com/localazy/cdn-client/commit/91d4c12))
-* Delete unused type ([7a9c488](https://github.com/localazy/cdn-client/commit/7a9c488))
-* Reformat with prettier ([8aa5725](https://github.com/localazy/cdn-client/commit/8aa5725))
-* Remove fetch polyfill ([5d60c36](https://github.com/localazy/cdn-client/commit/5d60c36))
-* Split CSS file into theme and custom styles, update hero claim ([ccd264a](https://github.com/localazy/cdn-client/commit/ccd264a))
-* Update deps ([80342a8](https://github.com/localazy/cdn-client/commit/80342a8))
-* Update terser plugin ([bd953d9](https://github.com/localazy/cdn-client/commit/bd953d9))
+- Add prettier ([91d4c12](https://github.com/localazy/cdn-client/commit/91d4c12))
+- Delete unused type ([7a9c488](https://github.com/localazy/cdn-client/commit/7a9c488))
+- Reformat with prettier ([8aa5725](https://github.com/localazy/cdn-client/commit/8aa5725))
+- Remove fetch polyfill ([5d60c36](https://github.com/localazy/cdn-client/commit/5d60c36))
+- Split CSS file into theme and custom styles, update hero claim ([ccd264a](https://github.com/localazy/cdn-client/commit/ccd264a))
+- Update deps ([80342a8](https://github.com/localazy/cdn-client/commit/80342a8))
+- Update terser plugin ([bd953d9](https://github.com/localazy/cdn-client/commit/bd953d9))
 
 ## 1.4.1 (2024-03-15)
 

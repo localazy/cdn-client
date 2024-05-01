@@ -24,6 +24,9 @@ jobs:
       - name: Lint source files
         run: npm run lint
 
+      - name: Run Prettier
+        run: npm run prettier
+
       - name: Check types
         run: npm run typecheck
 

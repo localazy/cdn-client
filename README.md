@@ -48,16 +48,16 @@ const result = await cdn.fetch({
 const result = {
   en: {
     cdn_info: 'With the CDN you can deliver the translation files instantly',
-    cdn_testing: 'We\'re testing the CDN',
+    cdn_testing: "We're testing the CDN",
     hello_localazy: 'Hello Localazy!',
-    using_javascript: 'In this project we decided to use JavaScript'
+    using_javascript: 'In this project we decided to use JavaScript',
   },
   de: {
     cdn_info: 'Mit dem CDN können Sie die Übersetzungsdateien sofort liefern',
     cdn_testing: 'Wir testen das CDN',
     hello_localazy: 'Hallo Localazy!',
-    using_javascript: 'In diesem Projekt haben wir uns für JavaScript entschieden'
-  }
+    using_javascript: 'In diesem Projekt haben wir uns für JavaScript entschieden',
+  },
 };
 ```
 
@@ -77,7 +77,7 @@ For more information, visit [Installation](https://localazy.github.io/cdn-client
 Check out all npm packages from Localazy:
 
 | Package                                                                                                      | Description                                                              |
-|--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
 | [@localazy/cli](https://www.npmjs.com/package/@localazy/cli)                                                 | Localazy CLI tool for app and software localization and translation.     |
 | [@localazy/api-client](https://www.npmjs.com/package/@localazy/api-client)                                   | Node.js module that allows you to easily interact with the Localazy API. |
 | [@localazy/cdn-client](https://www.npmjs.com/package/@localazy/cdn-client)                                   | Node.js module that allows you to easily interact with the Localazy CDN. |

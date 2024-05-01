@@ -1,13 +1,16 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
+
+title: Localazy CDN Client
+titleTemplate: Documentation
 
 hero:
   name: Localazy
   text: CDN Client
   tagline: Node.js module that allows you to easily<br>interact with the Localazy CDN
   image:
-    src: /hero.svg
+    light: /theme/hero-light.svg
+    dark: /theme/hero-dark.svg
     alt: Localazy CDN Client
   actions:
     - theme: brand
@@ -33,7 +36,7 @@ features:
   - title: Written in TypeScript
     details: Provides type definitions.
     icon:
-      src: /ts.svg
+      src: /theme/ts.svg
       width: 48
       height: 48
 ---
