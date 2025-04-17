@@ -1,6 +1,6 @@
-import { describe, test, expectTypeOf, beforeEach } from 'vitest';
-import { completeMetafile } from '@tests/fixtures';
 import { CdnClient, CdnFile } from '@/main';
+import { completeMetafile } from '@tests/fixtures';
+import { beforeEach, describe, expectTypeOf, test } from 'vitest';
 
 let cdn: CdnClient;
 

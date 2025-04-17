@@ -1,12 +1,12 @@
+import { MetafileData } from '@/cdn/metafile/metafile-data';
 import { MetafileFile } from '@/cdn/metafile/metafile-file';
 import { MetafileParams } from '@/cdn/metafile/metafile-params';
-import { CdnClientOptions } from '@/types/cdn-client-options';
-import { MetafileData } from '@/cdn/metafile/metafile-data';
 import { CdnBase } from '@/cdn/methods/cdn-base';
-import { CdnFile } from '@/types/cdn-file';
-import { CdnLocalesOptions } from '@/types/cdn-locales-options';
 import { IMetafile } from '@/interfaces/i-metafile';
+import { CdnClientOptions } from '@/types/cdn-client-options';
+import { CdnFile } from '@/types/cdn-file';
 import { CdnLocale } from '@/types/cdn-locale';
+import { CdnLocalesOptions } from '@/types/cdn-locales-options';
 
 export class CdnMetafile extends CdnBase {
   get projectUrl(): string {

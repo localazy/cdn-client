@@ -86,7 +86,8 @@
 
       <div class="footer-links__licence">
         © {{ new Date().getFullYear() }} Localazy. Released under the
-        <a href="https://github.com/localazy/cdn-client/blob/main/LICENSE" target="_blank">MIT license</a>.
+        <a href="https://github.com/localazy/cdn-client/blob/main/LICENSE" target="_blank">MIT license</a>
+        .
       </div>
     </div>
   </footer>

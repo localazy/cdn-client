@@ -1,13 +1,13 @@
-import { isString } from '@/cdn/utils';
-import { CdnFetchOptions } from '@/types/cdn-fetch-options';
-import { CdnResponse } from '@/types/cdn-response';
-import { CdnCache } from '@/cdn/methods/cdn-cache';
-import { MetafileContext } from '@/cdn/context/metafile-context';
 import { Context } from '@/cdn/context/context';
+import { MetafileContext } from '@/cdn/context/metafile-context';
+import { FetchHttpAdapter } from '@/cdn/http/fetch-http-adapter';
+import { CdnCache } from '@/cdn/methods/cdn-cache';
 import { CdnMetafile } from '@/cdn/methods/cdn-metafile';
 import { RequestBuilder } from '@/cdn/request/request-builder';
-import { FetchHttpAdapter } from '@/cdn/http/fetch-http-adapter';
+import { isString } from '@/cdn/utils';
 import { CdnClientOptions } from '@/types/cdn-client-options';
+import { CdnFetchOptions } from '@/types/cdn-fetch-options';
+import { CdnResponse } from '@/types/cdn-response';
 
 export class CdnClient {
   public metafile: CdnMetafile;

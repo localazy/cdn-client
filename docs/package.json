@@ -1,8 +1,8 @@
 {
   "type": "module",
   "scripts": {
-    "dev": "vitepress dev",
     "build": "vitepress build",
+    "dev": "vitepress dev",
     "preview": "vitepress preview"
   },
   "devDependencies": {

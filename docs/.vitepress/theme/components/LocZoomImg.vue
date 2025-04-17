@@ -1,7 +1,7 @@
 <script setup>
+import mediumZoom from 'medium-zoom';
 import { withBase } from 'vitepress';
 import { onMounted, ref } from 'vue';
-import mediumZoom from 'medium-zoom';
 
 defineProps({
   src: String,

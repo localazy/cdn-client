@@ -1,6 +1,6 @@
 import { MetafileData } from '@/cdn/metafile/metafile-data';
-import { IMetafile } from '@/interfaces/i-metafile';
 import { MetafileParams } from '@/cdn/metafile/metafile-params';
+import { IMetafile } from '@/interfaces/i-metafile';
 import { CdnClientOptions } from '@/types/cdn-client-options';
 
 export class MetafileContext {
