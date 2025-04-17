@@ -3,7 +3,7 @@ name: Release CI
 on:
   push:
     branches:
-      - test_ci
+      - main
 
 permissions:
   contents: write
