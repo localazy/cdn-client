@@ -28,13 +28,18 @@ export class MetafileParams implements IMetafileParams {
 
     try {
       url = new URL(metafileUrl);
-    } catch (e) {
+    } catch {
       throw new Error('Invalid param: "options.metafile" cannot be parsed as url.');
     }
 
-    const matches: string[] | null = url.pathname.match(/^\/(.*?)\/(.*?)\.(v2.json|js|ts)$/);
+    const matches: string[] | null = /^\/(.*?)\/(.*?)\.(v2.json|js|ts)$/.exec(url.pathname);
 
-    if (matches === null || matches.length !== 4) {
+    if (
+      matches === null ||
+      matches.length !== 4 ||
+      typeof matches[1] === 'undefined' ||
+      typeof matches[2] === 'undefined'
+    ) {
       throw new Error('Invalid param: "options.metafile" contains invalid metafile url.');
     }
 

@@ -1,3 +1,1 @@
-export type JsonResponse = {
-  [key: string]: Record<string, object>;
-};
+export type JsonResponse = Record<string, Record<string, object>>;

@@ -8,6 +8,7 @@ export default localazy({
         'tests/fixtures/file-types-metafile/file15-js/',
         'tests/fixtures/file-types-metafile/file14-ts/',
         'docs/code-examples/',
+        'docs/.vitepress/',
       ],
     },
     {

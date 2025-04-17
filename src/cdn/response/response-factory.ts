@@ -53,7 +53,7 @@ export class ResponseFactory {
           }
 
           // @ts-expect-error fix output type
-          // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+
           acc[metafileFile.id][metafileLocale.locale] = cur;
         }
       }

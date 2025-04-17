@@ -22,22 +22,22 @@ export const url = {
   metafile: `${baseUrl}/complete-metafile/_e0.v2.json`,
 
   file01: {
-    en: `${baseUrl}${file01Locales[0].uri}`,
-    msBn: `${baseUrl}${file01Locales[1].uri}`,
-    msArab: `${baseUrl}${file01Locales[2].uri}`,
-    msIdLatn: `${baseUrl}${file01Locales[3].uri}`,
+    en: `${baseUrl}${file01Locales?.[0]?.uri ?? ''}`,
+    msBn: `${baseUrl}${file01Locales?.[1]?.uri ?? ''}`,
+    msArab: `${baseUrl}${file01Locales?.[2]?.uri ?? ''}`,
+    msIdLatn: `${baseUrl}${file01Locales?.[3]?.uri ?? ''}`,
   },
   file02: {
-    en: `${baseUrl}${file02Locales[0].uri}`,
-    msBn: `${baseUrl}${file02Locales[1].uri}`,
-    msArab: `${baseUrl}${file02Locales[2].uri}`,
-    msIdLatn: `${baseUrl}${file02Locales[3].uri}`,
+    en: `${baseUrl}${file02Locales?.[0]?.uri ?? ''}`,
+    msBn: `${baseUrl}${file02Locales?.[1]?.uri ?? ''}`,
+    msArab: `${baseUrl}${file02Locales?.[2]?.uri ?? ''}`,
+    msIdLatn: `${baseUrl}${file02Locales?.[3]?.uri ?? ''}`,
   },
   file03: {
-    en: `${baseUrl}${file03Locales[0].uri}`,
-    msBn: `${baseUrl}${file03Locales[1].uri}`,
-    msArab: `${baseUrl}${file03Locales[2].uri}`,
-    msIdLatn: `${baseUrl}${file03Locales[3].uri}`,
+    en: `${baseUrl}${file03Locales?.[0]?.uri ?? ''}`,
+    msBn: `${baseUrl}${file03Locales?.[1]?.uri ?? ''}`,
+    msArab: `${baseUrl}${file03Locales?.[2]?.uri ?? ''}`,
+    msIdLatn: `${baseUrl}${file03Locales?.[3]?.uri ?? ''}`,
   },
 };
 

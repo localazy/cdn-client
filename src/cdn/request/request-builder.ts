@@ -17,7 +17,7 @@ export class RequestBuilder implements IRequestBuilder {
     this.request = new Request(this.context);
   }
 
-  public addFiles(files?: (CdnFile | string)[] | CdnFile | string): RequestBuilder {
+  public addFiles(files?: (CdnFile | string)[] | CdnFile | string): this {
     if (!(isPlainObject(files) || isString(files) || isUndefined(files) || isArray(files))) {
       throw new Error('Invalid param: "request.files" must be object, array, string or undefined.');
     }
@@ -89,7 +89,7 @@ export class RequestBuilder implements IRequestBuilder {
     return this;
   }
 
-  public addLocales(locales?: string[] | string, excludeBaseLocale?: boolean): RequestBuilder {
+  public addLocales(locales?: string[] | string, excludeBaseLocale?: boolean): this {
     if (!(isString(locales) || isUndefined(locales) || isArray(locales))) {
       throw new Error('Invalid param: "request.locales" must be array, string or undefined.');
     }

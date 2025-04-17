@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 import terser from '@rollup/plugin-terser'; // Minify output
 import { resolve } from 'node:path';
 import Replace from 'unplugin-replace/vite'; // Replace variables in files
@@ -7,7 +6,7 @@ import dts from 'vite-plugin-dts'; // Generate index.d.ts file
 import pkg from './package.json';
 
 const banner: string = `/* ${pkg.name}@${pkg.version}
- * (c) ${new Date().getFullYear()} ${pkg.author}
+ * (c) ${new Date().getFullYear().toString()} ${pkg.author}
  * @license MIT */\n`;
 
 export default defineConfig({
@@ -64,7 +63,6 @@ export default defineConfig({
   plugins: [
     dts({ rollupTypes: true }),
 
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-call
     Replace({
       values: {
         __CLIENT_VERSION__: pkg.version,
