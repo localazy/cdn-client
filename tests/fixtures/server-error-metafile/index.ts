@@ -7,6 +7,7 @@ export const url = {
 };
 
 export const mockResponse = (status: number = 500): void => {
-  fetchMock.reset();
+  fetchMock.hardReset();
+  fetchMock.mockGlobal();
   fetchMock.mock(url.metafile, { status, body: '', headers: { 'content-type': 'application/json' } });
 };

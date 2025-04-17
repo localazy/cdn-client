@@ -12,6 +12,7 @@ export const serverResponses = {
 };
 
 export const mockResponses = (): void => {
-  fetchMock.reset();
+  fetchMock.hardReset();
+  fetchMock.mockGlobal();
   fetchMock.get(url.metafile, serverResponses.metafile);
 };
