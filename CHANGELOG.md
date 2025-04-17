@@ -1,3 +1,21 @@
+## 1.5.3 (2025-04-17)
+### 🔀 Pull Requests
+
+- [Update deps #14](https://github.com/localazy/cdn-client/pull/14)
+
+### 🧪 Tests
+
+- Fix tests ([6fbeaa0](https://github.com/localazy/cdn-client/commit/6fbeaa0)) ([#14](https://github.com/localazy/cdn-client/pull/14))
+
+### 🧰 Other Commits
+
+- Update CI ([6c34517](https://github.com/localazy/cdn-client/commit/6c34517))
+- Fix audit ([6fbeaa0](https://github.com/localazy/cdn-client/commit/6fbeaa0)) ([#14](https://github.com/localazy/cdn-client/pull/14))
+- Fix lint ([6fbeaa0](https://github.com/localazy/cdn-client/commit/6fbeaa0)) ([#14](https://github.com/localazy/cdn-client/pull/14))
+- Fix prettier ([6fbeaa0](https://github.com/localazy/cdn-client/commit/6fbeaa0)) ([#14](https://github.com/localazy/cdn-client/pull/14))
+- Fix typecheck ([6fbeaa0](https://github.com/localazy/cdn-client/commit/6fbeaa0)) ([#14](https://github.com/localazy/cdn-client/pull/14))
+- Update deps ([6fbeaa0](https://github.com/localazy/cdn-client/commit/6fbeaa0)) ([#14](https://github.com/localazy/cdn-client/pull/14))
+
 ## 1.5.2 (2024-05-01)
 ### 🔀 Pull Requests
 
