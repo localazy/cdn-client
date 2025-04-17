@@ -1,6 +1,6 @@
-import { describe, test, expect } from 'vitest';
-import { completeMetafile, emptyMetafile, filesWithoutLocalesMetafile } from '@tests/fixtures';
 import { CdnClient, CdnFile } from '@/main';
+import { completeMetafile, emptyMetafile, filesWithoutLocalesMetafile } from '@tests/fixtures';
+import { describe, expect, test } from 'vitest';
 
 describe('Test error responses', (): void => {
   test('Invalid metafile url', async (): Promise<void> => {

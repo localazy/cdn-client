@@ -1,11 +1,11 @@
-import { uniq } from '@/cdn/utils';
-import { ICacheAdapter } from '@/interfaces/i-cache-adapter';
-import { CacheKeyMetafileOptions } from '@/types/cache-key-metafile-options';
-import { CacheGetLocalesRequest } from '@/types/cache-get-locales-request';
-import { CacheHasLocalesRequest } from '@/types/cache-has-locales-request';
-import { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request';
 import { MemoryCacheAdapter } from '@/cdn/cache/memory-cache-adapter';
 import { Context } from '@/cdn/context/context';
+import { uniq } from '@/cdn/utils';
+import { ICacheAdapter } from '@/interfaces/i-cache-adapter';
+import { CacheGetLocalesRequest } from '@/types/cache-get-locales-request';
+import { CacheHasLocalesRequest } from '@/types/cache-has-locales-request';
+import { CacheKeyMetafileOptions } from '@/types/cache-key-metafile-options';
+import { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request';
 
 export class LocalesCache {
   protected context: Context;

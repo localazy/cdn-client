@@ -1,6 +1,6 @@
-import { describe, test, expect, beforeEach } from 'vitest';
+import { CdnClient, CdnFile, CdnResponse } from '@/main';
 import { completeMetafile } from '@tests/fixtures';
-import { CdnResponse, CdnClient, CdnFile } from '@/main';
+import { beforeEach, describe, expect, test } from 'vitest';
 
 describe('cdn.fetch()', (): void => {
   let cdn: CdnClient;

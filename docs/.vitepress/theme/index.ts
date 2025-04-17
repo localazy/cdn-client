@@ -1,10 +1,10 @@
-import { h } from 'vue';
 import { EnhanceAppContext } from 'vitepress';
 import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client';
 import DefaultTheme from 'vitepress/theme';
+import { h } from 'vue';
 import FooterLinks from './components/FooterLinks.vue';
-import LocSandboxLayout from './components/LocSandboxLayout.vue';
 import LocSandbox from './components/LocSandbox.vue';
+import LocSandboxLayout from './components/LocSandboxLayout.vue';
 import LocZoomImg from './components/LocZoomImg.vue';
 import './index.css';
 

@@ -43,8 +43,9 @@ export class Request {
 
   protected getPromises(): [Promise<string | object>, ApiLocaleRequest][] {
     return this.files.reduce((acc: [Promise<string | object>, ApiLocaleRequest][], cur: MetafileFile) => {
-      if (this.localesMap.data[cur.id]) {
+      if (typeof this.localesMap.data?.[cur.id] !== 'undefined') {
         acc.push(
+          // @ts-expect-error TODO fix type
           ...this.localesMap.data[cur.id].map(
             (metafileLocale: MetafileLocale): [Promise<string | object>, ApiLocaleRequest] => {
               const request: ApiLocaleRequest = {

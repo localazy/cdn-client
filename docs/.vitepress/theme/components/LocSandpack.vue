@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import {
-  SandpackProvider,
-  SandpackPreview,
   SandpackCodeEditor,
   SandpackLayout,
+  SandpackPreview,
+  SandpackProvider,
   type SandpackFiles,
 } from 'sandpack-vue3';
 import { getCustomSetupFromProps, getSandpackFiles, getSandpackOptions, sandboxProps } from 'vitepress-plugin-sandpack';

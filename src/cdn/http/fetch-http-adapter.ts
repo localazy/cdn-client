@@ -13,7 +13,7 @@ export class FetchHttpAdapter implements IHttpAdapter {
     const isJson: boolean = contentType === 'application/json5' || contentType === 'application/json';
 
     if (response.status >= 400) {
-      throw new Error(`Request failed with status code ${response.status}`);
+      throw new Error(`Request failed with status code ${response.status.toString()}`);
     }
 
     let result: string | object;

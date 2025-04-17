@@ -1,6 +1,6 @@
-import { describe, test, expectTypeOf, beforeEach } from 'vitest';
-import { completeMetafile } from '@tests/fixtures';
 import { CdnClient, CdnFile } from '@/main';
+import { completeMetafile } from '@tests/fixtures';
+import { beforeEach, describe, expect, test } from 'vitest';
 
 let cdn: CdnClient;
 
@@ -16,13 +16,15 @@ describe('cdn.metafile.files', (): void => {
   test('List all metafile files', (): void => {
     const result: CdnFile[] = cdn.metafile.files;
 
-    expectTypeOf(result).toMatchTypeOf<CdnFile[]>();
+    expect(result.length).toBeGreaterThan(0);
+    expect(result[0]).toBeInstanceOf(Object);
   });
 
   test('List first metafile file', (): void => {
-    const result: CdnFile = cdn.metafile.files[0];
+    const result: CdnFile | undefined = cdn.metafile.files[0];
 
-    expectTypeOf(result).toMatchTypeOf<CdnFile>();
+    expect(result).toBeDefined();
+    expect(result).toHaveProperty('id');
   });
 
   test('Find metafile file', (): void => {
@@ -30,7 +32,8 @@ describe('cdn.metafile.files', (): void => {
       (metafileFile: CdnFile): boolean => metafileFile.id === 'file01',
     );
 
-    expectTypeOf(result).toMatchTypeOf<CdnFile | undefined>();
+    expect(result).toBeDefined();
+    expect(result).toHaveProperty('id');
   });
 
   test('Filter metafile files', (): void => {
@@ -38,6 +41,7 @@ describe('cdn.metafile.files', (): void => {
       ['file01', 'file03'].includes(metafileFile.id),
     );
 
-    expectTypeOf(result).toMatchTypeOf<CdnFile[]>();
+    expect(result.length).toBeGreaterThan(0);
+    expect(result[0]).toHaveProperty('id');
   });
 });

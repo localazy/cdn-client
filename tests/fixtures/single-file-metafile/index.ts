@@ -32,7 +32,8 @@ export const cdnResponses = {
 };
 
 export const mockResponses = (): void => {
-  fetchMock.reset();
+  fetchMock.hardReset();
+  fetchMock.mockGlobal();
   fetchMock.get(url.metafile, serverResponses.metafile);
   fetchMock.get(url.file01.en, serverResponses.file01.en);
   fetchMock.get(url.file01.ms, serverResponses.file01.ms);
