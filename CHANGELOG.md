@@ -1,3 +1,12 @@
+## 1.5.4 (2025-04-18)
+### 🔀 Pull Requests
+
+- [Fix docs deploy #18](https://github.com/localazy/cdn-client/pull/18)
+
+### 🧰 Other Commits
+
+- Fix docs deploy ([90e8525](https://github.com/localazy/cdn-client/commit/90e8525)) ([#18](https://github.com/localazy/cdn-client/pull/18))
+
 ## 1.5.3 (2025-04-18)
 ### 🔀 Pull Requests
 
