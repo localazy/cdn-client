@@ -31,6 +31,7 @@ jobs:
           app-id: ${{ secrets.AUTH_APP_ID }}
           app-key: ${{ secrets.AUTH_APP_KEY }}
           badges: true
+          badges-size: dist/browser/localazy-cdn-client.umd.min.js
 
   publish:
     name: Publish Release
