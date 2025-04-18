@@ -66,6 +66,7 @@ jobs:
 
       - name: Build Docs
         run: |
+          npm ci
           cd docs
           npm ci
           npm run build
