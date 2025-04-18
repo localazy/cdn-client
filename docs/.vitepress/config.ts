@@ -10,7 +10,7 @@ export default defineConfig({
   description: 'Localazy CDN Client Documentation',
 
   lang: 'en-US',
-  base: '/',
+  base: '/cdn-client/',
   head: head(),
   lastUpdated: true,
   markdown: markdown(),
