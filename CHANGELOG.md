@@ -1,3 +1,17 @@
+## 1.5.5 (2025-05-22)
+### 🔀 Pull Requests
+
+- [Update deps #21](https://github.com/localazy/cdn-client/pull/21)
+- [Update docs base url #20](https://github.com/localazy/cdn-client/pull/20)
+
+### 🧰 Other Commits
+
+- Update deps ([7053c40](https://github.com/localazy/cdn-client/commit/7053c40)) ([#21](https://github.com/localazy/cdn-client/pull/21))
+- Use pre-push husky hook instead of pre-commit ([7053c40](https://github.com/localazy/cdn-client/commit/7053c40)) ([#21](https://github.com/localazy/cdn-client/pull/21))
+- Fix npm version badge ([9f304eb](https://github.com/localazy/cdn-client/commit/9f304eb)) ([#20](https://github.com/localazy/cdn-client/pull/20))
+- Update base url config for gh-pages ([9f304eb](https://github.com/localazy/cdn-client/commit/9f304eb)) ([#20](https://github.com/localazy/cdn-client/pull/20))
+- Update docs deps ([9f304eb](https://github.com/localazy/cdn-client/commit/9f304eb)) ([#20](https://github.com/localazy/cdn-client/pull/20))
+
 ## 1.5.4 (2025-04-18)
 ### 🔀 Pull Requests
 
