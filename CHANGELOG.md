@@ -1,3 +1,9 @@
+## 1.5.6 (2025-08-08)
+
+### 🧰 Other Commits
+
+- **dependencies:** Update dependencies ([111da39](https://github.com/localazy/cdn-client/commit/111da39))
+
 ## 1.5.5 (2025-05-22)
 ### 🔀 Pull Requests
 
