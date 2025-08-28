@@ -1,6 +1,6 @@
-import type { CdnFile } from '@/main';
-import { CdnClient } from '@/main';
-import { completeMetafile } from '@tests/fixtures';
+import type { CdnFile } from '@/main.js';
+import { CdnClient } from '@/main.js';
+import { completeMetafile } from '@tests/fixtures/index.js';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 let cdn: CdnClient;

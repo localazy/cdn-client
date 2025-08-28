@@ -1,13 +1,13 @@
-import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import type { MetafileParams } from '@/cdn/metafile/metafile-params';
-import { uniqBy } from '@/cdn/utils';
-import type { IMetafile } from '@/interfaces/i-metafile';
-import type { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale';
-import type { IMetafileFiles } from '@/interfaces/i-metafile-files';
-import type { CdnLocale } from '@/types/cdn-locale';
-import type { FilesMap } from '@/types/files-map';
-import type { MetafileOptions } from '@/types/metafile-options';
+import { MetafileFile } from '@/cdn/metafile/metafile-file.js';
+import { MetafileLocale } from '@/cdn/metafile/metafile-locale.js';
+import type { MetafileParams } from '@/cdn/metafile/metafile-params.js';
+import { uniqBy } from '@/cdn/utils.js';
+import type { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale.js';
+import type { IMetafileFiles } from '@/interfaces/i-metafile-files.js';
+import type { IMetafile } from '@/interfaces/i-metafile.js';
+import type { CdnLocale } from '@/types/cdn-locale.js';
+import type { FilesMap } from '@/types/files-map.js';
+import type { MetafileOptions } from '@/types/metafile-options.js';
 
 export class MetafileData implements Omit<IMetafile, 'files' | 'baseLocale'> {
   public projectUrl: string;

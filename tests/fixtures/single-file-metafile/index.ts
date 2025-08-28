@@ -1,8 +1,8 @@
-import fetchMock from '@tests/mocks/fetch-mock';
+import fetchMock from '@tests/mocks/fetch-mock.js';
 import singleFileMetafile from '@tests/fixtures/single-file-metafile/metafile.json';
 import file01En from '@tests/fixtures/single-file-metafile/file01/en/file.json';
 import file01Ms from '@tests/fixtures/single-file-metafile/file01/ms/file.json';
-import { assertNotNull } from '@tests/support/assert-not-null';
+import { assertNotNull } from '@tests/support/assert-not-null.js';
 
 const baseUrl: string = 'https://delivery.localazy.com';
 const file01Locales = singleFileMetafile.files.file01.locales;

@@ -54,7 +54,7 @@
   "scripts": {
     "build": "npm run main-ts:build && vite build",
     "bundle:visualize": "vite-bundle-visualizer",
-    "check": "npm run prettier && npm run lint && npm run typecheck && npm run build && npm run test:coverage",
+    "check": "npm run prettier && npm run lint && npm run typecheck && npm run build && npm run test",
     "check:fix": "npm run prettier:fix && npm run lint:fix",
     "dev": "vite & npm run main-ts:watch",
     "lint": "eslint .",
@@ -64,10 +64,10 @@
     "prepare": "husky",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "test": "vitest",
+    "test": "vitest run",
     "test:coverage": "vitest run --coverage",
-    "test:debug": "vitest --inspect-brk --no-file-parallelism",
-    "test:ui": "vitest --ui",
+    "test:matrix": "./scripts/node-test-matrix.sh",
+    "test:watch": "vitest",
     "typecheck": "npx tsc --noemit"
   },
   "prettier": "@localazy/prettier-config",

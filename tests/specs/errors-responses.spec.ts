@@ -1,6 +1,10 @@
-import type { CdnFile } from '@/main';
-import { CdnClient } from '@/main';
-import { completeMetafile, emptyMetafile, filesWithoutLocalesMetafile } from '@tests/fixtures';
+import type { CdnFile } from '@/main.js';
+import { CdnClient } from '@/main.js';
+import {
+  completeMetafile,
+  emptyMetafile,
+  filesWithoutLocalesMetafile,
+} from '@tests/fixtures/index.js';
 import { describe, expect, test } from 'vitest';
 
 describe('Test error responses', (): void => {

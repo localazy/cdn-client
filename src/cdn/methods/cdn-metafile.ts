@@ -1,12 +1,12 @@
-import type { MetafileData } from '@/cdn/metafile/metafile-data';
-import type { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileParams } from '@/cdn/metafile/metafile-params';
-import { CdnBase } from '@/cdn/methods/cdn-base';
-import type { IMetafile } from '@/interfaces/i-metafile';
-import type { CdnClientOptions } from '@/types/cdn-client-options';
-import type { CdnFile } from '@/types/cdn-file';
-import type { CdnLocale } from '@/types/cdn-locale';
-import type { CdnLocalesOptions } from '@/types/cdn-locales-options';
+import type { MetafileData } from '@/cdn/metafile/metafile-data.js';
+import type { MetafileFile } from '@/cdn/metafile/metafile-file.js';
+import { MetafileParams } from '@/cdn/metafile/metafile-params.js';
+import { CdnBase } from '@/cdn/methods/cdn-base.js';
+import type { IMetafile } from '@/interfaces/i-metafile.js';
+import type { CdnClientOptions } from '@/types/cdn-client-options.js';
+import type { CdnFile } from '@/types/cdn-file.js';
+import type { CdnLocale } from '@/types/cdn-locale.js';
+import type { CdnLocalesOptions } from '@/types/cdn-locales-options.js';
 
 export class CdnMetafile extends CdnBase {
   get projectUrl(): string {

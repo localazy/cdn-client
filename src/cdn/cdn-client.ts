@@ -1,13 +1,13 @@
-import { Context } from '@/cdn/context/context';
-import { MetafileContext } from '@/cdn/context/metafile-context';
-import { FetchHttpAdapter } from '@/cdn/http/fetch-http-adapter';
-import { CdnCache } from '@/cdn/methods/cdn-cache';
-import { CdnMetafile } from '@/cdn/methods/cdn-metafile';
-import { RequestBuilder } from '@/cdn/request/request-builder';
-import { isString } from '@/cdn/utils';
-import type { CdnClientOptions } from '@/types/cdn-client-options';
-import type { CdnFetchOptions } from '@/types/cdn-fetch-options';
-import type { CdnResponse } from '@/types/cdn-response';
+import { Context } from '@/cdn/context/context.js';
+import { MetafileContext } from '@/cdn/context/metafile-context.js';
+import { FetchHttpAdapter } from '@/cdn/http/fetch-http-adapter.js';
+import { CdnCache } from '@/cdn/methods/cdn-cache.js';
+import { CdnMetafile } from '@/cdn/methods/cdn-metafile.js';
+import { RequestBuilder } from '@/cdn/request/request-builder.js';
+import { isString } from '@/cdn/utils.js';
+import type { CdnClientOptions } from '@/types/cdn-client-options.js';
+import type { CdnFetchOptions } from '@/types/cdn-fetch-options.js';
+import type { CdnResponse } from '@/types/cdn-response.js';
 
 export class CdnClient {
   public metafile: CdnMetafile;

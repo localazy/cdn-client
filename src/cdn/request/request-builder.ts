@@ -1,11 +1,11 @@
-import type { Context } from '@/cdn/context/context';
-import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import type { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import type { LocalesMap } from '@/cdn/request/locales-map';
-import { Request } from '@/cdn/request/request';
-import { isArray, isPlainObject, isString, isUndefined } from '@/cdn/utils';
-import type { IRequestBuilder } from '@/interfaces/i-request-builder';
-import type { CdnFile } from '@/types/cdn-file';
+import type { Context } from '@/cdn/context/context.js';
+import { MetafileFile } from '@/cdn/metafile/metafile-file.js';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale.js';
+import type { LocalesMap } from '@/cdn/request/locales-map.js';
+import { Request } from '@/cdn/request/request.js';
+import { isArray, isPlainObject, isString, isUndefined } from '@/cdn/utils.js';
+import type { IRequestBuilder } from '@/interfaces/i-request-builder.js';
+import type { CdnFile } from '@/types/cdn-file.js';
 
 export class RequestBuilder implements IRequestBuilder {
   protected context: Context;

@@ -1,4 +1,4 @@
-import fetchMock from '@tests/mocks/fetch-mock';
+import fetchMock from '@tests/mocks/fetch-mock.js';
 import filesWithoutLocalesMetafile
   from '@tests/fixtures/files-without-locales-metafile/metafile.json';
 

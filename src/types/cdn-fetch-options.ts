@@ -1,4 +1,4 @@
-import type { CdnFile } from '@/types/cdn-file';
+import type { CdnFile } from '@/types/cdn-file.js';
 
 // #region typedef
 export type CdnFetchOptions = {

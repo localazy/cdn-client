@@ -1,5 +1,5 @@
-import type { MetafileFile } from '@/cdn/metafile/metafile-file';
-import type { MetafileLocale } from '@/cdn/metafile/metafile-locale';
+import type { MetafileFile } from '@/cdn/metafile/metafile-file.js';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale.js';
 
 export interface ILocalesCacheItem {
   metafileFile: MetafileFile;

@@ -1,7 +1,7 @@
-import type { CdnFile, CdnResponse } from '@/main';
-import { CdnClient } from '@/main';
-import { completeMetafile } from '@tests/fixtures';
-import { assertNotNull } from '@tests/support/assert-not-null';
+import type { CdnFile, CdnResponse } from '@/main.js';
+import { CdnClient } from '@/main.js';
+import { completeMetafile } from '@tests/fixtures/index.js';
+import { assertNotNull } from '@tests/support/assert-not-null.js';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 describe('cdn.fetch()', (): void => {

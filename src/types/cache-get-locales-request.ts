@@ -1,3 +1,3 @@
-import type { ILocalesCacheItem } from '@/interfaces/i-locales-cache-item';
+import type { ILocalesCacheItem } from '@/interfaces/i-locales-cache-item.js';
 
 export type CacheGetLocalesRequest = ILocalesCacheItem;

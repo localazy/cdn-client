@@ -1,4 +1,4 @@
-import fetchMock from '@tests/mocks/fetch-mock';
+import fetchMock from '@tests/mocks/fetch-mock.js';
 import fileTypesMetafile from '@tests/fixtures/file-types-metafile/metafile.json';
 import { resolve } from 'node:path';
 import { readFileSync } from 'node:fs';

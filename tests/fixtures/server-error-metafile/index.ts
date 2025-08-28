@@ -1,4 +1,4 @@
-import fetchMock from '@tests/mocks/fetch-mock';
+import fetchMock from '@tests/mocks/fetch-mock.js';
 
 const baseUrl: string = 'https://delivery.localazy.com';
 

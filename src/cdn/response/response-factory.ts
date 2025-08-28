@@ -1,8 +1,8 @@
-import type { Context } from '@/cdn/context/context';
-import type { ApiLocaleRequest } from '@/types/api-locale-request';
-import type { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request';
-import type { CdnResponse } from '@/types/cdn-response';
-import type { ResponseFactoryOptions } from '@/types/response-factory-options';
+import type { Context } from '@/cdn/context/context.js';
+import type { ApiLocaleRequest } from '@/types/api-locale-request.js';
+import type { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request.js';
+import type { CdnResponse } from '@/types/cdn-response.js';
+import type { ResponseFactoryOptions } from '@/types/response-factory-options.js';
 
 export class ResponseFactory {
   protected context: Context;

@@ -1,8 +1,9 @@
-import terser from '@rollup/plugin-terser'; // Minify output
+import terser from '@rollup/plugin-terser';
 import { resolve } from 'node:path';
-import Replace from 'unplugin-replace/vite'; // Replace variables in files
+import Replace from 'unplugin-replace/vite';
 import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts'; // Generate index.d.ts file
+import dts from 'vite-plugin-dts';
+// eslint-disable-next-line no-relative-import-paths/no-relative-import-paths
 import pkg from './package.json';
 
 const banner: string = `/* ${pkg.name}@${pkg.version}

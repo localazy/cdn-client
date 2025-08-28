@@ -1,4 +1,4 @@
-import { CdnBase } from '@/cdn/methods/cdn-base';
+import { CdnBase } from '@/cdn/methods/cdn-base.js';
 
 export class CdnCache extends CdnBase {
   public flush = (): void => {

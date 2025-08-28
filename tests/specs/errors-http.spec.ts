@@ -1,5 +1,5 @@
-import { CdnClient } from '@/main';
-import { serverErrorMetafile } from '@tests/fixtures';
+import { CdnClient } from '@/main.js';
+import { serverErrorMetafile } from '@tests/fixtures/index.js';
 import { describe, expect, test } from 'vitest';
 
 describe('Test error responses', (): void => {

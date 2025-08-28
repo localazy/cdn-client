@@ -1,4 +1,4 @@
-import type { IMetafileFiles } from '@/interfaces/i-metafile-files';
+import type { IMetafileFiles } from '@/interfaces/i-metafile-files.js';
 
 export interface IMetafile {
   projectUrl: string;
