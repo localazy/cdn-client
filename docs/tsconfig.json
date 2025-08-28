@@ -1,5 +1,8 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@localazy/tsconfig/tsconfig.library.json",
-  "compilerOptions": {}
+  "extends": "@localazy/tsconfig/tsconfig.package.json",
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler"
+  }
 }
