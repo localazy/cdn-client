@@ -92,5 +92,8 @@
     "vite-bundle-visualizer": "^1.2.1",
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
