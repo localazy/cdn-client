@@ -1,4 +1,4 @@
-import { IMetafileParams } from '@/interfaces/i-metafile-params';
+import type { IMetafileParams } from '@/interfaces/i-metafile-params';
 
 export class MetafileParams implements IMetafileParams {
   protected options: IMetafileParams;

@@ -1,4 +1,4 @@
-import { IMetafileFiles } from '@/interfaces/i-metafile-files';
+import type { IMetafileFiles } from '@/interfaces/i-metafile-files';
 
 export interface IMetafile {
   projectUrl: string;

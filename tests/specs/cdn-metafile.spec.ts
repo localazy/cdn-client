@@ -1,4 +1,5 @@
-import { CdnClient, CdnLocale, CdnResponse } from '@/main';
+import type { CdnLocale, CdnResponse } from '@/main';
+import { CdnClient } from '@/main';
 import { completeMetafile, completeMetafileV2, singleFileMetafile } from '@tests/fixtures';
 import { beforeEach, describe, expect, test } from 'vitest';
 

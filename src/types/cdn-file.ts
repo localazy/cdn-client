@@ -1,4 +1,4 @@
-import { CdnFileLocale } from '@/types/cdn-file-locale';
+import type { CdnFileLocale } from '@/types/cdn-file-locale';
 
 // #region typedef
 export type CdnFile = {

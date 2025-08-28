@@ -5,9 +5,9 @@ import { CdnCache } from '@/cdn/methods/cdn-cache';
 import { CdnMetafile } from '@/cdn/methods/cdn-metafile';
 import { RequestBuilder } from '@/cdn/request/request-builder';
 import { isString } from '@/cdn/utils';
-import { CdnClientOptions } from '@/types/cdn-client-options';
-import { CdnFetchOptions } from '@/types/cdn-fetch-options';
-import { CdnResponse } from '@/types/cdn-response';
+import type { CdnClientOptions } from '@/types/cdn-client-options';
+import type { CdnFetchOptions } from '@/types/cdn-fetch-options';
+import type { CdnResponse } from '@/types/cdn-response';
 
 export class CdnClient {
   public metafile: CdnMetafile;

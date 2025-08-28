@@ -1,4 +1,4 @@
-import { Context } from '@/cdn/context/context';
+import type { Context } from '@/cdn/context/context';
 
 export abstract class CdnBase {
   protected context: Context;

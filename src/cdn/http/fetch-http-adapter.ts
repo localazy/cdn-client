@@ -1,4 +1,4 @@
-import { IHttpAdapter } from '@/interfaces/i-http-adapter';
+import type { IHttpAdapter } from '@/interfaces/i-http-adapter';
 
 export class FetchHttpAdapter implements IHttpAdapter {
   protected baseUrl: string;

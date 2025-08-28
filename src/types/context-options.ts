@@ -1,6 +1,6 @@
-import { CdnClient } from '@/cdn/cdn-client';
-import { MetafileContext } from '@/cdn/context/metafile-context';
-import { IHttpAdapter } from '@/interfaces/i-http-adapter';
+import type { CdnClient } from '@/cdn/cdn-client';
+import type { MetafileContext } from '@/cdn/context/metafile-context';
+import type { IHttpAdapter } from '@/interfaces/i-http-adapter';
 
 export type ContextOptions = {
   metafileContext: MetafileContext;

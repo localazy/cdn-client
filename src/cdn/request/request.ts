@@ -1,9 +1,9 @@
-import { Context } from '@/cdn/context/context';
-import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
+import type { Context } from '@/cdn/context/context';
+import type { MetafileFile } from '@/cdn/metafile/metafile-file';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale';
 import { LocalesMap } from '@/cdn/request/locales-map';
-import { ApiLocaleRequest } from '@/types/api-locale-request';
-import { CdnResponse } from '@/types/cdn-response';
+import type { ApiLocaleRequest } from '@/types/api-locale-request';
+import type { CdnResponse } from '@/types/cdn-response';
 
 export class Request {
   public files: MetafileFile[];

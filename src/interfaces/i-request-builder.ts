@@ -1,5 +1,5 @@
-import { Request } from '@/cdn/request/request';
-import { CdnFile } from '@/types/cdn-file';
+import type { Request } from '@/cdn/request/request';
+import type { CdnFile } from '@/types/cdn-file';
 
 export interface IRequestBuilder {
   addFiles(request?: (CdnFile | string)[] | CdnFile | string): IRequestBuilder;

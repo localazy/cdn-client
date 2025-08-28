@@ -1,5 +1,7 @@
-import { CdnClient, CdnFile, CdnResponse } from '@/main';
+import type { CdnFile, CdnResponse } from '@/main';
+import { CdnClient } from '@/main';
 import { completeMetafile } from '@tests/fixtures';
+import { assertNotNull } from '@tests/support/assert-not-null';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 describe('cdn.fetch()', (): void => {
@@ -34,7 +36,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch selected files with all locales', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: [cdn.metafile.files[0]],
+      files: [assertNotNull(cdn.metafile.files[0])],
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocales);
 
@@ -44,7 +46,7 @@ describe('cdn.fetch()', (): void => {
     expect(result2).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocales);
 
     const result3: CdnResponse = await cdn.fetch({
-      files: [cdn.metafile.files[0]],
+      files: [assertNotNull(cdn.metafile.files[0])],
     });
     expect(result3).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocales);
 
@@ -56,7 +58,7 @@ describe('cdn.fetch()', (): void => {
 
   test('Fetch selected files with all locales, exclude base locale', async (): Promise<void> => {
     const result: CdnResponse = await cdn.fetch({
-      files: [cdn.metafile.files[0]],
+      files: [assertNotNull(cdn.metafile.files[0])],
       excludeBaseLocale: true,
     });
     expect(result).toStrictEqual(completeMetafile.cdnResponses.selectedFilesAllLocalesExcludeBase);

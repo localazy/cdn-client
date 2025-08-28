@@ -1,11 +1,11 @@
-import { Context } from '@/cdn/context/context';
+import type { Context } from '@/cdn/context/context';
 import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import { LocalesMap } from '@/cdn/request/locales-map';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale';
+import type { LocalesMap } from '@/cdn/request/locales-map';
 import { Request } from '@/cdn/request/request';
 import { isArray, isPlainObject, isString, isUndefined } from '@/cdn/utils';
-import { IRequestBuilder } from '@/interfaces/i-request-builder';
-import { CdnFile } from '@/types/cdn-file';
+import type { IRequestBuilder } from '@/interfaces/i-request-builder';
+import type { CdnFile } from '@/types/cdn-file';
 
 export class RequestBuilder implements IRequestBuilder {
   protected context: Context;

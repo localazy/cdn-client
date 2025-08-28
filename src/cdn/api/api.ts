@@ -1,6 +1,6 @@
-import { Context } from '@/cdn/context/context';
-import { IMetafile } from '@/interfaces/i-metafile';
-import { ApiLocaleRequest } from '@/types/api-locale-request';
+import type { Context } from '@/cdn/context/context';
+import type { IMetafile } from '@/interfaces/i-metafile';
+import type { ApiLocaleRequest } from '@/types/api-locale-request';
 
 export class Api {
   protected context: Context;

@@ -1,13 +1,13 @@
 import { MetafileFile } from '@/cdn/metafile/metafile-file';
 import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import { MetafileParams } from '@/cdn/metafile/metafile-params';
+import type { MetafileParams } from '@/cdn/metafile/metafile-params';
 import { uniqBy } from '@/cdn/utils';
-import { IMetafile } from '@/interfaces/i-metafile';
-import { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale';
-import { IMetafileFiles } from '@/interfaces/i-metafile-files';
-import { CdnLocale } from '@/types/cdn-locale';
-import { FilesMap } from '@/types/files-map';
-import { MetafileOptions } from '@/types/metafile-options';
+import type { IMetafile } from '@/interfaces/i-metafile';
+import type { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale';
+import type { IMetafileFiles } from '@/interfaces/i-metafile-files';
+import type { CdnLocale } from '@/types/cdn-locale';
+import type { FilesMap } from '@/types/files-map';
+import type { MetafileOptions } from '@/types/metafile-options';
 
 export class MetafileData implements Omit<IMetafile, 'files' | 'baseLocale'> {
   public projectUrl: string;
