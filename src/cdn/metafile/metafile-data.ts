@@ -43,7 +43,11 @@ export class MetafileData implements Omit<IMetafile, 'files' | 'baseLocale'> {
     );
   }
 
-  protected static filesFactory(files: IMetafileFiles, baseLocale: string, params: MetafileParams): MetafileFile[] {
+  protected static filesFactory(
+    files: IMetafileFiles,
+    baseLocale: string,
+    params: MetafileParams,
+  ): MetafileFile[] {
     return Object.keys(files).reduce((acc: MetafileFile[], cur: string) => {
       if (typeof files[cur] !== 'undefined') {
         const locales: MetafileLocale[] = files[cur].locales.map(

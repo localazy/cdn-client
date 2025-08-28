@@ -12,7 +12,12 @@ export class ResponseFactory {
   }
 
   public createCdnResponse(options: ResponseFactoryOptions): CdnResponse {
-    const { requests, responses, hasSingleFileResponse, hasSingleLocaleResponse }: ResponseFactoryOptions = options;
+    const {
+      requests,
+      responses,
+      hasSingleFileResponse,
+      hasSingleLocaleResponse,
+    }: ResponseFactoryOptions = options;
 
     if (responses.length === 0 || typeof responses[0] === 'undefined') {
       return {};

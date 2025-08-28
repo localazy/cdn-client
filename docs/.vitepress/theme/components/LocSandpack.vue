@@ -6,7 +6,12 @@ import {
   SandpackProvider,
   type SandpackFiles,
 } from 'sandpack-vue3';
-import { getCustomSetupFromProps, getSandpackFiles, getSandpackOptions, sandboxProps } from 'vitepress-plugin-sandpack';
+import {
+  getCustomSetupFromProps,
+  getSandpackFiles,
+  getSandpackOptions,
+  sandboxProps,
+} from 'vitepress-plugin-sandpack';
 import { computed, nextTick, onBeforeMount, onMounted, ref, useSlots, watch } from 'vue';
 import { githubDark, githubLight } from './github-themes';
 
@@ -65,8 +70,12 @@ const previewHeight = computed(() =>
 const previewHeightStyle = computed(() =>
   previewHeight.value ? `${previewHeight.value}px` : 'var(--sp-layout-height)',
 );
-const coderHeight = computed(() => (isNaN(Number(getOpt('coderHeight'))) ? undefined : Number(getOpt('coderHeight'))));
-const coderHeightStyle = computed(() => (coderHeight.value ? `${coderHeight.value}px` : 'var(--sp-layout-height)'));
+const coderHeight = computed(() =>
+  isNaN(Number(getOpt('coderHeight'))) ? undefined : Number(getOpt('coderHeight')),
+);
+const coderHeightStyle = computed(() =>
+  coderHeight.value ? `${coderHeight.value}px` : 'var(--sp-layout-height)',
+);
 
 /* options */
 
@@ -88,11 +97,17 @@ const customSetup = computed(() => {
     :custom-setup="customSetup"
   >
     <SandpackLayout>
-      <SandpackCodeEditor showLineNumbers initMode="user-visible" />
+      <SandpackCodeEditor
+        showLineNumbers
+        initMode="user-visible"
+      />
     </SandpackLayout>
     <br />
     <SandpackLayout>
-      <SandpackPreview showNavigator :showRestartButton="false" />
+      <SandpackPreview
+        showNavigator
+        :showRestartButton="false"
+      />
     </SandpackLayout>
   </SandpackProvider>
 </template>

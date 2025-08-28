@@ -114,7 +114,9 @@ export class RequestBuilder implements IRequestBuilder {
     } else if (isUndefined(locales)) {
       this.request.files.reduce((acc: LocalesMap, cur: MetafileFile) => {
         acc.data[cur.id] = excludeBaseLocale
-          ? cur.locales.filter((metafileLocale: MetafileLocale): boolean => !metafileLocale.isBaseLocale)
+          ? cur.locales.filter(
+              (metafileLocale: MetafileLocale): boolean => !metafileLocale.isBaseLocale,
+            )
           : cur.locales;
 
         return acc;
