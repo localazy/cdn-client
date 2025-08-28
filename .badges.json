@@ -4,7 +4,7 @@
     {
       "fileName": "version.svg",
       "label": "npm",
-      "status": "1.5.6",
+      "status": "1.5.7",
       "icon": "npm"
     },
     {
@@ -16,7 +16,7 @@
     {
       "fileName": "size.svg",
       "label": "minzipped size",
-      "status": "3546",
+      "status": "3364",
       "icon": "speed",
       "color": "43b816"
     },

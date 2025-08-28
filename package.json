@@ -1,6 +1,6 @@
 {
   "name": "@localazy/cdn-client",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "Node.js module that allows you to easily interact with the Localazy CDN.",
   "keywords": [
     "Localazy",
@@ -93,6 +93,7 @@
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.2.4"
   },
+  "packageManager": "npm@10.9.3",
   "engines": {
     "node": ">=20"
   }

@@ -1,3 +1,17 @@
+## 1.5.7 (2025-08-28)
+### 🔀 Pull Requests
+
+- [Enforce code quality standards and update dependencies #25](https://github.com/localazy/cdn-client/pull/25)
+
+### 🧰 Other Commits
+
+- **dependencies:** Update development dependencies and enforce `.js` extensions in imports ([e661edd](https://github.com/localazy/cdn-client/commit/e661edd)) ([#25](https://github.com/localazy/cdn-client/pull/25))
+- **dependencies:** Upgrade development dependencies ([e661edd](https://github.com/localazy/cdn-client/commit/e661edd)) ([#25](https://github.com/localazy/cdn-client/pull/25))
+- **prettier:** Fix code formatting ([e661edd](https://github.com/localazy/cdn-client/commit/e661edd)) ([#25](https://github.com/localazy/cdn-client/pull/25))
+- Add Node.js test matrix script and update workflows ([e661edd](https://github.com/localazy/cdn-client/commit/e661edd)) ([#25](https://github.com/localazy/cdn-client/pull/25))
+- Enforce `.js` extensions in imports and update ESLint config for path alias and extension rules ([e661edd](https://github.com/localazy/cdn-client/commit/e661edd)) ([#25](https://github.com/localazy/cdn-client/pull/25))
+- Replace imports with type-only imports, add `assertNotNull` utility, and adjust related files ([e661edd](https://github.com/localazy/cdn-client/commit/e661edd)) ([#25](https://github.com/localazy/cdn-client/pull/25))
+
 ## 1.5.6 (2025-08-08)
 
 ### 🧰 Other Commits
