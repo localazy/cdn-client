@@ -1,8 +1,8 @@
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import { IMetafileFile } from '@/interfaces/i-metafile-file';
-import { CdnFile } from '@/types/cdn-file';
-import { CdnFileLocale } from '@/types/cdn-file-locale';
-import { MetafileFileOptions } from '@/types/metafile-file-options';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale.js';
+import type { IMetafileFile } from '@/interfaces/i-metafile-file.js';
+import type { CdnFileLocale } from '@/types/cdn-file-locale.js';
+import type { CdnFile } from '@/types/cdn-file.js';
+import type { MetafileFileOptions } from '@/types/metafile-file-options.js';
 
 export class MetafileFile implements Omit<IMetafileFile, 'locales'> {
   public id: string;

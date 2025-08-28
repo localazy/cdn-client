@@ -1,9 +1,9 @@
-import { Context } from '@/cdn/context/context';
-import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import { LocalesMap } from '@/cdn/request/locales-map';
-import { ApiLocaleRequest } from '@/types/api-locale-request';
-import { CdnResponse } from '@/types/cdn-response';
+import type { Context } from '@/cdn/context/context.js';
+import type { MetafileFile } from '@/cdn/metafile/metafile-file.js';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale.js';
+import { LocalesMap } from '@/cdn/request/locales-map.js';
+import type { ApiLocaleRequest } from '@/types/api-locale-request.js';
+import type { CdnResponse } from '@/types/cdn-response.js';
 
 export class Request {
   public files: MetafileFile[];
@@ -29,7 +29,9 @@ export class Request {
     const promises: Promise<string | object>[] = payload.map(
       (item: [Promise<string | object>, ApiLocaleRequest]) => item[0],
     );
-    const requests: ApiLocaleRequest[] = payload.map((item: [Promise<string | object>, ApiLocaleRequest]) => item[1]);
+    const requests: ApiLocaleRequest[] = payload.map(
+      (item: [Promise<string | object>, ApiLocaleRequest]) => item[1],
+    );
     const responses: (string | object)[] = await Promise.all(promises);
 
     return this.context.responseFactory.createCdnResponse({
@@ -42,23 +44,26 @@ export class Request {
   }
 
   protected getPromises(): [Promise<string | object>, ApiLocaleRequest][] {
-    return this.files.reduce((acc: [Promise<string | object>, ApiLocaleRequest][], cur: MetafileFile) => {
-      if (typeof this.localesMap.data?.[cur.id] !== 'undefined') {
-        acc.push(
-          // @ts-expect-error TODO fix type
-          ...this.localesMap.data[cur.id].map(
-            (metafileLocale: MetafileLocale): [Promise<string | object>, ApiLocaleRequest] => {
-              const request: ApiLocaleRequest = {
-                metafileFile: cur,
-                metafileLocale,
-              };
+    return this.files.reduce(
+      (acc: [Promise<string | object>, ApiLocaleRequest][], cur: MetafileFile) => {
+        if (typeof this.localesMap.data?.[cur.id] !== 'undefined') {
+          acc.push(
+            // @ts-expect-error TODO fix type
+            ...this.localesMap.data[cur.id].map(
+              (metafileLocale: MetafileLocale): [Promise<string | object>, ApiLocaleRequest] => {
+                const request: ApiLocaleRequest = {
+                  metafileFile: cur,
+                  metafileLocale,
+                };
 
-              return [this.context.api.fetchLocale(request), request];
-            },
-          ),
-        );
-      }
-      return acc;
-    }, []);
+                return [this.context.api.fetchLocale(request), request];
+              },
+            ),
+          );
+        }
+        return acc;
+      },
+      [],
+    );
   }
 }

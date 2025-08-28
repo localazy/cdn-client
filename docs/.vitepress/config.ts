@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress';
-import { head } from './config/en/head';
-import { nav } from './config/en/nav';
-import { sidebar } from './config/en/sidebar';
-import { markdown } from './config/markdown';
+import { head } from './config/en/head.js';
+import { nav } from './config/en/nav.js';
+import { sidebar } from './config/en/sidebar.js';
+import { markdown } from './config/markdown.js';
 
 export default defineConfig({
   title: 'CDN Client',

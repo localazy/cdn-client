@@ -1,4 +1,4 @@
-import { ICacheAdapter } from '@/interfaces/i-cache-adapter';
+import type { ICacheAdapter } from '@/interfaces/i-cache-adapter.js';
 
 export class MemoryCacheAdapter<K, V> implements ICacheAdapter<K, V> {
   protected map: Map<K, V>;

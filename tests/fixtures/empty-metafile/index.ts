@@ -1,4 +1,4 @@
-import fetchMock from '@tests/mocks/fetch-mock';
+import fetchMock from '@tests/mocks/fetch-mock.js';
 import emptyFileMetafile from '@tests/fixtures/empty-metafile/metafile.json';
 
 const baseUrl: string = 'https://delivery.localazy.com';

@@ -1,11 +1,11 @@
-import { MemoryCacheAdapter } from '@/cdn/cache/memory-cache-adapter';
-import { Context } from '@/cdn/context/context';
-import { uniq } from '@/cdn/utils';
-import { ICacheAdapter } from '@/interfaces/i-cache-adapter';
-import { CacheGetLocalesRequest } from '@/types/cache-get-locales-request';
-import { CacheHasLocalesRequest } from '@/types/cache-has-locales-request';
-import { CacheKeyMetafileOptions } from '@/types/cache-key-metafile-options';
-import { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request';
+import { MemoryCacheAdapter } from '@/cdn/cache/memory-cache-adapter.js';
+import type { Context } from '@/cdn/context/context.js';
+import { uniq } from '@/cdn/utils.js';
+import type { ICacheAdapter } from '@/interfaces/i-cache-adapter.js';
+import type { CacheGetLocalesRequest } from '@/types/cache-get-locales-request.js';
+import type { CacheHasLocalesRequest } from '@/types/cache-has-locales-request.js';
+import type { CacheKeyMetafileOptions } from '@/types/cache-key-metafile-options.js';
+import type { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request.js';
 
 export class LocalesCache {
   protected context: Context;

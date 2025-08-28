@@ -1,5 +1,10 @@
-import { CdnClient, CdnFile } from '@/main';
-import { completeMetafile, emptyMetafile, filesWithoutLocalesMetafile } from '@tests/fixtures';
+import type { CdnFile } from '@/main.js';
+import { CdnClient } from '@/main.js';
+import {
+  completeMetafile,
+  emptyMetafile,
+  filesWithoutLocalesMetafile,
+} from '@tests/fixtures/index.js';
 import { describe, expect, test } from 'vitest';
 
 describe('Test error responses', (): void => {
@@ -40,7 +45,9 @@ describe('Test error responses', (): void => {
 
   test('Missing locales in metafile.json', async (): Promise<void> => {
     filesWithoutLocalesMetafile.mockResponses();
-    const cdn: CdnClient = await CdnClient.create({ metafile: filesWithoutLocalesMetafile.url.metafile });
+    const cdn: CdnClient = await CdnClient.create({
+      metafile: filesWithoutLocalesMetafile.url.metafile,
+    });
 
     expect(cdn.metafile.locales()).toStrictEqual([]);
   });
@@ -52,12 +59,16 @@ describe('Test error responses', (): void => {
     await expect(async (): Promise<void> => {
       // @ts-expect-error invalid param
       await cdn.fetch({ files: 123 });
-    }).rejects.toThrowError('Invalid param: "request.files" must be object, array, string or undefined.');
+    }).rejects.toThrowError(
+      'Invalid param: "request.files" must be object, array, string or undefined.',
+    );
 
     await expect(async (): Promise<void> => {
       // @ts-expect-error invalid param
       await cdn.fetch({ files: [123] });
-    }).rejects.toThrowError('Invalid param: array "request.files" must contain objects or strings.');
+    }).rejects.toThrowError(
+      'Invalid param: array "request.files" must contain objects or strings.',
+    );
 
     await expect(async (): Promise<void> => {
       await cdn.fetch({ files: 'random-string' });

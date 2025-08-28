@@ -1,8 +1,8 @@
-import { Context } from '@/cdn/context/context';
-import { ApiLocaleRequest } from '@/types/api-locale-request';
-import { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request';
-import { CdnResponse } from '@/types/cdn-response';
-import { ResponseFactoryOptions } from '@/types/response-factory-options';
+import type { Context } from '@/cdn/context/context.js';
+import type { ApiLocaleRequest } from '@/types/api-locale-request.js';
+import type { CacheStoreLocalesRequest } from '@/types/cache-store-locales-request.js';
+import type { CdnResponse } from '@/types/cdn-response.js';
+import type { ResponseFactoryOptions } from '@/types/response-factory-options.js';
 
 export class ResponseFactory {
   protected context: Context;
@@ -12,7 +12,12 @@ export class ResponseFactory {
   }
 
   public createCdnResponse(options: ResponseFactoryOptions): CdnResponse {
-    const { requests, responses, hasSingleFileResponse, hasSingleLocaleResponse }: ResponseFactoryOptions = options;
+    const {
+      requests,
+      responses,
+      hasSingleFileResponse,
+      hasSingleLocaleResponse,
+    }: ResponseFactoryOptions = options;
 
     if (responses.length === 0 || typeof responses[0] === 'undefined') {
       return {};

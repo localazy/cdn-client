@@ -1,4 +1,4 @@
-import { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale';
+import type { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale.js';
 
 export interface IMetafileFile {
   file: string;

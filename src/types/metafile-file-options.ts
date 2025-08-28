@@ -1,5 +1,5 @@
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import { IMetafileFile } from '@/interfaces/i-metafile-file';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale.js';
+import type { IMetafileFile } from '@/interfaces/i-metafile-file.js';
 
 export type MetafileFileOptions = Omit<IMetafileFile, 'locales'> & {
   id: string;

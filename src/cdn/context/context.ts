@@ -1,10 +1,10 @@
-import { Api } from '@/cdn/api/api';
-import { LocalesCache } from '@/cdn/cache/locales-cache';
-import { CdnClient } from '@/cdn/cdn-client';
-import { MetafileContext } from '@/cdn/context/metafile-context';
-import { ResponseFactory } from '@/cdn/response/response-factory';
-import { IHttpAdapter } from '@/interfaces/i-http-adapter';
-import { ContextOptions } from '@/types/context-options';
+import { Api } from '@/cdn/api/api.js';
+import { LocalesCache } from '@/cdn/cache/locales-cache.js';
+import type { CdnClient } from '@/cdn/cdn-client.js';
+import type { MetafileContext } from '@/cdn/context/metafile-context.js';
+import { ResponseFactory } from '@/cdn/response/response-factory.js';
+import type { IHttpAdapter } from '@/interfaces/i-http-adapter.js';
+import type { ContextOptions } from '@/types/context-options.js';
 
 export class Context {
   public metafile: MetafileContext;

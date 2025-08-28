@@ -1,6 +1,6 @@
-import { Context } from '@/cdn/context/context';
-import { LocalesMapData } from '@/types/locales-map-data';
-import { LocalesMapOptions } from '@/types/locales-map-options';
+import type { Context } from '@/cdn/context/context.js';
+import type { LocalesMapData } from '@/types/locales-map-data.js';
+import type { LocalesMapOptions } from '@/types/locales-map-options.js';
 
 export class LocalesMap {
   public data: LocalesMapData;

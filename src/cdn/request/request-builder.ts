@@ -1,11 +1,11 @@
-import { Context } from '@/cdn/context/context';
-import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileLocale } from '@/cdn/metafile/metafile-locale';
-import { LocalesMap } from '@/cdn/request/locales-map';
-import { Request } from '@/cdn/request/request';
-import { isArray, isPlainObject, isString, isUndefined } from '@/cdn/utils';
-import { IRequestBuilder } from '@/interfaces/i-request-builder';
-import { CdnFile } from '@/types/cdn-file';
+import type { Context } from '@/cdn/context/context.js';
+import { MetafileFile } from '@/cdn/metafile/metafile-file.js';
+import type { MetafileLocale } from '@/cdn/metafile/metafile-locale.js';
+import type { LocalesMap } from '@/cdn/request/locales-map.js';
+import { Request } from '@/cdn/request/request.js';
+import { isArray, isPlainObject, isString, isUndefined } from '@/cdn/utils.js';
+import type { IRequestBuilder } from '@/interfaces/i-request-builder.js';
+import type { CdnFile } from '@/types/cdn-file.js';
 
 export class RequestBuilder implements IRequestBuilder {
   protected context: Context;
@@ -114,7 +114,9 @@ export class RequestBuilder implements IRequestBuilder {
     } else if (isUndefined(locales)) {
       this.request.files.reduce((acc: LocalesMap, cur: MetafileFile) => {
         acc.data[cur.id] = excludeBaseLocale
-          ? cur.locales.filter((metafileLocale: MetafileLocale): boolean => !metafileLocale.isBaseLocale)
+          ? cur.locales.filter(
+              (metafileLocale: MetafileLocale): boolean => !metafileLocale.isBaseLocale,
+            )
           : cur.locales;
 
         return acc;

@@ -1,5 +1,6 @@
-import { CdnClient, CdnLocale, CdnResponse } from '@/main';
-import { completeMetafile, completeMetafileV2, singleFileMetafile } from '@tests/fixtures';
+import type { CdnLocale, CdnResponse } from '@/main.js';
+import { CdnClient } from '@/main.js';
+import { completeMetafile, completeMetafileV2, singleFileMetafile } from '@tests/fixtures/index.js';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 let cdn: CdnClient;

@@ -1,12 +1,12 @@
-import { MetafileData } from '@/cdn/metafile/metafile-data';
-import { MetafileFile } from '@/cdn/metafile/metafile-file';
-import { MetafileParams } from '@/cdn/metafile/metafile-params';
-import { CdnBase } from '@/cdn/methods/cdn-base';
-import { IMetafile } from '@/interfaces/i-metafile';
-import { CdnClientOptions } from '@/types/cdn-client-options';
-import { CdnFile } from '@/types/cdn-file';
-import { CdnLocale } from '@/types/cdn-locale';
-import { CdnLocalesOptions } from '@/types/cdn-locales-options';
+import type { MetafileData } from '@/cdn/metafile/metafile-data.js';
+import type { MetafileFile } from '@/cdn/metafile/metafile-file.js';
+import { MetafileParams } from '@/cdn/metafile/metafile-params.js';
+import { CdnBase } from '@/cdn/methods/cdn-base.js';
+import type { IMetafile } from '@/interfaces/i-metafile.js';
+import type { CdnClientOptions } from '@/types/cdn-client-options.js';
+import type { CdnFile } from '@/types/cdn-file.js';
+import type { CdnLocale } from '@/types/cdn-locale.js';
+import type { CdnLocalesOptions } from '@/types/cdn-locales-options.js';
 
 export class CdnMetafile extends CdnBase {
   get projectUrl(): string {
@@ -29,7 +29,9 @@ export class CdnMetafile extends CdnBase {
     const { excludeBaseLocale }: CdnLocalesOptions = options || {};
     const { locales }: MetafileData = this.context.metafile.data;
 
-    return excludeBaseLocale ? locales.filter((cdnLocale: CdnLocale): boolean => !cdnLocale.isBaseLocale) : locales;
+    return excludeBaseLocale
+      ? locales.filter((cdnLocale: CdnLocale): boolean => !cdnLocale.isBaseLocale)
+      : locales;
   };
 
   public refresh = async (): Promise<void> => {

@@ -1,5 +1,5 @@
-import fetchMock from '@tests/mocks/fetch-mock';
-import { url } from '@tests/fixtures/complete-metafile';
+import fetchMock from '@tests/mocks/fetch-mock.js';
+import { url } from '@tests/fixtures/complete-metafile/index.js';
 import completeMetafileV2 from '@tests/fixtures/complete-metafile-v2/metafile.json';
 import file01En from '@tests/fixtures/complete-metafile-v2/file01/en/file.json';
 import file01MSBn from '@tests/fixtures/complete-metafile-v2/file01/ms-BN/file.json';

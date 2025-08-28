@@ -1,5 +1,5 @@
-import { CdnClient } from '@/main';
-import { fileTypesMetafile } from '@tests/fixtures';
+import { CdnClient } from '@/main.js';
+import { fileTypesMetafile } from '@tests/fixtures/index.js';
 import { beforeEach, describe, expect, test } from 'vitest';
 
 let cdn: CdnClient;

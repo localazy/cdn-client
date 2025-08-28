@@ -1,5 +1,5 @@
-import { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale';
-import { CdnLocale } from '@/types/cdn-locale';
+import type { IMetafileFileLocale } from '@/interfaces/i-metafile-file-locale.js';
+import type { CdnLocale } from '@/types/cdn-locale.js';
 
 export class MetafileLocale implements IMetafileFileLocale {
   public language: string;

@@ -6,14 +6,43 @@
       <div class="footer-links__nav">
         <div class="footer-links__col">
           <div class="footer-links__col-header">
-            <a href="https://localazy.com" target="_blank" class="logo-link">
-              <img src="/theme/localazy-logo-white.svg" alt="Localazy" width="150" />
+            <a
+              href="https://localazy.com"
+              target="_blank"
+              class="logo-link"
+            >
+              <img
+                src="/theme/localazy-logo-white.svg"
+                alt="Localazy"
+                width="150"
+              />
             </a>
           </div>
           <ul>
-            <li><a href="https://localazy.com" target="_blank">Why Localazy?</a></li>
-            <li><a href="https://localazy.com/book-demo" target="_blank">Book a demo</a></li>
-            <li><a href="https://localazy.com/my/dashboard" target="_blank">Go to your Dashboard</a></li>
+            <li>
+              <a
+                href="https://localazy.com"
+                target="_blank"
+              >
+                Why Localazy?
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://localazy.com/book-demo"
+                target="_blank"
+              >
+                Book a demo
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://localazy.com/my/dashboard"
+                target="_blank"
+              >
+                Go to your Dashboard
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -22,8 +51,22 @@
             <strong>Resources</strong>
           </div>
           <ul>
-            <li><a href="https://localazy.com/docs/cdn/cdn-introduction" target="_blank">CDN documentation</a></li>
-            <li><a href="https://localazy.com/tags/cdn" target="_blank">CDN blog posts</a></li>
+            <li>
+              <a
+                href="https://localazy.com/docs/cdn/cdn-introduction"
+                target="_blank"
+              >
+                CDN documentation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://localazy.com/tags/cdn"
+                target="_blank"
+              >
+                CDN blog posts
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -32,10 +75,38 @@
             <strong>Support</strong>
           </div>
           <ul>
-            <li><a href="https://localazy.com" target="_blank">Intercom chat</a></li>
-            <li><a href="https://github.com/localazy/cdn-client/issues" target="_blank">GitHub issues</a></li>
-            <li><a href="https://discuss.localazy.com" target="_blank">Discussion forum</a></li>
-            <li><a href="mailto:team@localazy.com" target="_blank">team@localazy.com</a></li>
+            <li>
+              <a
+                href="https://localazy.com"
+                target="_blank"
+              >
+                Intercom chat
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/localazy/cdn-client/issues"
+                target="_blank"
+              >
+                GitHub issues
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://discuss.localazy.com"
+                target="_blank"
+              >
+                Discussion forum
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:team@localazy.com"
+                target="_blank"
+              >
+                team@localazy.com
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -44,18 +115,43 @@
             <strong>NPM packages</strong>
           </div>
           <ul>
-            <li><a href="https://www.npmjs.com/package/@localazy/cli" target="_blank">@localazy/cli</a></li>
             <li>
-              <a href="https://www.npmjs.com/package/@localazy/api-client" target="_blank">@localazy/api-client</a>
+              <a
+                href="https://www.npmjs.com/package/@localazy/cli"
+                target="_blank"
+              >
+                @localazy/cli
+              </a>
             </li>
-            <li><a href="https://www.npmjs.com/package/@localazy/languages" target="_blank">@localazy/languages</a></li>
             <li>
-              <a href="https://www.npmjs.com/package/@localazy/strapi-plugin" target="_blank">
+              <a
+                href="https://www.npmjs.com/package/@localazy/api-client"
+                target="_blank"
+              >
+                @localazy/api-client
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.npmjs.com/package/@localazy/languages"
+                target="_blank"
+              >
+                @localazy/languages
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.npmjs.com/package/@localazy/strapi-plugin"
+                target="_blank"
+              >
                 @localazy/strapi-plugin
               </a>
             </li>
             <li>
-              <a href="https://www.npmjs.com/package/@localazy/directus-extension-localazy" target="_blank">
+              <a
+                href="https://www.npmjs.com/package/@localazy/directus-extension-localazy"
+                target="_blank"
+              >
                 @localazy/directus-extension-localazy
               </a>
             </li>
@@ -64,29 +160,58 @@
       </div>
 
       <div class="footer-links__social">
-        <a href="https://localazy.com/feed.xml" target="_blank" class="social-link">
+        <a
+          href="https://localazy.com/feed.xml"
+          target="_blank"
+          class="social-link"
+        >
           <span class="vpi-social-rss" />
         </a>
-        <a href="https://www.facebook.com/localazy/" target="_blank" class="social-link">
+        <a
+          href="https://www.facebook.com/localazy/"
+          target="_blank"
+          class="social-link"
+        >
           <span class="vpi-social-facebook" />
         </a>
-        <a href="https://github.com/localazy" target="_blank" class="social-link">
+        <a
+          href="https://github.com/localazy"
+          target="_blank"
+          class="social-link"
+        >
           <span class="vpi-social-github" />
         </a>
-        <a href="https://twitter.com/localazy" target="_blank" class="social-link">
+        <a
+          href="https://twitter.com/localazy"
+          target="_blank"
+          class="social-link"
+        >
           <span class="vpi-social-twitter" />
         </a>
-        <a href="https://www.linkedin.com/company/37836599/" target="_blank" class="social-link">
+        <a
+          href="https://www.linkedin.com/company/37836599/"
+          target="_blank"
+          class="social-link"
+        >
           <span class="vpi-social-linkedin" />
         </a>
-        <a href="https://discuss.localazy.com/" target="_blank" class="social-link">
+        <a
+          href="https://discuss.localazy.com/"
+          target="_blank"
+          class="social-link"
+        >
           <span class="vpi-social-discuss" />
         </a>
       </div>
 
       <div class="footer-links__licence">
         © {{ new Date().getFullYear() }} Localazy. Released under the
-        <a href="https://github.com/localazy/cdn-client/blob/main/LICENSE" target="_blank">MIT license</a>
+        <a
+          href="https://github.com/localazy/cdn-client/blob/main/LICENSE"
+          target="_blank"
+        >
+          MIT license
+        </a>
         .
       </div>
     </div>

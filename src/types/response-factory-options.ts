@@ -1,5 +1,5 @@
-import { LocalesMap } from '@/cdn/request/locales-map';
-import { ApiLocaleRequest } from '@/types/api-locale-request';
+import type { LocalesMap } from '@/cdn/request/locales-map.js';
+import type { ApiLocaleRequest } from '@/types/api-locale-request.js';
 
 export type ResponseFactoryOptions = {
   requests: ApiLocaleRequest[];

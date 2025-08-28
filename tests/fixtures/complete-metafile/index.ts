@@ -1,4 +1,4 @@
-import fetchMock from '@tests/mocks/fetch-mock';
+import fetchMock from '@tests/mocks/fetch-mock.js';
 import completeMetafile from '@tests/fixtures/complete-metafile/metafile.json';
 import file01En from '@tests/fixtures/complete-metafile/file01/en/file.json';
 import file01MsBn from '@tests/fixtures/complete-metafile/file01/ms-BN/file.json';
