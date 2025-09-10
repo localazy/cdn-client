@@ -1,3 +1,12 @@
+## 1.5.8 (2025-09-10)
+### 🔀 Pull Requests
+
+- [update dependencies #27](https://github.com/localazy/cdn-client/pull/27)
+
+### 🧰 Other Commits
+
+- **deps:** update dependencies ([469c66e](https://github.com/localazy/cdn-client/commit/469c66e)) ([#27](https://github.com/localazy/cdn-client/pull/27))
+
 ## 1.5.7 (2025-08-28)
 ### 🔀 Pull Requests
 
