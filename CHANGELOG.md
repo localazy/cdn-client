@@ -1,3 +1,12 @@
+## 1.5.9 (2025-11-06)
+### 🔀 Pull Requests
+
+- [update dependencies to latest versions #29](https://github.com/localazy/cdn-client/pull/29)
+
+### 🧰 Other Commits
+
+- **deps:** update dependencies to latest versions ([f6f35b6](https://github.com/localazy/cdn-client/commit/f6f35b6)) ([#29](https://github.com/localazy/cdn-client/pull/29))
+
 ## 1.5.8 (2025-09-10)
 ### 🔀 Pull Requests
 
