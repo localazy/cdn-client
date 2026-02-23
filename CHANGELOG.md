@@ -1,3 +1,13 @@
+## 1.5.10 (2026-02-23)
+### 🔀 Pull Requests
+
+- [Update deps and migrate to oxlint and oxfmt #31](https://github.com/localazy/cdn-client/pull/31)
+
+### 🧰 Other Commits
+
+- Update GH workflow ([ac1ad70](https://github.com/localazy/cdn-client/commit/ac1ad70)) ([#31](https://github.com/localazy/cdn-client/pull/31))
+- Update deps and migrate to oxlint and oxfmt ([ac1ad70](https://github.com/localazy/cdn-client/commit/ac1ad70)) ([#31](https://github.com/localazy/cdn-client/pull/31))
+
 ## 1.5.9 (2025-11-06)
 ### 🔀 Pull Requests
 
