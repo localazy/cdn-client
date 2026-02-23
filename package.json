@@ -3,30 +3,39 @@
   "version": "1.5.9",
   "description": "Node.js module that allows you to easily interact with the Localazy CDN.",
   "keywords": [
+    "CDN",
     "Localazy",
     "Localazy CDN",
-    "CDN",
     "TypeScript",
-    "internationalization",
-    "translation",
-    "localization",
+    "g11n",
     "globalization",
     "i18n",
-    "t9n",
+    "internationalization",
     "l10n",
-    "g11n"
+    "localization",
+    "t9n",
+    "translation"
   ],
   "homepage": "https://github.com/localazy/cdn-client#readme",
   "bugs": {
     "url": "https://github.com/localazy/cdn-client/issues"
   },
+  "license": "MIT",
+  "author": "Localazy <team@localazy.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/localazy/cdn-client"
   },
-  "license": "MIT",
-  "author": "Localazy <team@localazy.com>",
+  "files": [
+    "dist/**/*",
+    "README.md"
+  ],
   "type": "module",
+  "main": "./dist/node/localazy-cdn-client.cjs",
+  "module": "./dist/localazy-cdn-client.js",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/browser/localazy-cdn-client.umd.min.js",
+  "jsdelivr": "./dist/browser/localazy-cdn-client.umd.min.js",
   "exports": {
     ".": {
       "types": {
@@ -42,59 +51,49 @@
       }
     }
   },
-  "main": "./dist/node/localazy-cdn-client.cjs",
-  "jsdelivr": "./dist/browser/localazy-cdn-client.umd.min.js",
-  "unpkg": "./dist/browser/localazy-cdn-client.umd.min.js",
-  "module": "./dist/localazy-cdn-client.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist/**/*",
-    "README.md"
-  ],
   "scripts": {
     "build": "npm run main-ts:build && vite build",
     "bundle:visualize": "vite-bundle-visualizer",
-    "check": "npm run prettier && npm run lint && npm run typecheck && npm run build && npm run test",
-    "check:fix": "npm run prettier:fix && npm run lint:fix",
+    "check": "npm run format && npm run lint && npm run typecheck && npm run build && npm run test",
+    "check:fix": "npm run format:fix && npm run lint:fix",
     "dev": "vite & npm run main-ts:watch",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "format": "oxfmt --check",
+    "format:fix": "oxfmt",
+    "lint": "oxlint --type-aware",
+    "lint:fix": "oxlint --type-aware --fix",
     "main-ts:build": "reexport src/main.ts",
     "main-ts:watch": "reexport --watch src/main.ts",
     "prepare": "husky",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
     "test:matrix": "./scripts/node-test-matrix.sh",
     "test:watch": "vitest",
-    "typecheck": "npx tsc --noemit"
+    "typecheck": "tsc --build"
   },
-  "prettier": "@localazy/prettier-config",
   "devDependencies": {
-    "@localazy/eslint-config": "^1.3.0",
-    "@localazy/prettier-config": "^1.2.0",
-    "@localazy/tsconfig": "^1.1.1",
+    "@microsoft/api-extractor": "^7.57.3",
     "@rollup/plugin-terser": "^0.4.4",
+    "@tsconfig/node22": "^22.0.5",
     "@types/isomorphic-fetch": "^0.0.39",
-    "@types/node": "^22.19.0",
-    "@vitest/coverage-v8": "^4.0.7",
-    "@vitest/ui": "^4.0.7",
-    "eslint": "^9.39.1",
+    "@types/node": "^22.19.11",
+    "@vitest/coverage-v8": "^4.0.18",
+    "@vitest/ui": "^4.0.18",
     "fetch-mock": "^12.6.0",
     "husky": "^9.1.7",
     "isomorphic-fetch": "^3.0.0",
-    "prettier": "^3.6.2",
+    "oxfmt": "^0.35.0",
+    "oxlint": "^1.50.0",
+    "oxlint-tsgolint": "^0.14.2",
     "reexport": "^1.4.1",
     "typescript": "^5.9.3",
-    "unplugin-replace": "^0.6.2",
-    "vite": "^7.2.1",
+    "unplugin-dts": "^1.0.0-beta.6",
+    "unplugin-replace": "^0.6.3",
+    "vite": "^7.3.1",
     "vite-bundle-visualizer": "^1.2.1",
-    "vite-plugin-dts": "^4.5.4",
-    "vitest": "^4.0.7"
+    "vitest": "^4.0.18"
   },
-  "packageManager": "npm@10.9.3",
   "engines": {
     "node": ">=20"
-  }
+  },
+  "packageManager": "npm@10.9.3"
 }
