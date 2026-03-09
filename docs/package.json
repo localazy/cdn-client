@@ -6,6 +6,7 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@localazy/tsconfig": "^1.1.1",
     "markdown-it-container": "^4.0.0",
     "medium-zoom": "^1.1.0",
     "sandpack-vue3": "^3.1.12",
