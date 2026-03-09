@@ -1,3 +1,15 @@
+## 1.5.11 (2026-03-09)
+### 🔀 Pull Requests
+
+- [Fix docs build #35](https://github.com/localazy/cdn-client/pull/35)
+- [Update dependencies #33](https://github.com/localazy/cdn-client/pull/33)
+
+### 🧰 Other Commits
+
+- Fix docs audit ([3f4ff8c](https://github.com/localazy/cdn-client/commit/3f4ff8c)) ([#35](https://github.com/localazy/cdn-client/pull/35))
+- Fix docs build ([3f4ff8c](https://github.com/localazy/cdn-client/commit/3f4ff8c)) ([#35](https://github.com/localazy/cdn-client/pull/35))
+- Update dependencies ([8378eaa](https://github.com/localazy/cdn-client/commit/8378eaa)) ([#33](https://github.com/localazy/cdn-client/pull/33))
+
 ## 1.5.10 (2026-02-23)
 ### 🔀 Pull Requests
 
