@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.13 (2026-04-01)
+
+### 🔀 Merged Pull Requests
+- 🔧 chore: Fix published README links [#38](https://github.com/localazy/cdn-client/pull/38)
+
+### 🧰 Other Commits
+- Fix published README links (*[2f3eb1a](https://github.com/localazy/cdn-client/commit/2f3eb1a9fe00e095caf1e0bf5542275eb29ffa99)*) (*[#38](https://github.com/localazy/cdn-client/pull/38)*)
+
+### ❤️ Contributors
+- [*Bubinek*](https://github.com/honzabubenik)
+
 ## 1.5.12 (2026-04-01)
 
 ### 🔀 Merged Pull Requests
