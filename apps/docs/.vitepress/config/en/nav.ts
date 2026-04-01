@@ -1,5 +1,5 @@
 import type { DefaultTheme } from 'vitepress/theme';
-import { version } from '../../../../package.json';
+import { version } from '../../../../../packages/cdn-client/package.json';
 
 export const nav = (): DefaultTheme.NavItem[] => [
   {

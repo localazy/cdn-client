@@ -1,6 +1,12 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["**/CHANGELOG.md", "**/.env*", "**/src/main.ts"],
+  "ignorePatterns": [
+    "**/CHANGELOG.md",
+    "**/.env*",
+    "**/src/main.ts",
+    "**/tests/fixtures/",
+    "apps/docs"
+  ],
   "printWidth": 100,
   "singleQuote": true,
   "jsxSingleQuote": true,

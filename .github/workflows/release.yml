@@ -1,78 +1,128 @@
-name: Release CI
+name: Release
 
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: write
-  pull-requests: write
+env:
+  NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_PUBLIC }}
+  FORCE_COLOR: '3'
 
 jobs:
-  ci:
-    name: CI Init
-    runs-on: [self-hosted, Linux]
-    outputs:
-      action: ${{ steps.init.outputs.action }}
+  release:
+    name: Create Release PR
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '🚀 release:')"
+    timeout-minutes: 10
     steps:
-      - id: init
-        uses: localazy/release/init@v2
-
-  prepare:
-    name: Prepare Release PR
-    needs: ci
-    if: needs.ci.outputs.action == 'prepare'
-    runs-on: [self-hosted, Linux]
-    steps:
-      - uses: localazy/release/prepare@v2
-        with:
-          node-version-file: .nvmrc
-          app-id: ${{ secrets.AUTH_APP_ID }}
-          app-key: ${{ secrets.AUTH_APP_KEY }}
-          badges: true
-          badges-size: dist/browser/localazy-cdn-client.umd.min.js
-
-  publish:
-    name: Publish Release
-    needs: ci
-    if: needs.ci.outputs.action == 'publish'
-    runs-on: [self-hosted, Linux]
-    steps:
-      - uses: localazy/release/publish@v2
-        with:
-          node-version-file: .nvmrc
-          app-id: ${{ secrets.AUTH_APP_ID }}
-          app-key: ${{ secrets.AUTH_APP_KEY }}
-          npm-publish: public
-          npm-token: ${{ secrets.NPM_AUTH_TOKEN_PUBLIC }}
-
-  deploy-docs:
-    name: Deploy Docs
-    needs: publish
-    runs-on: [self-hosted, Linux]
-    env:
-      NODE_OPTIONS: --max_old_space_size=8192
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Check for library changes
+        id: changes
+        run: |
+          if git diff --name-only HEAD~1 HEAD | grep -q '^packages/cdn-client/'; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Generate token
+        if: steps.changes.outputs.changed == 'true'
+        id: auth
+        uses: actions/create-github-app-token@v3
+        with:
+          app-id: ${{ secrets.AUTH_APP_ID }}
+          private-key: ${{ secrets.AUTH_APP_KEY }}
+
+      - name: Setup pnpm
+        if: steps.changes.outputs.changed == 'true'
+        uses: pnpm/action-setup@v5
+        with:
+          run_install: false
+
+      - name: Setup Node
+        if: steps.changes.outputs.changed == 'true'
+        uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
+          registry-url: https://registry.npmjs.org
 
-      - name: Build Docs
-        run: |
-          npm ci
-          cd docs
-          npm ci
-          npm run build
+      - name: Install dependencies
+        if: steps.changes.outputs.changed == 'true'
+        run: pnpm install --frozen-lockfile
 
-      - name: Update Docs Branch
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Run release script
+        if: steps.changes.outputs.changed == 'true'
+        run: pnpx @localazy/workflow-scripts create-release-pr packages/cdn-client
+        env:
+          GITHUB_TOKEN: ${{ steps.auth.outputs.token }}
+
+  publish:
+    name: Publish to npm
+    runs-on: ubuntu-latest
+    if: "contains(github.event.head_commit.message, '🚀 release:')"
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - name: Generate token
+        id: auth
+        uses: actions/create-github-app-token@v3
         with:
-          branch: gh-pages
-          folder: docs/.vitepress/dist
+          app-id: ${{ secrets.AUTH_APP_ID }}
+          private-key: ${{ secrets.AUTH_APP_KEY }}
+
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v5
+        with:
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+          registry-url: https://registry.npmjs.org
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+
+      - name: Determine npm tag
+        id: npm-tag
+        run: |
+          VERSION=$(node -p "require('./packages/cdn-client/package.json').version")
+          if echo "$VERSION" | grep -q '-'; then
+            echo "tag=${VERSION#*-}" | sed 's/\..*//' >> "$GITHUB_OUTPUT"
+          else
+            echo "tag=latest" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publish to npm
+        run: pnpm --filter @localazy/cdn-client publish --no-git-checks --tag ${{ steps.npm-tag.outputs.tag }} --access public
+
+      - name: Create and push git tag
+        id: git-tag
+        run: |
+          NAME=$(node -p "require('./packages/cdn-client/package.json').name")
+          VERSION=$(node -p "require('./packages/cdn-client/package.json').version")
+          TAG="${NAME}@${VERSION}"
+          git tag "${TAG}"
+          git push origin "${TAG}"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Create GitHub Release
+        run: pnpx @localazy/workflow-scripts create-github-release "${{ steps.git-tag.outputs.version }}"
+        env:
+          GITHUB_TOKEN: ${{ steps.auth.outputs.token }}
