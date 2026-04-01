@@ -1,3 +1,23 @@
+# Changelog
+
+## 1.5.12 (2026-04-01)
+
+### 🔀 Merged Pull Requests
+- Update deps [#36](https://github.com/localazy/cdn-client/pull/36)
+
+### 🐛 Bug Fixes
+- Fix docs footer icons (*[68de8cd](https://github.com/localazy/cdn-client/commit/68de8cdbd34656ee8e5ed4822b33580b62ad7b69)*) (*[#36](https://github.com/localazy/cdn-client/pull/36)*)
+
+### 🧰 Other Commits
+- Update deps (*[67f8836](https://github.com/localazy/cdn-client/commit/67f8836c42bf20425a0418dff5f5cd46af0648d8)*) (*[#36](https://github.com/localazy/cdn-client/pull/36)*)
+- Update docs deps (*[afb185d](https://github.com/localazy/cdn-client/commit/afb185de110e556381e020a37d78411892c1561f)*) (*[#36](https://github.com/localazy/cdn-client/pull/36)*)
+- Update base path (*[a5522f5](https://github.com/localazy/cdn-client/commit/a5522f572167ece216d5d7fb60a36a489d54a639)*) (*[#36](https://github.com/localazy/cdn-client/pull/36)*)
+- Use pnpm and monorepo structure (*[ac34a79](https://github.com/localazy/cdn-client/commit/ac34a796dc5960e5f4ee753883917877860d863e)*) (*[#36](https://github.com/localazy/cdn-client/pull/36)*)
+- Use Node 24 (*[3f1d6da](https://github.com/localazy/cdn-client/commit/3f1d6da00cbabffc76b96f8cf09b89f626f16297)*) (*[#36](https://github.com/localazy/cdn-client/pull/36)*)
+
+### ❤️ Contributors
+- [*Bubinek*](https://github.com/honzabubenik)
+
 ## 1.5.11 (2026-03-09)
 ### 🔀 Pull Requests
 
