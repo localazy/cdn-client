@@ -1,10 +1,12 @@
 import { HeadConfig } from 'vitepress';
 
+const base = '/cdn-client/';
+
 export const head = (): HeadConfig[] => [
   // Favicon
-  ['link', { rel: 'icon', href: '/favicon.ico', sizes: '32x32' }],
-  ['link', { rel: 'icon', href: '/theme/localazy-logo.svg', type: 'image/svg+xml' }],
-  ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/theme/apple-touch-icon.png' }],
+  ['link', { rel: 'icon', href: `${base}favicon.ico`, sizes: '32x32' }],
+  ['link', { rel: 'icon', href: `${base}theme/localazy-logo.svg`, type: 'image/svg+xml' }],
+  ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: `${base}theme/apple-touch-icon.png` }],
 
   // Fonts
   [
