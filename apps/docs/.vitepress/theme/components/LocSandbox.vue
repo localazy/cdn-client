@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { sandboxProps } from 'vitepress-plugin-sandpack';
-import { version } from '../../../../package.json';
+import { version } from '../../../../../packages/cdn-client/package.json';
 import LocSandpack from './LocSandpack.vue';
 
 const props = defineProps(sandboxProps);

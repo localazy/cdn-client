@@ -27,12 +27,12 @@ if ! command -v nvm > /dev/null 2>&1; then
 fi
 
 NODE_MATRIX=("20" "22" "24")
-PM="npm"
+PM="pnpm"
 
 echo "=== Test matrix - Node 20, 22 and 24 ==="
 for v in "${NODE_MATRIX[@]}"; do
   echo -e "\n--- Node $v: install + test + build ---"
-  nvm exec "$v" "$PM" ci
+  nvm exec "$v" "$PM" install
   nvm exec "$v" "$PM" run format
   nvm exec "$v" "$PM" run lint
   nvm exec "$v" "$PM" run typecheck

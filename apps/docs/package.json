@@ -1,4 +1,6 @@
 {
+  "name": "@localazy/cdn-client-docs",
+  "private": true,
   "type": "module",
   "scripts": {
     "build": "vitepress build",
