@@ -11,11 +11,11 @@
 
 Node.js module that allows you to easily interact with the [Localazy CDN](https://localazy.com/docs/cdn/cdn-introduction).
 
-[![npm](.github/badges/npm.svg)](https://www.npmjs.com/package/@localazy/cdn-client)
-[![maintainer](.github/badges/maintainer.svg)](https://github.com/localazy)
-[![license](.github/badges/license.svg)](https://github.com/localazy/cdn-client/blob/main/LICENSE)<br>
-[![coverage](.github/badges/coverage.svg)](https://github.com/localazy/cdn-client/actions)
-[![size](.github/badges/size.svg)](https://bundlephobia.com/package/@localazy/cdn-client)
+[![npm](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/npm.svg)](https://www.npmjs.com/package/@localazy/cdn-client)
+[![maintainer](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/maintainer.svg)](https://github.com/localazy)
+[![license](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/license.svg)](https://github.com/localazy/cdn-client/blob/main/LICENSE)<br>
+[![coverage](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/coverage.svg)](https://github.com/localazy/cdn-client/actions)
+[![size](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/size.svg)](https://bundlephobia.com/package/@localazy/cdn-client)
 
 </div>
 
@@ -89,4 +89,4 @@ Discover all available [integration options](https://github.com/localazy) and [l
 
 ## 📜 License
 
-Code released under the [MIT license](LICENSE).
+Code released under the [MIT license](https://github.com/localazy/cdn-client/blob/main/packages/cdn-client/LICENSE).
