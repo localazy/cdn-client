@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.14 (2026-04-14)
+
+### 🔀 Merged Pull Requests
+- 🔧 chore: Update deps [#40](https://github.com/localazy/cdn-client/pull/40)
+
+### 🧰 Other Commits
+- Update deps (*[d143f6a](https://github.com/localazy/cdn-client/commit/d143f6ac34684b5c7dcdf1e0365b0409dfc1c650)*) (*[#40](https://github.com/localazy/cdn-client/pull/40)*)
+
+### ❤️ Contributors
+- [*Bubinek*](https://github.com/honzabubenik)
+
 ## 1.5.13 (2026-04-01)
 
 ### 🔀 Merged Pull Requests
