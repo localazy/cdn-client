@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches:
-      - main
+      - create_pr
 
 env:
   NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_PUBLIC }}
@@ -13,7 +13,6 @@ jobs:
   release:
     name: Create Release PR
     runs-on: ubuntu-latest
-    if: "!contains(github.event.head_commit.message, '🚀 release:')"
     timeout-minutes: 10
     steps:
       - name: Checkout repository
@@ -21,17 +20,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Check for library changes
-        id: changes
-        run: |
-          if git diff --name-only HEAD~1 HEAD | grep -q '^packages/cdn-client/'; then
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Generate token
-        if: steps.changes.outputs.changed == 'true'
         id: auth
         uses: actions/create-github-app-token@v3
         with:
@@ -39,24 +28,20 @@ jobs:
           private-key: ${{ secrets.AUTH_APP_KEY }}
 
       - name: Setup pnpm
-        if: steps.changes.outputs.changed == 'true'
         uses: pnpm/action-setup@v5
         with:
           dest: ${{ runner.temp }}/setup-pnpm
 
       - name: Setup Node
-        if: steps.changes.outputs.changed == 'true'
         uses: actions/setup-node@v6
         with:
           node-version-file: .nvmrc
           registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
-        if: steps.changes.outputs.changed == 'true'
         run: pnpm install --frozen-lockfile
 
       - name: Prepare data for badges
-        if: steps.changes.outputs.changed == 'true'
         run: |
           pnpm --filter @localazy/cdn-client run build
           pnpm --filter @localazy/cdn-client run test:coverage
@@ -64,74 +49,6 @@ jobs:
           echo "BADGES_SIZE=$(gzip -c packages/cdn-client/dist/browser/localazy-cdn-client.umd.min.js | wc -c)" >> "$GITHUB_ENV"
 
       - name: Run release script
-        if: steps.changes.outputs.changed == 'true'
         run: npx @localazy/workflow-scripts@latest create-release-pr packages/cdn-client
-        env:
-          GITHUB_TOKEN: ${{ steps.auth.outputs.token }}
-
-  publish:
-    name: Publish to npm
-    runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, '🚀 release:')"
-    timeout-minutes: 10
-    permissions:
-      contents: write
-      id-token: write
-    steps:
-      - name: Generate token
-        id: auth
-        uses: actions/create-github-app-token@v3
-        with:
-          client-id: ${{ secrets.AUTH_APP_ID }}
-          private-key: ${{ secrets.AUTH_APP_KEY }}
-
-      - name: Checkout repository
-        uses: actions/checkout@v6
-        with:
-          fetch-depth: 0
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v5
-        with:
-          dest: ${{ runner.temp }}/setup-pnpm
-
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version-file: .nvmrc
-          registry-url: https://registry.npmjs.org
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - name: Build
-        run: pnpm --filter @localazy/cdn-client run build
-
-      - name: Determine npm tag
-        id: npm-tag
-        run: |
-          VERSION=$(node -p "require('./packages/cdn-client/package.json').version")
-          if echo "$VERSION" | grep -q '-'; then
-            echo "tag=${VERSION#*-}" | sed 's/\..*//' >> "$GITHUB_OUTPUT"
-          else
-            echo "tag=latest" >> "$GITHUB_OUTPUT"
-          fi
-
-      - name: Publish to npm
-        run: pnpm --filter @localazy/cdn-client publish --no-git-checks --tag ${{ steps.npm-tag.outputs.tag }} --access public --provenance
-
-      - name: Create and push git tag
-        id: git-tag
-        run: |
-          NAME=$(node -p "require('./packages/cdn-client/package.json').name")
-          VERSION=$(node -p "require('./packages/cdn-client/package.json').version")
-          TAG="${NAME}@${VERSION}"
-          git tag "${TAG}"
-          git push origin "${TAG}"
-          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
-          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
-
-      - name: Create GitHub Release
-        run: npx @localazy/workflow-scripts@latest create-github-release "${{ steps.git-tag.outputs.version }}"
         env:
           GITHUB_TOKEN: ${{ steps.auth.outputs.token }}
