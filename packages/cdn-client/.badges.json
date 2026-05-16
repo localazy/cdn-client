@@ -1,5 +1,5 @@
 {
-  "outputDir": ".github/badges",
+  "outputDir": "../../.github/badges/cdn-client",
   "badges": {
     "version": { "label": "npm", "value": "@version", "icon": "npm" },
     "coverage": {
