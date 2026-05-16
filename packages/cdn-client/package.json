@@ -68,22 +68,22 @@
     "typecheck": "tsc --build"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.58.2",
+    "@microsoft/api-extractor": "^7.58.7",
     "@rollup/plugin-terser": "^1.0.0",
     "@tsconfig/node22": "^22.0.5",
     "@types/isomorphic-fetch": "^0.0.39",
-    "@types/node": "^24.12.0",
-    "@vitest/coverage-v8": "^4.1.4",
-    "@vitest/ui": "^4.1.4",
+    "@types/node": "^24.12.4",
+    "@vitest/coverage-v8": "^4.1.6",
+    "@vitest/ui": "^4.1.6",
     "fetch-mock": "^12.6.0",
     "isomorphic-fetch": "^3.0.0",
     "reexport": "^1.4.1",
-    "typescript": "^6.0.2",
-    "unplugin-dts": "^1.0.0-beta.6",
-    "unplugin-replace": "^0.8.0",
-    "vite": "^8.0.8",
+    "typescript": "^6.0.3",
+    "unplugin-dts": "^1.0.0",
+    "unplugin-replace": "^0.9.0",
+    "vite": "^8.0.13",
     "vite-bundle-visualizer": "^1.2.1",
-    "vitest": "^4.1.4"
+    "vitest": "^4.1.6"
   },
   "engines": {
     "node": ">=20"
