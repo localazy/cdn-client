@@ -11,7 +11,7 @@
 
 Node.js module that allows you to easily interact with the [Localazy CDN](https://localazy.com/docs/cdn/cdn-introduction).
 
-[![npm](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/cdn-client/npm.svg)](https://www.npmjs.com/package/@localazy/cdn-client)
+[![npm](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/cdn-client/version.svg)](https://www.npmjs.com/package/@localazy/cdn-client)
 [![maintainer](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/cdn-client/maintainer.svg)](https://github.com/localazy)
 [![license](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/cdn-client/license.svg)](https://github.com/localazy/cdn-client/blob/main/LICENSE)<br>
 [![coverage](https://raw.githubusercontent.com/localazy/cdn-client/main/.github/badges/cdn-client/coverage.svg)](https://github.com/localazy/cdn-client/actions)
