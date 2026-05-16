@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.16 (2026-05-16)
+
+### 🔀 Merged Pull Requests
+- 🔧 chore: Update Node tsconfig [#49](https://github.com/localazy/cdn-client/pull/49)
+
+### 🧰 Other Commits
+- Update Node tsconfig (*[4b5dee5](https://github.com/localazy/cdn-client/commit/4b5dee52448a45600836615dd80847fcff463367)*) (*[#49](https://github.com/localazy/cdn-client/pull/49)*)
+
+### ❤️ Contributors
+- [*Bubinek*](https://github.com/honzabubenik)
+
 ## 1.5.15 (2026-05-16)
 
 ### 🔀 Merged Pull Requests
