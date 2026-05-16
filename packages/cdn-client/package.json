@@ -59,7 +59,6 @@
     "dev": "vite & pnpm run main-ts:watch",
     "main-ts:build": "reexport src/main.ts",
     "main-ts:watch": "reexport --watch src/main.ts",
-    "postpack": "rm README.md",
     "prepack": "cp ../../README.md .",
     "test": "vitest run",
     "test:coverage": "vitest run --coverage",
