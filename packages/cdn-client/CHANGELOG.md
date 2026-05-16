@@ -3,6 +3,27 @@
 ## 1.5.15 (2026-05-16)
 
 ### 🔀 Merged Pull Requests
+- 🔧 chore: Remove postpack call [#45](https://github.com/localazy/cdn-client/pull/45)
+- 🔧 chore: Remove old badges [#44](https://github.com/localazy/cdn-client/pull/44)
+- Update deps [#42](https://github.com/localazy/cdn-client/pull/42)
+
+### 🧪 Tests
+- Add build tests (*[aa1a318](https://github.com/localazy/cdn-client/commit/aa1a3187b7d34d1f3f7a2fa7ea8847e324658c32)*) (*[#42](https://github.com/localazy/cdn-client/pull/42)*)
+
+### 🧰 Other Commits
+- Remove postpack call (*[f7b9bbe](https://github.com/localazy/cdn-client/commit/f7b9bbef8e0c1e0890111110d1493db5f0d87007)*) (*[#45](https://github.com/localazy/cdn-client/pull/45)*)
+- Remove old badges (*[e263f76](https://github.com/localazy/cdn-client/commit/e263f7679f6f96637cfc8c85e9460ccb3edafc78)*) (*[#44](https://github.com/localazy/cdn-client/pull/44)*)
+- Remove @localazy/tsconfig (*[fe85b99](https://github.com/localazy/cdn-client/commit/fe85b99ae750d37624bcc633c3fd57e6134b1dac)*) (*[#42](https://github.com/localazy/cdn-client/pull/42)*)
+- Update deps (*[ac8531e](https://github.com/localazy/cdn-client/commit/ac8531e484cc541e8e0d57b2159451fe934f2785)*) (*[#42](https://github.com/localazy/cdn-client/pull/42)*)
+- Update GH workflows (*[0bfabc9](https://github.com/localazy/cdn-client/commit/0bfabc9f5e7735f65d08d65fd5fdab65635ce0ba)*) (*[#42](https://github.com/localazy/cdn-client/pull/42)*)
+- Update badges config (*[7f072e1](https://github.com/localazy/cdn-client/commit/7f072e156db3cc497b4f39eb5fe53338a7380a0e)*) (*[#42](https://github.com/localazy/cdn-client/pull/42)*)
+
+### ❤️ Contributors
+- [*Bubinek*](https://github.com/honzabubenik)
+
+## 1.5.15 (2026-05-16)
+
+### 🔀 Merged Pull Requests
 - 🔧 chore: Remove old badges [#44](https://github.com/localazy/cdn-client/pull/44)
 - Update deps [#42](https://github.com/localazy/cdn-client/pull/42)
 
