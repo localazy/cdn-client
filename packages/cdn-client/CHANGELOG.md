@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.5.17 (2026-05-29)
+
+### 🔀 Merged Pull Requests
+- 🔧 chore: Fix audit [#51](https://github.com/localazy/cdn-client/pull/51)
+
+### 🧰 Other Commits
+- Fix audit (*[c8b7d69](https://github.com/localazy/cdn-client/commit/c8b7d69186af2f8346fbbc882925f4716aad3e11)*) (*[#51](https://github.com/localazy/cdn-client/pull/51)*)
+
+### ❤️ Contributors
+- [*Bubinek*](https://github.com/honzabubenik)
+
 ## 1.5.16 (2026-05-16)
 
 ### 🔀 Merged Pull Requests
