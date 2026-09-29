@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.5.18 (2026-09-29)
+
+### 🔀 Merged Pull Requests
+- 🔧 chore: Fix audit [#55](https://github.com/localazy/cdn-client/pull/55)
+- 🔧 chore: Fix audit [#53](https://github.com/localazy/cdn-client/pull/53)
+
+### 🧰 Other Commits
+- Fix audit (*[9cb45d5](https://github.com/localazy/cdn-client/commit/9cb45d55c18a8df6e94aa3a0954365523ca71327)*) (*[#55](https://github.com/localazy/cdn-client/pull/55)*)
+- Fix audit (*[ac60fb2](https://github.com/localazy/cdn-client/commit/ac60fb2dc170bb3404962d5626933cbf140bc30b)*) (*[#53](https://github.com/localazy/cdn-client/pull/53)*)
+
+### ❤️ Contributors
+- [*Bubinek*](https://github.com/honzabubenik)
+
 ## 1.5.17 (2026-05-29)
 
 ### 🔀 Merged Pull Requests
