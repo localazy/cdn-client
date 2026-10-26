@@ -1,6 +1,11 @@
 packages:
   - 'packages/*'
   - 'apps/*'
+
+# Keep a single-document lockfile, GitHub dependency graph cannot read the pnpm 12 env document
+# https://github.com/dependabot/dependabot-core/issues/15904
+pmOnFail: ignore
+
 allowBuilds:
   '@parcel/watcher': true
   esbuild: true
